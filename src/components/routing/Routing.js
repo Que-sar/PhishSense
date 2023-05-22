@@ -4,7 +4,7 @@ const Routing = (props) => {
 
     const routes = props.routes;
     const routeMaps = routes.map((route) => (
-        <Route path={route.path} element={<route.component />} />
+        <Route key={route.path} path={route.path} element={<route.component />} />
     ))
 
     return <Routes>

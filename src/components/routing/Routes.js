@@ -5,18 +5,6 @@ import Register from "../../pages/Register";
 
 const usedRoutes = [
     {
-        path:"/",
-        name: "Home",
-        reference: "home",
-        component: Home
-    },
-    {
-        path:"/about",
-        name:"About Us",
-        reference: "about",
-        component: About
-    },
-    {
         path:"/login",
         name:"Log in",
         reference: "login",
@@ -27,6 +15,18 @@ const usedRoutes = [
         name:"Sign up",
         reference: "sign-up",
         component: Register
+    },
+    {
+        path:"/",
+        name: "Home",
+        reference: "home",
+        component: Home
+    },
+    {
+        path:"/about",
+        name:"About Us",
+        reference: "about",
+        component: About
     },
 ]
 

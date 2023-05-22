@@ -24,8 +24,8 @@ const Navbar = (props) => {
     
     
     const routes = props.routes;
-    const navLinks = routes.map((route) => (
-        <li className="nav-links">
+    const navLinks = routes.map((route, index) => (
+        <li key={`${route.reference}-${index}`} className="nav-links">
           <Link to={route.path} className={route.reference + "-link"}>{route.name}</Link>
         </li>
       ));

@@ -1,57 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,100&family=Montserrat:ital,wght@0,500;1,200&display=swap');
-.navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    /* background-color: #f1f1f1; */
-    font-family: 'IBM Plex Serif', serif;
-    font-family: 'Montserrat', sans-serif;
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    flex-direction: row; /* Change flex direction to stack items vertically */
+    padding: 10px 20px; /* Adjust padding for better spacing */
   }
-  
+
+  .nav-links-container {
+    margin-top: 10px; /* Add margin to separate the links from the logo */
+  }
+
+  .nav-links > * {
+    margin-right: 0; /* Remove the right margin on individual links */
+    margin-bottom: 10px; /* Add bottom margin for spacing between links */
+  }
+
   .logo-img {
-    width: 200px;
+    width: 50px;
     height: auto;
     padding-left: 20px;
   }
-  
+}
 
-  .nav-links-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .nav-links {
-    list-style: none;
-  }
-  
-  .nav-links > * {
-    text-decoration: none;
-    margin-right: 15px;
-    color: inherit;
-    }
-    
-    .nav-links > *:visited,
-    .nav-links > *:link {
-        color: inherit; /* Set the color to inherit or any other desired color */
-    }
-    
 
-    .login-link,
-    .sign-up-link {
-    display: inline-block;
-    padding: 10px 10px;
-    border: none;
-    background-color: #ddd;
-    color: #333;
-    text-decoration: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .login-link:hover,
-  .sign-up-link:hover {
-    background-color: #c9c6c6;
-  }
-  
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'IBM Plex Serif', serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.logo-img {
+  width: 200px;
+  height: auto;
+  padding-left: 20px;
+}
+
+.nav-links-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links > *,
+.nav-links > *:visited,
+.nav-links > *:link
+ {
+  text-decoration: none;
+  margin-right: 15px;
+  color: inherit;
+}
+
+
+.login-link,
+.sign-up-link {
+  display: inline-block;
+  padding: 10px 10px;
+  border: none;
+  background-color: #ddd;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-link:hover,
+.sign-up-link:hover {
+  background-color: #c9c6c6;
+}
+
 

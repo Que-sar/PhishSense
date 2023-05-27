@@ -28,11 +28,10 @@
   padding: 10px;
   position: relative;
   z-index: 1;
-  background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f1eeee;
   font-family: 'IBM Plex Serif', serif;
   font-family: 'Montserrat', sans-serif;
+  color: rgb(24, 24, 24);
 }
 
 .logo-img {
@@ -47,7 +46,29 @@
 }
 
 .nav-links {
+  margin-right: 15px;
   list-style: none;
+}
+
+.login-link {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.sign-up-link {
+  border: 1.5px solid rgb(24, 24, 24);
+  padding: 10px 15px;
+}
+
+.sign-up-link,
+.login-link {
+  font-weight: 500;
+}
+
+.sign-up-link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  
 }
 
 .nav-links > *,
@@ -59,22 +80,29 @@
   color: inherit;
 }
 
-
-.login-link,
-.sign-up-link {
-  display: inline-block;
-  padding: 10px 10px;
-  border: none;
-  background-color: #ddd;
-  color: #333;
-  text-decoration: none;
-  border-radius: 5px;
-  cursor: pointer;
+.nav-links > .login-link,
+.nav-links > .about-link,
+.nav-links > .products-link {
+  position: relative;
+  overflow: hidden;
 }
 
-.login-link:hover,
-.sign-up-link:hover {
-  background-color: #c9c6c6;
+.nav-links > .login-link:after,
+.nav-links > .about-link:after,
+.nav-links > .products-link:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: rgb(24, 24, 24);
+  transition: width 0.3s ease;
 }
 
+.nav-links > .login-link:hover:after,
+.nav-links > .about-link:hover:after,
+.nav-links > .products-link:hover:after {
+  width: 100%;
+}
 

@@ -2,8 +2,27 @@ import Home from "../../pages/Home";
 import About from "../../pages/About";
 import Login from "../../pages/Login";
 import Register from "../../pages/Register";
+import Products from "../../pages/Products";
 
 const usedRoutes = [
+    {
+        path:"/",
+        name: "Home",
+        reference: "home",
+        component: Home
+    },
+    {
+        path:"/products",
+        name:"Products",
+        reference: "products",
+        component: Products
+    },
+    {
+        path:"/about",
+        name:"About us",
+        reference: "about",
+        component: About
+    },
     {
         path:"/login",
         name:"Log in",
@@ -12,21 +31,9 @@ const usedRoutes = [
     },
     {
         path:"/signup",
-        name:"Sign up",
+        name:"Get started",
         reference: "sign-up",
         component: Register
-    },
-    {
-        path:"/",
-        name: "Home",
-        reference: "home",
-        component: Home
-    },
-    {
-        path:"/about",
-        name:"About Us",
-        reference: "about",
-        component: About
     },
 ]
 

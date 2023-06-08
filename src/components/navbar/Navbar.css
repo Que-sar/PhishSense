@@ -34,8 +34,7 @@
     background-color: rgb(251, 196, 113, 0.8);
     backdrop-filter: blur(5px); /* Adjust the blur radius as desired */
     -webkit-backdrop-filter: blur(5px); /* For Safari support */
-    font-family: 'IBM Plex Serif', serif;
-    font-family: 'Montserrat', sans-serif;
+
   }
 
   .logo-img {

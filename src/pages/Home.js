@@ -9,13 +9,19 @@ return (
     <div className='hero-section'>
         <div className='hero-action'>
             <div className='hero-title'>
-                <h1>Title</h1>
+                Sense your security,
+                <br/>
+                empower yourself.
             </div>
             <div className='hero-description'>
-                <h3>I am the description</h3>
-                </div>
+            <br/>
+            Build natural resistance against malicious emails<br/>
+            through a comprehensive training and certification program <br/>
+            offered by PhishSense.             
+            </div>
             <div className='hero-call-to-action'>
-                <button>Call</button>
+            <br/>
+                <button className='hero-action-button'>Try it for free!</button>
                 </div>    
         </div>
         <div className='hero-image'>

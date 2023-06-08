@@ -31,10 +31,9 @@
     left: 0;
     width: 100%;
     z-index: 100;
-    background-color: rgb(251, 196, 113, 0.8);
+    background-color: rgba(250, 226, 189, 0.8);
     backdrop-filter: blur(5px); /* Adjust the blur radius as desired */
     -webkit-backdrop-filter: blur(5px); /* For Safari support */
-
   }
 
   .logo-img {
@@ -62,18 +61,29 @@
   .sign-up-link {
     border: 1.5px solid rgb(24, 24, 24);
     padding: 10px 15px;
+    background-color: rgb(240, 144, 115);
   }
 
   .sign-up-link,
   .login-link {
     font-weight: 500;
   }
+  
+  .sign-up-link:hover {
 
-  .sign-up-link:hover,
+    background-color: rgb(231, 134, 70);
+    transition: background-color 0.3s ease;
+  }
+
   .login-link:hover {
     background-color: rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
-    
+  }
+
+  .nav-links > .sign-up-link,
+  .nav-links > .sign-up-link:visited,
+  .nav-links > .sign-up-link:link {
+    color: #3c0c01;
   }
 
   .nav-links > *,
@@ -96,10 +106,10 @@
     content: "";
     position: absolute;
     left: 0;
-    bottom: -2px;
+    bottom: -4px;
     width: 0;
     height: 2px;
-    background-color: rgba(123,56,63,255);
+    background-color: rgba(240, 144, 115,255);
     transition: width 0.3s ease;
   }
 

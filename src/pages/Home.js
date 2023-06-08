@@ -21,7 +21,7 @@ return (
             </div>
             <div className='hero-call-to-action'>
             <br/>
-                <button className='hero-action-button'>Try it out!</button>
+                <button className='hero-action-button'>Try for free!</button>
                 </div>    
         </div>
         <div className='hero-image'>

@@ -61,7 +61,8 @@
   .sign-up-link {
     border: 1.5px solid rgb(24, 24, 24);
     padding: 10px 15px;
-    background-color: #FFA500;
+    background-color: #181818;
+
   }
 
   .sign-up-link,
@@ -70,7 +71,12 @@
     border-radius: 20px;
   }
   
-  .sign-up-link:hover,
+  .sign-up-link:hover {
+    background-color: rgba(0,0,0, 0.65);
+    transition: background-color 0.3s ease;
+  }
+
+
   .login-link:hover {
     background-color: rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
@@ -79,7 +85,7 @@
   .nav-links > .sign-up-link,
   .nav-links > .sign-up-link:visited,
   .nav-links > .sign-up-link:link {
-
+    color: whitesmoke;
   }
 
   .nav-links > *,

@@ -61,20 +61,16 @@
   .sign-up-link {
     border: 1.5px solid rgb(24, 24, 24);
     padding: 10px 15px;
-    background-color: rgb(240, 144, 115);
+    background-color: #FFA500;
   }
 
   .sign-up-link,
   .login-link {
     font-weight: 500;
+    border-radius: 20px;
   }
   
-  .sign-up-link:hover {
-
-    background-color: rgb(231, 134, 70);
-    transition: background-color 0.3s ease;
-  }
-
+  .sign-up-link:hover,
   .login-link:hover {
     background-color: rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
@@ -83,7 +79,7 @@
   .nav-links > .sign-up-link,
   .nav-links > .sign-up-link:visited,
   .nav-links > .sign-up-link:link {
-    color: #3c0c01;
+
   }
 
   .nav-links > *,

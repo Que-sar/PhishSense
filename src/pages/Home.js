@@ -27,9 +27,14 @@ return (
             </div>
     </div>
     <div className='benefits-section'>
-        <div className='firstBenefit'>One</div>
-        <div className='secondBenefit'>Two</div>
-        <div className='thirdBenefit'>Three</div>
+        <div className='benefits-title'>
+            Benefits
+        </div>
+        <div className='benefits-list'>
+            <div className='firstBenefit'>One</div>
+            <div className='secondBenefit'>Two</div>
+            <div className='thirdBenefit'>Three</div>
+        </div>
     </div>
 </div>
 

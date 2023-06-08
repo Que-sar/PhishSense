@@ -14,14 +14,12 @@ return (
                 empower yourself.
             </div>
             <div className='hero-description'>
-            <br/>
             Build natural resistance against malicious emails<br/>
             through a comprehensive training and certification program <br/>
             offered by PhishSense.             
             </div>
             <div className='hero-call-to-action'>
-            <br/>
-                <button className='hero-action-button'>Try for free!</button>
+                <button className='hero-action-button'>Get started</button>
                 </div>    
         </div>
         <div className='hero-image'>

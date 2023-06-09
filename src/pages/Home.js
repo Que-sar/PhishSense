@@ -2,7 +2,11 @@ import React from 'react';
 import "./Home.css";
 import HeroImage from "../components/images/heroImage.png";
 import BenefitsWave from "../components/images/heroWave.svg";
+
 import ShieldIcon from "../components/images/shieldIcon.svg";
+import PeaceIcon from "../components/images/peaceIcon.svg";
+import TrophyIcon from "../components/images/trophyIcon.svg";
+
 
 const Home = () => {
 
@@ -54,7 +58,7 @@ return (
 
             <div className='secondBenefit'>
                 <div className='benefit-item-icon'>
-                    <img src={ShieldIcon} alt='Protection' />
+                    <img src={TrophyIcon} alt='Protection' />
                 </div>
                 <div>
                     <div className='benefit-item-title'>
@@ -68,7 +72,7 @@ return (
 
             <div className='thirdBenefit'>
                 <div className='benefit-item-icon'>
-                    <img src={ShieldIcon} alt='Protection' />
+                    <img src={PeaceIcon} alt='Protection' />
                 </div>
                 <div>
                     <div className='benefit-item-title'>

@@ -1,0 +1,207 @@
+
+
+.hero-section {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background:#fcc477;
+    height: 75vh;
+}
+
+
+
+.hero-action {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title {
+    font-weight: bolder;
+    font-size: calc(55px + 0.390625vw);;
+    margin-top: 7vh;
+}
+
+.hero-description {
+    font-size: calc(15px + 0.390625vw);;
+    font-weight: 400;
+    margin-top: 1.5vh;
+    max-width: 600px
+}
+
+.hero-action-button {
+    position: relative;
+    font-size: calc(15px + 0.390625vw);
+    font-weight: bold;
+    background-color: rgb(24, 24, 24);
+    color: #f5f5f5;
+    border-radius: 20px;
+    margin-bottom: 7vh;
+    margin-top: 2vh;
+    padding: 15px;
+
+}
+
+.hero-action-button:hover {
+    background-color: rgba(0,0,0, 0.65);
+    transition: background-color 0.3s ease;
+}
+.hero-image {
+    flex: 1; /* Allow the image to grow or shrink based on available space */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    position: relative; /* Enable relative positioning for the image */
+    margin-right: 50px;
+}
+
+.hero-image img {
+    max-width: 40vw;
+    height: auto;
+    max-height: 72vh;
+}
+
+.benefits-wave img{
+
+    width: 100%;
+    z-index: -1;
+    margin-top: -2px;
+}
+
+.benefits-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.benefits-title {
+
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: calc(55px + 0.390625vw);
+    margin-bottom: 5vh;
+    margin-top: -10vh;
+}
+
+.benefits-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(20px + 0.390625vw);
+    margin-bottom: 8vh;
+    margin-right: 12vw;
+    margin-left: 12vw;
+}
+
+.benefits-section {
+    margin-top: 8vh;
+}
+
+.benefits-list > * {
+    max-width: 40vh;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+
+}
+
+.benefit-item-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1vh;
+    font-weight: 700;
+    font-size: calc(18px + 0.390625vw);
+  }
+
+.benefit-item-description {
+    font-size: calc(15px + 0.390625vw);
+    margin-bottom: 8vh;
+}
+
+.benefit-item-icon {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1vh;
+    margin-right: 2vh;
+    margin-left: 2vh;
+
+}
+
+.benefit-item-icon img {
+    width: 35px;
+    height: auto;
+    background-color: #fcc477;
+    border-radius: 50%;
+    padding: 5px;
+  }
+
+
+.pricing-title-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-title {
+
+    font-weight: bolder;
+    font-size: calc(55px + 0.390625vw);
+    margin-top: 7vh;
+    margin-bottom: 5vh;
+
+}
+
+.pricing-title-description {
+    font-size: calc(20px + 0.390625vw);
+    margin-bottom: 5vh;
+    margin-right: 12vw;
+    margin-left: 12vw;
+}
+.pricing-title-plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+    
+}
+.plan-button {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    font-size: calc(16px + 0.390625vw);
+}
+
+.pricing-panel-section {
+    display: flex;
+    justify-content: center;
+  }
+  
+.pricing-panel {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 0 0 auto;
+    margin: 0 0.5vw;
+    font-size: calc(15px + 0.390625vw);
+    border-style: solid;
+    border-width: thin;
+    border-radius: 15px;
+    height: 55vh;
+    min-width: 300px;
+    padding-top: 2vh;
+    margin-bottom: 8vh;
+}
+
+
+
+
+
+
+

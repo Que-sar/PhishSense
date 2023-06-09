@@ -1,4 +1,4 @@
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 991px) {
     .navbar-container {
       flex-direction: row; /* Change flex direction to stack items vertically */
       padding: 10px 20px; /* Adjust padding for better spacing */

@@ -9,7 +9,7 @@ const Navbar = (props) => {
     const [isSmallScreen, setIsSmallScreen] = useState(false);
     
     const screenSize = () => {
-        setIsSmallScreen(window.innerWidth < 768);
+        setIsSmallScreen(window.innerWidth < 991);
         
     }
     

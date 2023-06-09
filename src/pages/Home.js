@@ -39,6 +39,9 @@ return (
         <div className='benefits-title'>
             Benefits
         </div>
+        <div className='benefits-description'>
+            What we offer to increase your security, elevate your confidence, achieve your goals.
+        </div>
         <div className='benefits-list'>
 
 
@@ -51,7 +54,8 @@ return (
                     Enforce Your Defense
                     </div>
                     <p className='benefit-item-description'>
-                    Acquire or test skills to detect and protect against phishing, showcasing resilience and gaining a cybersecurity edge.
+                    Acquire or test skills to detect and protect against phishing,
+                     showcasing resilience and gaining a cybersecurity edge.
                     </p>
                 </div>
                 </div>
@@ -65,7 +69,8 @@ return (
                     Prove Digital Resilience
                     </div>
                     <p className='benefit-item-description'>
-                    Demonstrate your ability to navigate securely, confidently defend against phishing, and set yourself apart by certifying.
+                    Demonstrate your ability to navigate securely,
+                     confidently defend against phishing, and set your organisation or yourself apart by certifying.
                     </p>
                 </div>
                 </div>
@@ -85,6 +90,43 @@ return (
                 </div>
         </div>
     </div>
+
+
+    <div className='pricing-plan-section'>
+        <div className='pricing-title-section'>
+            <div className='pricing-title'>
+                Pricing Plan
+            </div>
+            <div className='pricing-title-description'>
+                Tailor it to your needs.
+            </div>
+            <div className='pricing-title-plan'>
+                <button className='plan-button individual-plan'>
+                    Individual Plan
+                </button> 
+                <button className='plan-button enterprise-plan'>
+                    Enterprise Plan
+                </button> 
+            </div>
+        </div>
+        <div className='pricing-panel-section'>
+            <div className='pricing-panel training'>
+                Training Essentials
+            </div>
+
+            <div className='pricing-panel certification'>
+                Certification Exam
+            </div>
+
+            <div className='pricing-panel comprehensive'>
+                Comprehensive Mastery
+            </div>    
+        </div>
+    </div>
+
+
+
+
 </div>
 
 

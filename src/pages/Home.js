@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Home.css";
 import HeroImage from "../components/images/heroImage.png";
+import BenefitsWave from "../components/images/heroWave.svg";
 
 const Home = () => {
 
@@ -14,8 +15,8 @@ return (
                 empower yourself.
             </div>
             <div className='hero-description'>
-            Build natural resistance against malicious emails<br/>
-            through a comprehensive training and certification program <br/>
+            Build natural resistance against malicious emails
+            through a comprehensive training and certification program
             offered by PhishSense.             
             </div>
             <div className='hero-call-to-action'>
@@ -27,6 +28,9 @@ return (
             </div>
     </div>
     <div className='benefits-section'>
+        <div className='benefits-wave'>
+            <img src={BenefitsWave} alt='Benefits Wave' />
+        </div>
         <div className='benefits-title'>
             Benefits
         </div>

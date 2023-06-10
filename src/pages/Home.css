@@ -176,6 +176,22 @@
     margin-left: 2vw;
     margin-right: 2vw;
     font-size: calc(16px + 0.390625vw);
+    width: 12vw;
+    height: 5vh;
+    border-radius: 25px;
+    background-color: rgb(252, 196, 119);
+    color: rgb(24, 24, 24);
+}
+
+.plan-button:hover {
+    background-color: rgba(24, 24, 24, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.individual-plan.active,
+.enterprise-plan.active {
+    background-color: rgb(24, 24, 24);
+    color: #f5f5f5;
 }
 
 .pricing-panel-section {
@@ -201,11 +217,6 @@
     padding: 20px 20px;
     display: flex;
     justify-content: left;
-}
-
-.pricing-panel-price {
-
-
 }
 
 .training-title,
@@ -254,8 +265,40 @@
     margin-top: 5vh;
 }
 
+.enterpriseEntry {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vh;
+    font-size: calc(16px + 0.390625vw);
+}
 
+.enterpriseEntry div {
+    margin-right: 2vw;
+}
 
+#numberInput {
+    margin-top: 2vh;
+    font-size: calc(16px + 0.390625vw);
+    border-style: solid;
+    border-width: thin;
+    border-color: #181818;
+    padding:10px;
+    border-radius: 25px;
+    height: 4vh;
+    width: 8vw;
 
+}
+
+.sliderBackground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    color: #fcc477;
+    width: 30vw;
+    height: 3vh;
+}
 
 

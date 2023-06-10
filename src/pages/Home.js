@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Home.css";
+
+
 import HeroImage from "../components/images/heroImage.png";
 import BenefitsWave from "../components/images/heroWave.svg";
 
@@ -9,6 +11,42 @@ import TrophyIcon from "../components/images/trophyIcon.svg";
 
 
 const Home = () => {
+    const [individualButton, setIndividualButton] = useState(true);
+    const [enterpriseButton, setEnterpriseButton] = useState(false);
+    const [enterprisePeople, setEnterprisePeople] = useState(1);
+    const [sliderValue, setSliderValue] = useState(1);
+
+    const sliderValueChange = (event) => {
+      setSliderValue(event.target.value);
+      setEnterprisePeople(sliderValue);
+    };
+
+    const handleNumberChange = (event) => {
+        setEnterprisePeople(event.target.value);
+        setSliderValue(enterprisePeople);
+      };
+
+    const individualPrice = {
+        training: 20,
+        certification: 10,
+        comprehensive: 25
+    }
+
+    const individualButtonListener = () => {
+        if(!individualButton){
+            setIndividualButton(true);
+            setEnterpriseButton(false);
+        }
+    }
+
+    const enterpriseButtonListener = () => {
+        if(!enterpriseButton){
+            setEnterpriseButton(true);
+            setIndividualButton(false);
+        }
+    }
+
+
 
 return (
 <div className='home-container'>
@@ -101,14 +139,38 @@ return (
                 Tailor it to your needs.
             </div>
             <div className='pricing-title-plan'>
-                <button className='plan-button individual-plan'>
+                <button className={`plan-button individual-plan ${individualButton ? 'active' : ''}`} onClick={individualButtonListener}>
                     Individual Plan
                 </button> 
-                <button className='plan-button enterprise-plan'>
+                <button className={`plan-button enterprise-plan ${enterpriseButton ? 'active' : ''}`} onClick={enterpriseButtonListener}>
                     Enterprise Plan
-                </button> 
+                </button>
+                 
             </div>
         </div>
+                {enterpriseButton ? (
+
+                <div className='enterpriseEntry'>
+
+                <div>How many people will use this service? </div>
+                <input
+                    type="number"
+                    id="numberInput"
+                    value={enterprisePeople}
+                    onChange={handleNumberChange}
+                    />
+
+                    <input
+                        type="range"
+                        id="sliderInput"
+                        min="2"
+                        max="1000"
+                        className='sliderBackground'
+                        value={sliderValue}
+                        onChange={sliderValueChange}
+                    />
+
+                    </div>): " "}
 
 
         <div className='pricing-panel-section'>
@@ -117,7 +179,7 @@ return (
                     Training
                 </div>
                 <div className='pricing-panel-price training-price'>
-                    10$
+                    {individualPrice.training}$
                 </div>
                 <div className='pricing-panel-description training-description'>
                     Description
@@ -129,7 +191,7 @@ return (
                 Certification
                 </div>
                 <div className='pricing-panel-price certification-price'>
-                    10$
+                    {individualPrice.certification}$
                 </div>
                 <div className='pricing-panel-description certification-description'>
                     Description
@@ -141,7 +203,7 @@ return (
                 Comprehensive
                 </div>
                 <div className='pricing-panel-price comprehensive-price'>
-                    10$
+                    {individualPrice.comprehensive}$
                 </div>
                 <div className='pricing-panel-description comprehensive-description'>
                     Description

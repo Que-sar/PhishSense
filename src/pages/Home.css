@@ -148,6 +148,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .pricing-title {
@@ -270,13 +271,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5vh;
+
+    margin-bottom: 3vh;
+    margin-left: auto;
+    margin-right: auto;
     font-size: calc(16px + 0.390625vw);
+
+    border-style: solid;
+    border-width: thin;
+    border-radius: 25px;
+    padding: 10px;
+    border-color: #fcc477;
+    background: #fcc477;
+    color: #181818;
+
+    width: 30vw;
+
 }
 
-.enterpriseEntry div {
-    margin-right: 2vw;
-}
 
 #numberInput {
     margin-top: 2vh;
@@ -290,15 +302,4 @@
     width: 8vw;
 
 }
-
-.sliderBackground {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2vh;
-    color: #fcc477;
-    width: 30vw;
-    height: 3vh;
-}
-
 

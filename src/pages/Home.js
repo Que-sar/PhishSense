@@ -13,7 +13,7 @@ import TrophyIcon from "../components/images/trophyIcon.svg";
 const Home = () => {
     const [individualButton, setIndividualButton] = useState(true);
     const [enterpriseButton, setEnterpriseButton] = useState(false);
-    const [enterprisePeople, setEnterprisePeople] = useState(1);
+    const [enterprisePeople, setEnterprisePeople] = useState(10);
 
     const handleNumberChange = (event) => {
         setEnterprisePeople(event.target.value);
@@ -143,10 +143,12 @@ return (
         </div>
                 {enterpriseButton ? (
 
-                <div className='enterpriseEntry'>
+                <div className='enterpriseEntry entry-panel'>
 
                 <div>How many people will use this service? </div>
                 <input
+                    min={2}
+                    max={10000}
                     type="number"
                     id="numberInput"
                     value={enterprisePeople}

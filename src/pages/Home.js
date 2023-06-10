@@ -14,16 +14,9 @@ const Home = () => {
     const [individualButton, setIndividualButton] = useState(true);
     const [enterpriseButton, setEnterpriseButton] = useState(false);
     const [enterprisePeople, setEnterprisePeople] = useState(1);
-    const [sliderValue, setSliderValue] = useState(1);
-
-    const sliderValueChange = (event) => {
-      setSliderValue(event.target.value);
-      setEnterprisePeople(sliderValue);
-    };
 
     const handleNumberChange = (event) => {
         setEnterprisePeople(event.target.value);
-        setSliderValue(enterprisePeople);
       };
 
     const individualPrice = {
@@ -158,16 +151,6 @@ return (
                     id="numberInput"
                     value={enterprisePeople}
                     onChange={handleNumberChange}
-                    />
-
-                    <input
-                        type="range"
-                        id="sliderInput"
-                        min="2"
-                        max="1000"
-                        className='sliderBackground'
-                        value={sliderValue}
-                        onChange={sliderValueChange}
                     />
 
                     </div>): " "}

@@ -109,17 +109,43 @@ return (
                 </button> 
             </div>
         </div>
+
+
         <div className='pricing-panel-section'>
             <div className='pricing-panel training'>
-                Training Essentials
+                <div className='pricing-panel-title training-title'>
+                    Training
+                </div>
+                <div className='pricing-panel-price training-price'>
+                    10$
+                </div>
+                <div className='pricing-panel-description training-description'>
+                    Description
+                </div>
             </div>
 
             <div className='pricing-panel certification'>
-                Certification Exam
+                <div className='pricing-panel-title certification-title'>
+                Certification
+                </div>
+                <div className='pricing-panel-price certification-price'>
+                    10$
+                </div>
+                <div className='pricing-panel-description certification-description'>
+                    Description
+                </div>                
             </div>
 
             <div className='pricing-panel comprehensive'>
-                Comprehensive Mastery
+                <div className='pricing-panel-title comprehensive-title'>
+                Comprehensive
+                </div>
+                <div className='pricing-panel-price comprehensive-price'>
+                    10$
+                </div>
+                <div className='pricing-panel-description comprehensive-description'>
+                    Description
+                </div>
             </div>    
         </div>
     </div>

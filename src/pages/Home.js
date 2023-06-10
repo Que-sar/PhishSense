@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "./Home.css";
+import { individual, enterprise } from './Descriptions.js';
 
 
 import HeroImage from "../components/images/heroImage.png";
@@ -13,15 +14,18 @@ import TrophyIcon from "../components/images/trophyIcon.svg";
 const Home = () => {
     const [individualButton, setIndividualButton] = useState(true);
     const [enterpriseButton, setEnterpriseButton] = useState(false);
-    const [enterprisePeople, setEnterprisePeople] = useState(10);
+    const [enterprisePeople, setEnterprisePeople] = useState(1);
 
     const handleNumberChange = (event) => {
-        setEnterprisePeople(event.target.value);
+        const newNumber = event.target.value;
+        if(newNumber > 0){
+            setEnterprisePeople(event.target.value);
+        }
       };
 
     const individualPrice = {
-        training: 20,
-        certification: 10,
+        training: 10,
+        certification: 20,
         comprehensive: 25
     }
 
@@ -29,6 +33,7 @@ const Home = () => {
         if(!individualButton){
             setIndividualButton(true);
             setEnterpriseButton(false);
+            setEnterprisePeople(1);
         }
     }
 
@@ -36,6 +41,7 @@ const Home = () => {
         if(!enterpriseButton){
             setEnterpriseButton(true);
             setIndividualButton(false);
+            setEnterprisePeople(10);
         }
     }
 
@@ -85,7 +91,7 @@ return (
                     Enforce Your Defense
                     </div>
                     <p className='benefit-item-description'>
-                    Acquire or test skills to detect and protect against phishing,
+                    Acquire habits or test skills to detect and protect against phishing,
                      showcasing resilience and gaining a cybersecurity edge.
                     </p>
                 </div>
@@ -101,7 +107,8 @@ return (
                     </div>
                     <p className='benefit-item-description'>
                     Demonstrate your ability to navigate securely,
-                     confidently defend against phishing, and set your organisation or yourself apart by certifying.
+                     confidently defend against phishing, and set your organisation
+                      or yourself apart by certifying.
                     </p>
                 </div>
                 </div>
@@ -115,7 +122,9 @@ return (
                     Gain Peace of Mind
                     </div>
                     <p className='benefit-item-description'>
-                    Join our comprehensive training and certification program for peace of mind, effective mitigation of phishing threats, and instilling confidence.
+                    Join our comprehensive training and certification
+                     program for peace of mind, effective mitigation of phishing threats,
+                      and instilling confidence.
                     </p>
                 </div>
                 </div>
@@ -164,10 +173,22 @@ return (
                     Training
                 </div>
                 <div className='pricing-panel-price training-price'>
-                    {individualPrice.training}$
+                    {enterprisePeople * individualPrice.training}$
                 </div>
+                <div className="horizontalLine"></div>
                 <div className='pricing-panel-description training-description'>
-                    Description
+                    {individualButton ? individual.training : enterprise.training}
+                </div>
+                <div className="horizontalLine"></div>
+                <div className='pricing-panel-bulletpoints'>
+                    <ul>
+                        <li>Interactive material</li>
+                        <li>Habit-building exercises</li>
+                        <li>Decision-making simulations</li>
+                        <li>Comprehensive guide</li>
+                        <li>Monitored progress</li>
+
+                    </ul>
                 </div>
             </div>
 
@@ -176,11 +197,23 @@ return (
                 Certification
                 </div>
                 <div className='pricing-panel-price certification-price'>
-                    {individualPrice.certification}$
+                    {enterprisePeople * individualPrice.certification}$
                 </div>
+                <div className="horizontalLine-whites"></div>
                 <div className='pricing-panel-description certification-description'>
-                    Description
-                </div>                
+                    {individualButton ? individual.certification : enterprise.certification}
+
+                </div>
+                <div className="horizontalLine-whites"></div>
+                <div className='pricing-panel-bulletpoints'>
+                    <ul>
+                        <li>Comprehensive assessment</li>
+                        <li>Professional advancement</li>
+                        <li>Trust-building certification</li>
+                        <li>Ongoing validity</li>
+
+                    </ul>
+                </div>
             </div>
 
             <div className='pricing-panel comprehensive'>
@@ -188,10 +221,18 @@ return (
                 Comprehensive
                 </div>
                 <div className='pricing-panel-price comprehensive-price'>
-                    {individualPrice.comprehensive}$
+                    {enterprisePeople * individualPrice.comprehensive}$
                 </div>
+                <div className="horizontalLine"></div>
                 <div className='pricing-panel-description comprehensive-description'>
-                    Description
+                {individualButton ? individual.comprehensive : enterprise.comprehensive}
+                </div>
+                <div className="horizontalLine"></div>
+                <div className='pricing-panel-bulletpoints'>
+                    <ul>
+                        <li>Training Plan</li>
+                        <li>Certification Plan</li>
+                    </ul>
                 </div>
             </div>    
         </div>

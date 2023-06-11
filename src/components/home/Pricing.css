@@ -65,7 +65,6 @@
   margin: 0 0.5vw;
   width: 320px;
   padding-top: 2vh;
-  margin-bottom: 8vh;
 }
 
 .pricing-panel-title {
@@ -199,4 +198,42 @@
 .pricing-panel-bulletpoints ul {
     padding-inline-start: 20px;
     margin: 0;
+}
+
+.price-action-button {
+
+    font-size: calc(15px + 0.390625vw);
+    font-weight: bold;
+    background-color: rgb(24, 24, 24);
+    color: #f5f5f5;
+    border-radius: 20px;
+    margin-top: 4vh;
+    padding: 15px;
+    width: 200px;
+}
+
+.price-action-button:hover {
+    background-color: rgba(0,0,0, 0.65);
+    transition: background-color 0.3s ease;
+}
+
+
+
+@media (max-width: 991px) {
+    .pricing-panel-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .pricing-panel {
+        margin-bottom: 2vh;
+        width: 70vw;
+        padding-top: 2vh;
+      }
+
+      #numberInput {
+        width: 30vw;
+      }
+
 }

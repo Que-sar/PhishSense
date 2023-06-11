@@ -86,6 +86,7 @@ const Pricing = () => {
                 <div className='pricing-panel-price training-price'>
                     {enterprisePeople * individualPrice.training}$
                 </div>
+                <button className='price-action-button'>Get started</button>
                 <div className="horizontalLine"></div>
                 <div className='pricing-panel-description training-description'>
                     {individualButton ? individual.training : enterprise.training}
@@ -110,6 +111,7 @@ const Pricing = () => {
                 <div className='pricing-panel-price certification-price'>
                     {enterprisePeople * individualPrice.certification}$
                 </div>
+                <button className='price-action-button'>Get started</button>
                 <div className="horizontalLine-whites"></div>
                 <div className='pricing-panel-description certification-description'>
                     {individualButton ? individual.certification : enterprise.certification}
@@ -134,6 +136,7 @@ const Pricing = () => {
                 <div className='pricing-panel-price comprehensive-price'>
                     {enterprisePeople * individualPrice.comprehensive}$
                 </div>
+                <button className='price-action-button'>Get started</button>
                 <div className="horizontalLine"></div>
                 <div className='pricing-panel-description comprehensive-description'>
                 {individualButton ? individual.comprehensive : enterprise.comprehensive}

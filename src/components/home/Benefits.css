@@ -36,8 +36,13 @@
     margin-top: 8vh;
 }
 
+.benefits-list {
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+
 .benefits-list > * {
-    max-width: 40vh;
+    max-width: 30vw;
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
@@ -73,3 +78,27 @@
     border-radius: 50%;
     padding: 5px;
   }
+
+
+  @media (max-width: 991px) {
+
+      .benefits-list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+
+      .benefits-list > * {
+        max-width: 75vw;
+      }
+
+      .benefit-item-title {
+        font-size: calc(25px + 0.390625vw);
+      }
+
+      .benefit-item-description {
+        font-size: calc(22px + 0.390625vw);
+      }
+
+    }

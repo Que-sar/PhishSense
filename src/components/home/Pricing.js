@@ -67,7 +67,7 @@ const Pricing = () => {
 
                 <div>How many people will use this service? </div>
                 <input
-                    min={2}
+                    min={1}
                     max={10000}
                     type="number"
                     id="numberInput"

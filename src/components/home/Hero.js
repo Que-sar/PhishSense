@@ -20,6 +20,7 @@ const Hero = () => {
             </div>
             <div className='hero-call-to-action'>
                 <button className='hero-action-button'>Get started</button>
+                <button className='hero-tryout-button'>Try our demo</button>
                 </div>    
         </div>
         <div className='hero-image'>

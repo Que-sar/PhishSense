@@ -42,7 +42,7 @@
 }
 
 .plan-button:hover {
-    background-color: rgba(24, 24, 24, 0.1);
+    background-color: rgba(251, 195, 119, 0.85);
     transition: background-color 0.3s ease;
 }
 

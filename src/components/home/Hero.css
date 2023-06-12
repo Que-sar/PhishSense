@@ -30,23 +30,49 @@
     margin-top: 1.5vh;
     max-width: 600px
 }
+.hero-call-to-action {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4vh;
+}
+
+.hero-tryout-button {
+    margin-top: 4vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    font-size: calc(16px + 0.390625vw);
+    min-width: 12vw;
+    min-height: 7vh;
+    border-radius: 25px;
+    border-style: solid;
+    background-color: #fcc477;
+    color: rgb(24, 24, 24);
+    padding: 18px;
+    padding-bottom: 20px;
+}
+
+.hero-tryout-button:hover {
+    background-color: rgb(24, 24, 24, 0.1);
+    transition: background-color 0.3s ease;
+}
 
 .hero-action-button {
-    position: relative;
-    font-size: calc(17px + 0.390625vw);
-    font-weight: bold;
-    width: 200px;
-    background-color: rgb(24, 24, 24);
-    color: #f5f5f5;
-    border-radius: 20px;
-    margin-bottom: 7vh;
-    margin-top: 2vh;
-    padding: 15px;
+    margin-top: 4vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    font-size: calc(16px + 0.390625vw);
+    min-width: 12vw;
+    min-height: 7vh;
+    border-radius: 25px;
+    background-color: rgba(24, 24, 24);
+    color: whitesmoke;
+    padding: 18px;
+    padding-bottom: 20px;
 
 }
 
 .hero-action-button:hover {
-    background-color: rgba(0,0,0, 0.65);
+    background-color: rgba(0, 0, 0, 0.65);
     transition: background-color 0.3s ease;
 }
 .hero-image {

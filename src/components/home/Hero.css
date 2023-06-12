@@ -114,3 +114,8 @@
         height: auto;
     }
 }
+
+.demo-link {
+    text-decoration: none;
+    color: inherit;
+}

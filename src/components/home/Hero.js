@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from "react-router-dom";
 import HeroImage from "../images/heroImage.png";
 
 import "./Hero.css";
@@ -20,7 +20,7 @@ const Hero = () => {
             </div>
             <div className='hero-call-to-action'>
                 <button className='hero-action-button'>Get started</button>
-                <button className='hero-tryout-button'>Try our demo</button>
+                <button className='hero-tryout-button'><Link to="/demo" className={"demo-link"}>Try our demo</Link></button>
                 </div>    
         </div>
         <div className='hero-image'>

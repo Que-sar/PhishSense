@@ -3,6 +3,7 @@ import About from "../../pages/About";
 import Login from "../../pages/Login";
 import Register from "../../pages/Register";
 import Products from "../../pages/Products";
+import Demo from "../../pages/Demo";
 
 const usedRoutes = [
     {
@@ -10,6 +11,12 @@ const usedRoutes = [
         name: "Home",
         reference: "home",
         component: Home
+    },
+    {
+        path:"/demo",
+        name: "Demo",
+        reference: "demo",
+        component: Demo
     },
     {
         path:"/products",

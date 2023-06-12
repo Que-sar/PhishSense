@@ -2,10 +2,6 @@ import React, { useState } from 'react';
 import "./Simulation.css";
 
 import GiveUp from "../images/simulationIcons/giveup.svg";
-import Legitimate from "../images/simulationIcons/mark.svg";
-import ChosenLegitimate from "../images/simulationIcons/chosenlegitimate.svg";
-import Malicious from "../images/simulationIcons/badmark.svg";
-import ChosenMalicious from "../images/simulationIcons/chosenmalicious.svg";
 import Report from "../images/simulationIcons/report.svg";
 import Delete from "../images/simulationIcons/delete.svg";
 import Reply from "../images/simulationIcons/reply.svg";
@@ -15,13 +11,15 @@ import DarkFlag from "../images/simulationIcons/darkflag.svg";
 import More from "../images/simulationIcons/more.svg";
 
 
-
+// neutral f5f5f5
+// red DE2626
+// green 1ED44B
 
 const Simulation = () => {
 
     const [flagged, setFlagged] = useState(false);
-    const [legitimateColor, setLegitimateColor] = useState(false);
-    const [maliciousColor, setMaliciousColor] = useState(false);
+    const [legitimateColor, setLegitimateColor] = useState("#f5f5f5");
+    const [maliciousColor, setMaliciousColor] = useState("#f5f5f5");
     // const [moreOpen, setMoreOpen] = useState(false);
 
     const flagClick = () => {
@@ -29,17 +27,13 @@ const Simulation = () => {
     }
 
     const legitimateClick = () => {
-        if(!legitimateColor){
-            setMaliciousColor(false);
-            setLegitimateColor(true);
-        }
+        setMaliciousColor("#f5f5f5");
+        setLegitimateColor("#1ED44B");
     }
 
     const maliciousClick = () => {
-        if(!maliciousColor){
-            setLegitimateColor(false);
-            setMaliciousColor(true);
-        }
+        setLegitimateColor("#f5f5f5");
+        setMaliciousColor("#DE2626");
     }
 
     // const moreClick = () => {
@@ -59,12 +53,12 @@ const Simulation = () => {
                     <div className='small-line'></div>
                     <div className='icon done-button'>
                         <button className='legitimate-click' onClick={legitimateClick}>
-                            <img src={legitimateColor ? ChosenLegitimate : Legitimate} alt='Delete' />
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style={{ fill: legitimateColor }}><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
                         </button>
                     </div>
                     <div className='icon markbad-phishing-button'>
                         <button className='malicious-click' onClick={maliciousClick}>
-                            <img src={maliciousColor ? ChosenMalicious : Malicious} alt='Delete' />
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style={{ fill: maliciousColor }}><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
                         </button>
                     </div>
                     <div className='small-line'></div>

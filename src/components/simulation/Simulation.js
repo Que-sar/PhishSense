@@ -3,7 +3,9 @@ import "./Simulation.css";
 
 import GiveUp from "../images/simulationIcons/giveup.svg";
 import Legitimate from "../images/simulationIcons/mark.svg";
+import ChosenLegitimate from "../images/simulationIcons/chosenlegitimate.svg";
 import Malicious from "../images/simulationIcons/badmark.svg";
+import ChosenMalicious from "../images/simulationIcons/chosenmalicious.svg";
 import Report from "../images/simulationIcons/report.svg";
 import Delete from "../images/simulationIcons/delete.svg";
 import Reply from "../images/simulationIcons/reply.svg";
@@ -18,10 +20,26 @@ import More from "../images/simulationIcons/more.svg";
 const Simulation = () => {
 
     const [flagged, setFlagged] = useState(false);
+    const [legitimateColor, setLegitimateColor] = useState(false);
+    const [maliciousColor, setMaliciousColor] = useState(false);
     // const [moreOpen, setMoreOpen] = useState(false);
 
     const flagClick = () => {
         setFlagged(!flagged);
+    }
+
+    const legitimateClick = () => {
+        if(!legitimateColor){
+            setMaliciousColor(false);
+            setLegitimateColor(true);
+        }
+    }
+
+    const maliciousClick = () => {
+        if(!maliciousColor){
+            setLegitimateColor(false);
+            setMaliciousColor(true);
+        }
     }
 
     // const moreClick = () => {
@@ -34,29 +52,43 @@ const Simulation = () => {
             <div className='email-topbar'>
                 <div className='topbar-container'>
                     <div className='icon done-button'>
-                        <img src={GiveUp} alt='GiveUp' />
+                        <button className='giveup-click'>
+                            <img src={GiveUp} alt='GiveUp' />
+                        </button>
                     </div>
                     <div className='small-line'></div>
                     <div className='icon done-button'>
-                        <img src={Legitimate} alt='Legitimate' />
+                        <button className='legitimate-click' onClick={legitimateClick}>
+                            <img src={legitimateColor ? ChosenLegitimate : Legitimate} alt='Delete' />
+                        </button>
                     </div>
-                    <div className='icon report-phishing-button'>
-                        <img src={Malicious} alt='Delete' />
+                    <div className='icon markbad-phishing-button'>
+                        <button className='malicious-click' onClick={maliciousClick}>
+                            <img src={maliciousColor ? ChosenMalicious : Malicious} alt='Delete' />
+                        </button>
                     </div>
                     <div className='small-line'></div>
                     <div className='icon report-phishing-button'>
-                        <img src={Report} alt='Report' />
+                        <button className='report-click'>
+                            <img src={Report} alt='Report' />
+                        </button>
                     </div>
                     <div className='icon delete-button'>
-                        <img src={Delete} alt='Delete' />
+                        <button className='delete-click'>
+                            <img src={Delete} alt='Delete' />
+                        </button>
                     </div>
                     
                     <div className='small-line'></div>
                     <div className='icon reply-button'>
-                        <img src={Reply} alt='Reply' />
+                        <button className='reply-click'>
+                            <img src={Reply} alt='Reply' />
+                        </button>
                     </div>
                     <div className='icon forward-button'>
-                        <img src={Forward} alt='Forward' />
+                        <button className='forward-click'>
+                            <img src={Forward} alt='Forward' />
+                        </button>
                     </div>
                 </div>
             </div>

@@ -20,8 +20,8 @@ const Hero = () => {
             </div>
             <div className='hero-call-to-action'>
                 <button className='hero-action-button'>Get started</button>
-                <button className='hero-tryout-button'><Link to="/demo" className={"demo-link"}>Try our demo</Link></button>
-                </div>    
+                <Link to="/demo" className="hero-tryout-button">Try our demo</Link>
+            </div>    
         </div>
         <div className='hero-image'>
             <img src={HeroImage} alt='Hero'/>

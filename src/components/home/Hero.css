@@ -37,6 +37,9 @@
 }
 
 .hero-tryout-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 4vh;
     margin-left: 2vw;
     margin-right: 2vw;
@@ -49,6 +52,9 @@
     color: rgb(24, 24, 24);
     padding: 18px;
     padding-bottom: 20px;
+    cursor: pointer;
+    text-decoration: none;
+
 }
 
 .hero-tryout-button:hover {
@@ -68,6 +74,7 @@
     color: whitesmoke;
     padding: 18px;
     padding-bottom: 20px;
+    
 
 }
 
@@ -113,9 +120,4 @@
         max-width: 95vw;
         height: auto;
     }
-}
-
-.demo-link {
-    text-decoration: none;
-    color: inherit;
 }

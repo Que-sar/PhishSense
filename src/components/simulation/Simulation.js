@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import "./Simulation.css";
 
-import GiveUp from "../images/simulationIcons/giveup.svg";
-import Report from "../images/simulationIcons/report.svg";
-import Delete from "../images/simulationIcons/delete.svg";
-import Reply from "../images/simulationIcons/reply.svg";
-import Forward from "../images/simulationIcons/forward.svg";
-import LightFlag from "../images/simulationIcons/lightflag.svg";
-import DarkFlag from "../images/simulationIcons/darkflag.svg";
-import More from "../images/simulationIcons/more.svg";
+import GiveUp from "../images/simulationIconsSmaller/giveup.svg";
+import Report from "../images/simulationIconsSmaller/report.svg";
+import Delete from "../images/simulationIconsSmaller/delete.svg";
+import Reply from "../images/simulationIconsSmaller/reply.svg";
+import Forward from "../images/simulationIconsSmaller/forward.svg";
+import LightFlag from "../images/simulationIconsSmaller/lightflag.svg";
+import DarkFlag from "../images/simulationIconsSmaller/darkflag.svg";
+import More from "../images/simulationIconsSmaller/more.svg";
 
 const Simulation = () => {
 

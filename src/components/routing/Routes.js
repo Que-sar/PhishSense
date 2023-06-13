@@ -6,17 +6,18 @@ import Products from "../../pages/Products";
 import Demo from "../../pages/Demo";
 
 const usedRoutes = [
-    {
-        path:"/",
-        name: "Home",
-        reference: "home",
-        component: Home
-    },
+
     {
         path:"/demo",
         name: "Demo",
         reference: "demo",
         component: Demo
+    },
+    {
+        path:"/",
+        name: "Home",
+        reference: "home",
+        component: Home
     },
     {
         path:"/products",

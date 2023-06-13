@@ -117,11 +117,6 @@
     font-weight: 600;
 }
 
-.pricing-panel-description {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .enterpriseEntry {
     display: flex;
@@ -165,7 +160,7 @@
     justify-content: center;
     align-items: center;
     max-width: 80%;
-    font-size: calc(15px + 0.390625vw);
+    font-size: calc(18px + 0.390625vw);
 }
 
 .horizontalLine {
@@ -189,7 +184,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: calc(15px + 0.390625vw);
+    font-size: calc(18px + 0.390625vw);
     font-weight: 450;
     margin-bottom: 5vh;
     max-width: 80%;

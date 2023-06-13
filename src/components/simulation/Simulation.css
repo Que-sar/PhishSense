@@ -69,7 +69,6 @@
 .mail-identity {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10vh;
 }
 
 .mail-options {
@@ -149,4 +148,65 @@
     fill: #1ED44B;
   }
 
+.mail-subject {
+    font-size: calc(20px + 0.390625vw);
+    font-weight: 450;
+    margin-bottom: 2vh;
+}
 
+.sender-identity {
+    display: flex;
+}
+
+
+.sender-name{
+    font-size: calc(16px + 0.390625vw);
+    margin-bottom: 1vh;
+    font-weight: bold;
+    margin-left: 1vw;
+}
+
+.reciever-identity {
+    margin-bottom: 2vh;
+}
+
+.reply-click.bottom {
+    margin-right: 1vw;
+}
+
+.reply-click.bottom,
+.forward-click.bottom {
+    background: rgba(24, 24, 24, 0.8);
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5vh;
+}
+
+.reply-click.bottom:hover,
+.forward-click.bottom:hover {
+    background-color: rgba(80, 77, 77, 0.9);
+    transition: background-color 0.3s ease;
+}
+
+.mail-foot {
+    display: flex;
+    align-items: center;
+    margin-top: 3vh;
+
+}
+
+
+.literal-email {
+    height: 100%;
+    overflow-y: auto;
+    margin-top: 2vh;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 25px;
+  }
+  
+  .read-container {
+    padding: 10px;
+    max-height: 60vh;
+    font-size: (16px + 0.390625vw); 
+  }

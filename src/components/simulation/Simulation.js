@@ -9,6 +9,7 @@ import Forward from "../images/simulationIconsSmaller/forward.svg";
 import LightFlag from "../images/simulationIconsSmaller/lightflag.svg";
 import DarkFlag from "../images/simulationIconsSmaller/darkflag.svg";
 import More from "../images/simulationIconsSmaller/more.svg";
+import Example from './Example';
 
 const Simulation = () => {
 
@@ -84,9 +85,18 @@ const Simulation = () => {
             <div className='mail-body'>
                 <div className='mail-head'>
                     <div className='mail-identity'>
-                        <div className='sender-identity'>Sender</div>
-                        <div className='sender-identity'>Reciever</div>
+                        <div className='mail-subject'>Dinner reservation</div>
+                        <div className='sender-identity'>
+                            <div className='sender-photo'>RAN</div>
+                            <div className='sender-name'>Miles Martines</div>
+                        </div>
+                        <div className='reciever-identity'>To: Katrina Milka</div>
                         <div className='mail-attachments'>Attachments</div>
+                        <div className='literal-email'>
+                            <div className="read-container">
+                                <Example />
+                            </div>
+                        </div>
                     </div>
                     <div className='mail-options'>
                         <div className='icon flag-button'>
@@ -102,8 +112,16 @@ const Simulation = () => {
                     </div>
                 </div>
                 <div className='mail-foot'>
-                    <div className='reply-button'>Reply</div>
-                    <div className='forward-button'>Forward</div>
+                    <div className='reply-button'>
+                        <button className='reply-click bottom'>
+                            <img src={Reply} alt='Reply' className='reply-icon-down'/>
+                        </button>
+                    </div>
+                    <div className='forward-button'>
+                        <button className='forward-click bottom'>
+                            <img src={Forward} alt='Forward' />
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

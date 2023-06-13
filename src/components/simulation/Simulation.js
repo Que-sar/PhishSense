@@ -10,11 +10,6 @@ import LightFlag from "../images/simulationIcons/lightflag.svg";
 import DarkFlag from "../images/simulationIcons/darkflag.svg";
 import More from "../images/simulationIcons/more.svg";
 
-
-// neutral f5f5f5
-// red DE2626
-// green 1ED44B
-
 const Simulation = () => {
 
     const [flagged, setFlagged] = useState(false);

@@ -9,6 +9,7 @@ import Forward from "../images/simulationIconsSmaller/forward.svg";
 import LightFlag from "../images/simulationIconsSmaller/lightflag.svg";
 import DarkFlag from "../images/simulationIconsSmaller/darkflag.svg";
 import More from "../images/simulationIconsSmaller/more.svg";
+import ProfilePic from "../images/simulationIconsSmaller/profilePic.svg";
 import Example from './Example';
 
 const Simulation = () => {
@@ -87,7 +88,9 @@ const Simulation = () => {
                     <div className='mail-identity'>
                         <div className='mail-subject'>Dinner reservation</div>
                         <div className='sender-identity'>
-                            <div className='sender-photo'>RAN</div>
+                            <div className='sender-photo'>
+                                <img src={ProfilePic} alt='ProfilePicture' className='profile-icon'/>
+                            </div>
                             <div className='sender-name'>Miles Martines</div>
                         </div>
                         <div className='reciever-identity'>To: Katrina Milka</div>

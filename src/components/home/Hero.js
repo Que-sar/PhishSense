@@ -16,7 +16,7 @@ const Hero = () => {
             <div className='hero-description'>
             Build natural resistance against malicious emails
             through a comprehensive training and certification program
-            offered by PhishSense.             
+            offered by PhishSense.        
             </div>
             <div className='hero-call-to-action'>
                 <button className='hero-action-button'>Get started</button>

@@ -11,10 +11,11 @@
 
 .simulation-panel {
 
+    margin-top: 2vh;
     display: flex;
     flex-direction: column;
     width: 70vw;
-    height: 80vh;
+    height: fit-content;
     background: whitesmoke;
     border-radius: 20px;
 }
@@ -156,6 +157,7 @@
 
 .sender-identity {
     display: flex;
+    align-items: center;
 }
 
 
@@ -164,6 +166,11 @@
     margin-bottom: 1vh;
     font-weight: bold;
     margin-left: 1vw;
+}
+
+.profile-icon {
+    min-width:3vw;
+    margin-bottom: 1vh;
 }
 
 .reciever-identity {

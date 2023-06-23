@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import "./Simulation.css";
+import Draggable from 'react-draggable';
+
 
 import GiveUp from "../images/simulationIconsSmaller/giveup.svg";
 import Report from "../images/simulationIconsSmaller/report.svg";

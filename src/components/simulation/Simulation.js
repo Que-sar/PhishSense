@@ -129,7 +129,40 @@ const Simulation = () => {
             </div>
         </div>
         <div className='todo-panel'>
-            Email
+            <div className='todo-ranking-panel'>
+                <div className='todo-rankingpanel-top'>
+                    When to do?
+                </div>
+
+                <div className='todo-placing'>
+                    <div className='first-place'>
+                        1. 
+                    </div>
+                    <div className='second-place'>
+                        2. 
+                    </div>
+                    <div className='third-place'>
+                        3. 
+                    </div>
+                </div>
+            </div>
+            <div className="horizontalLine"></div>
+            <div className='todo-list-panel'>
+                <div className='todo-listingpanel-top'>
+                    What to do?
+                </div>
+                <div className='todo-listing'>
+                    <div className='first-list'>
+                        First
+                    </div>
+                    <div className='second-list'>
+                        Second
+                    </div>
+                    <div className='third-list'>
+                        Third
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
   )

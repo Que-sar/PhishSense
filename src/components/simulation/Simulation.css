@@ -22,12 +22,16 @@
 
 .todo-panel {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     width: 20vw;
     height: 80vh;
     background: whitesmoke;
-    border-radius: 20px;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: thick;
+    
 }
 
 .email-topbar {
@@ -217,3 +221,78 @@
     max-height: 60vh;
     font-size: (16px + 0.390625vw); 
   }
+
+
+
+
+
+
+
+.todo-ranking-panel,
+.todo-list-panel {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 25px;
+}
+
+
+.horizontalLine{
+    width: 75%;
+    height: 2px;
+    background-color: rgb(24, 24, 24);
+    z-index: 10;
+    margin-bottom: -0.1vh;
+    margin-top: -1vh;
+}
+
+
+.todo-placing,
+.todo-listing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 90%;
+    width: 95%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.todo-placing > *,
+.todo-listing > *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-radius: 25px;
+    margin-bottom: 1vh;
+    height: 100%;
+    width: 100%;
+    background-color: #484444;
+}
+
+
+.todo-rankingpanel-top{
+    font-size: larger; 
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-listingpanel-top {
+    font-size: larger; 
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+

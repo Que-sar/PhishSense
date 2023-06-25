@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import './HamburgerMenu.css';
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import "./HamburgerMenu.css";
 
 const HamburgerMenu = (props) => {
   const { navigationLinks } = props;
   const [menuOpen, setMenuOpen] = useState(false);
-  const [selectedLink, setSelectedLink] = useState('');
+  const [selectedLink, setSelectedLink] = useState("");
   const location = useLocation();
 
   useEffect(() => {
@@ -25,9 +25,11 @@ const HamburgerMenu = (props) => {
   const navLinks = navigationLinks.slice(1).map((route) => (
     <Link
       to={route.path}
-      className={`hamburger-links ${selectedLink === route.path ? 'selected' : ''}`}
+      className={`hamburger-links ${
+        selectedLink === route.path ? "selected" : ""
+      }`}
       onClick={() => handleLinkClick(route.path)}
-      key={route.reference + 'unique-key'}
+      key={route.reference + "unique-key"}
     >
       {route.name}
     </Link>
@@ -38,14 +40,14 @@ const HamburgerMenu = (props) => {
       <label>
         <input
           type="button"
-          className={menuOpen ? 'burger-input checkbox' : 'burger-input'}
+          className={menuOpen ? "burger-input checkbox" : "burger-input"}
           onClick={toggleMenu}
         />
         <span></span>
         <span></span>
         <span></span>
       </label>
-      <div className={`menu-container${menuOpen ? ' slide-in' : ''}`}>
+      <div className={`menu-container${menuOpen ? " slide-in" : ""}`}>
         <ul className="menu-list">{navLinks}</ul>
       </div>
     </div>

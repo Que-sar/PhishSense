@@ -1,83 +1,94 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import "./TodoPanel.css";
-import {DragDropContext, Draggable, Droppable} from "react-beautiful-dnd";
+import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 
 const panelTexts = [
-    {
-        id: "doNotingPanel",
-        name: "Do not touch anything"
-    },
-    {
-        id: "followProtocolPanel",
-        name: "Follow Company Protocol"
-    },
-    {
-        id: "contactITPanel",
-        name: "Contact IT"
-    }
+  {
+    id: "doNotingPanel",
+    name: "Do not touch anything",
+  },
+  {
+    id: "followProtocolPanel",
+    name: "Follow Company Protocol",
+  },
+  {
+    id: "contactITPanel",
+    name: "Contact IT",
+  },
 ];
 
 const TodoPanel = () => {
+  const [rankContent, setRankContent] = useState(panelTexts);
 
-    const [panelContent, setPanelContent] = useState(panelTexts);
+  const handleDragDrop = (results) => {
+    const { source, destination, type } = results;
 
-    const handleDragDrop = (results) => {
-        const {source, destination, type} = results;
+    if (!destination) {
+      return;
+    }
 
-        if(!destination) return;
+    if (
+      source.droppableId === destination.droppableId &&
+      source.index === destination.index
+    )
+      return;
 
-        if(source.droppableId === destination.droppableId && source.index === destination.index) return;
+    if (type === "rank-group") {
+      const reorderedStores = [...rankContent];
 
-        if(type === "group"){
-            const reorderedStores = [...panelContent];
+      const sourceIndex = source.index;
+      const destinationIndex = destination.index;
 
-            const sourceIndex = source.index;
-            const destinationIndex = destination.index;
+      const [removedStore] = reorderedStores.splice(sourceIndex, 1);
+      reorderedStores.splice(destinationIndex, 0, removedStore);
 
-            const [removedStore] = reorderedStores.splice(sourceIndex, 1);
-            reorderedStores.splice(destinationIndex, 0, removedStore)
-
-            return setPanelContent(reorderedStores);
-        }
-    };
+      return setRankContent(reorderedStores);
+    }
+  };
 
   return (
-    <div className='todo-panel'>
-        <DragDropContext onDragEnd={handleDragDrop}>
-            <div className='todo-ranking-panel'>
-                <div className='todo-rankingpanel-top'>
-                    When to do?
-                </div>
-
-                <div className='todo-placing'>
-                </div>
-            </div>
-            <div className="horizontalLine"></div>
-            <div className='todo-list-panel'>
-                <div className='todo-listingpanel-top'>
-                    What to do?
-                </div>
-                <Droppable droppableId='todo-listing-droppable' type='group'>
+    <div className="todo-panel">
+      <DragDropContext onDragEnd={handleDragDrop}>
+        <div className="todo-ranking-panel">
+          <div className="todo-rankingpanel-top">When to do?</div>
+          <Droppable droppableId="todo-ranking-droppable" type="rank-group">
+            {(provided) => (
+              <div
+                className="todo-placing"
+                {...provided.droppableProps}
+                ref={provided.innerRef}
+              >
+                {rankContent.map((rankText, index) => (
+                  <Draggable
+                    draggableId={rankText.id}
+                    key={rankText.id}
+                    index={index}
+                  >
                     {(provided) => (
-                        <div className='todo-listing' {...provided.droppableProps} ref={provided.innerRef}> 
-                            {panelContent.map((rankText, index) => (
-                                <Draggable draggableId={rankText.id} key={rankText.id} index={index}>
-                                    {(provided) => (
-                                        <div className='simText-container' {...provided.dragHandleProps} {...provided.draggableProps} ref={provided.innerRef}>
-                                            {rankText.name}
-                                        </div>
-                                    )}
-                                </Draggable>
-                            ))}
-                            {provided.placeholder}
-                        </div>
+                      <div
+                        className="simText-container"
+                        {...provided.dragHandleProps}
+                        {...provided.draggableProps}
+                        ref={provided.innerRef}
+                      >
+                        {rankText.name}
+                      </div>
                     )}
-                </Droppable>
-            </div>
-        </DragDropContext>
+                  </Draggable>
+                ))}
+                {provided.placeholder}
+              </div>
+            )}
+          </Droppable>
+        </div>
+        <div className="horizontalLine"></div>
+        <div className="todo-list-panel">
+          <div className="todo-listingpanel-top">What to do?</div>
+          <div className="todo-placing"></div>
+        </div>
+      </DragDropContext>
     </div>
-  )
-}
+  );
+};
 
-export default TodoPanel
-
+export default TodoPanel;

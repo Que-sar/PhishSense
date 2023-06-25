@@ -6,13 +6,10 @@ import "./App.css";
 function App() {
   return (
     <>
-    <Navbar routes={usedRoutes} />
-    <Routing routes={usedRoutes} />
+      <Navbar routes={usedRoutes} />
+      <Routing routes={usedRoutes} />
     </>
   );
 }
-
-
-
 
 export default App;

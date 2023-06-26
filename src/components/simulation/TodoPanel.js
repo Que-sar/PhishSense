@@ -18,7 +18,16 @@ const panelTexts = [
 ];
 
 const TodoPanel = () => {
-  const [rankContent, setRankContent] = useState(panelTexts);
+  const [rankContent, setRankContent] = useState([]);
+
+  const handleRankClick = (index) => {
+    const clickedText = panelTexts[index];
+    // Check if the clicked text already exists in rankContent
+    if (rankContent.some((text) => text.id === clickedText.id)) {
+      return; // Return early if it's a duplicate
+    }
+    setRankContent([...rankContent, clickedText]);
+  };
 
   const handleDragDrop = (results) => {
     const { source, destination, type } = results;
@@ -86,8 +95,14 @@ const TodoPanel = () => {
         <div className="todo-list-panel">
           <div className="todo-listingpanel-top">What to do?</div>
           <div className="todo-placing">
-            {panelTexts.map((element) => (
-              <div className={`panel-button ${element.id}`}>{element.name}</div>
+            {panelTexts.map((element, index) => (
+              <div
+                className={`panel-button ${element.id}`}
+                onClick={() => handleRankClick(index)}
+                key={element.id}
+              >
+                {element.name}
+              </div>
             ))}
           </div>
         </div>

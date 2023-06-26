@@ -2,11 +2,12 @@ import React from "react";
 import Simulation from "../components/simulation/Simulation";
 import Footer from "../components/footer/Footer";
 import BenefitsWave from "../components/images/heroWave.svg";
+import Example from "../components/simulation/Example";
 
 const Demo = () => {
   return (
     <>
-      <Simulation />
+      <Simulation EmailDisplay={<Example />} />
       <div className="wave">
         <img
           src={BenefitsWave}

@@ -4,10 +4,11 @@ import "./Simulation.css";
 import TodoPanel from "./TodoPanel";
 import SimulationPanel from "./SimulationPanel";
 
-const Simulation = () => {
+const Simulation = (props) => {
+  const displayText = props.EmailDisplay;
   return (
     <div className="simulation-container">
-      <SimulationPanel />
+      <SimulationPanel EmailDisplay={displayText} />
 
       <TodoPanel />
     </div>

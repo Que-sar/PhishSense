@@ -46,6 +46,7 @@
 .panel-button {
   font-size: calc(16px + 0.390625vw);
   background-color: rgb(24, 24, 24);
+  cursor: pointer;
 }
 
 .panel-button:hover {

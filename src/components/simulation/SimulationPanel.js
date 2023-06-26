@@ -11,12 +11,12 @@ import DarkFlag from "../images/simulationIconsSmaller/darkflag.svg";
 import More from "../images/simulationIconsSmaller/more.svg";
 import ProfilePic from "../images/simulationIconsSmaller/profilePic.svg";
 
-import Example from "./Example";
-
-const SimulationPanel = () => {
+const SimulationPanel = (props) => {
   const [flagged, setFlagged] = useState(false);
   const [legitimateColor, setLegitimateColor] = useState("#f5f5f5");
   const [maliciousColor, setMaliciousColor] = useState("#f5f5f5");
+
+  const displayText = props.EmailDisplay;
 
   const flagClick = () => {
     setFlagged(!flagged);
@@ -105,9 +105,7 @@ const SimulationPanel = () => {
             <div className="reciever-identity">To: Katrina Milka</div>
             <div className="mail-attachments">Attachments</div>
             <div className="literal-email">
-              <div className="read-container">
-                <Example />
-              </div>
+              <div className="read-container">{displayText}</div>
             </div>
           </div>
           <div className="mail-options">

@@ -71,7 +71,8 @@ const TodoPanel = () => {
                         {...provided.draggableProps}
                         ref={provided.innerRef}
                       >
-                        {rankText.name}
+                        <div className="action-index">{index + 1}</div>
+                        <div className="action-place">{rankText.name}</div>
                       </div>
                     )}
                   </Draggable>
@@ -84,7 +85,11 @@ const TodoPanel = () => {
         <div className="horizontalLine"></div>
         <div className="todo-list-panel">
           <div className="todo-listingpanel-top">What to do?</div>
-          <div className="todo-placing"></div>
+          <div className="todo-placing">
+            {panelTexts.map((element) => (
+              <div className={`panel-button ${element.id}`}>{element.name}</div>
+            ))}
+          </div>
         </div>
       </DragDropContext>
     </div>

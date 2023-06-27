@@ -91,7 +91,7 @@ const TodoPanel = () => {
             )}
           </Droppable>
         </div>
-        <div className="horizontalLine"></div>
+        <div className="horizontalLineTodo"></div>
         <div className="todo-list-panel">
           <div className="todo-listingpanel-top">What to do?</div>
           <div className="todo-placing">

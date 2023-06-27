@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import { individual, enterprise } from "./Descriptions";
 import "./Pricing.css";
 

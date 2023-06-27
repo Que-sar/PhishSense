@@ -9,6 +9,7 @@
   border-radius: 25px;
   border-style: solid;
   border-width: thick;
+  user-select: none;
 }
 
 .todo-ranking-panel,
@@ -22,7 +23,7 @@
   border-radius: 25px;
 }
 
-.horizontalLine {
+.horizontalLineTodo {
   width: 75%;
   height: 2px;
   background-color: rgb(24, 24, 24);
@@ -31,8 +32,7 @@
   margin-top: -1vh;
 }
 
-.todo-placing,
-.todo-listing {
+.todo-placing {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,7 +44,8 @@
 }
 
 .panel-button {
-  font-size: calc(16px + 0.390625vw);
+  text-align: center;
+  font-size: calc(15px + 0.390625vw);
   background-color: rgb(24, 24, 24);
   cursor: pointer;
 }
@@ -62,7 +63,7 @@
   margin-bottom: 1vh;
   height: 100%;
   width: 100%;
-  user-select: none;
+
   color: whitesmoke;
 }
 
@@ -114,4 +115,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 991px) {
+  .todo-panel {
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    height: fit-content;
+    width: 90vw;
+  }
+
+  .todo-placing > * {
+    height: 6vh;
+  }
 }

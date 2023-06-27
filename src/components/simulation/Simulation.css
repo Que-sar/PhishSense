@@ -1,10 +1,16 @@
 .simulation-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin-top:70px;
-    width: 100%;
-    min-height: 90vh;
-    background:#fcc477;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 70px;
+  width: 100%;
+  min-height: 90vh;
+  background: #fcc477;
+}
+
+@media (max-width: 991px) {
+  .simulation-container {
+    flex-direction: column;
+  }
 }

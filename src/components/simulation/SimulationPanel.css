@@ -60,8 +60,8 @@
 .icon img,
 .icon svg,
 .profile-icon {
-  width: 3vw;
-  height: 3vh;
+  width: calc(25px + 0.390625vw);
+  height: calc(25px + 0.390625vh);
 }
 
 .small-line {
@@ -73,7 +73,7 @@
 .flag-click {
   border-radius: 50%;
   padding: 10px;
-  background: whitesmoke;
+  background: #f5f5f5;
 }
 
 .flag-click:hover,
@@ -99,7 +99,7 @@
   height: 40px;
   border-radius: 50%;
   padding: 5px;
-  background: rgba(24, 24, 24, 0.1);
+  background: #1818181a;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -119,6 +119,68 @@
 .forward-click:hover {
   background-color: rgba(189, 189, 189, 0.2);
   transition: background-color 0.3s ease;
+}
+
+.flag-click,
+.more-click {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flag-click .tooltiptext-flag,
+.more-click .tooltiptext-more {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 15px;
+  font-size: calc(8px + 0.390625vw);
+  font-weight: bold;
+  margin-top: 85px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  width: fit-content;
+  height: fit-content;
+}
+
+.giveup-click .tooltiptext-giveup,
+.legitimate-click .tooltiptext-legitimate,
+.malicious-click .tooltiptext-malicious,
+.report-click .tooltiptext-report,
+.delete-click .tooltiptext-delete,
+.reply-click .tooltiptext-reply,
+.forward-click .tooltiptext-forward {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 15px;
+  font-size: calc(8px + 0.390625vw);
+  font-weight: bold;
+  margin-top: 75px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  width: fit-content;
+  height: fit-content;
+}
+
+.giveup-click:hover .tooltiptext-giveup,
+.legitimate-click:hover .tooltiptext-legitimate,
+.malicious-click:hover .tooltiptext-malicious,
+.report-click:hover .tooltiptext-report,
+.delete-click:hover .tooltiptext-delete,
+.reply-click:hover .tooltiptext-reply,
+.forward-click:hover .tooltiptext-forward,
+.flag-click:hover .tooltiptext-flag,
+.more-click:hover .tooltiptext-more {
+  visibility: visible;
 }
 
 .giveup-click {

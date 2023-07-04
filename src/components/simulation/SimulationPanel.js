@@ -19,14 +19,12 @@ const SimulationPanel = (props) => {
   const [legitMarked, setLegitMarked] = useState(false);
   const [maliciousMarked, setMaliciousMarked] = useState(false);
 
+  const [modalOpen, setModalOpen] = useState(false);
+
   const [legitimateColor, setLegitimateColor] = useState("#f5f5f5");
   const [maliciousColor, setMaliciousColor] = useState("#f5f5f5");
 
   const displayText = props.EmailDisplay;
-
-  const moreClick = () => {
-    return <MoreInfo />;
-  };
 
   const markClick = () => {
     setMarked(!marked);
@@ -149,10 +147,18 @@ const SimulationPanel = (props) => {
               </button>
             </div>
             <div className="icon more-actions-button">
-              <button className="more-click" onClick={moreClick}>
+              <button
+                className="more-click"
+                onClick={() => {
+                  setModalOpen(true);
+                }}
+              >
                 <img src={More} alt="Show more" />
                 <span className="tooltiptext-more">More information</span>
               </button>
+              {modalOpen && (
+                <MoreInfo setOpenModal={setModalOpen} headerInfo={"Blah"} />
+              )}
             </div>
           </div>
         </div>

@@ -12,6 +12,7 @@ import LightFlag from "../images/simulationIconsSmaller/lightflag.svg";
 import DarkFlag from "../images/simulationIconsSmaller/darkflag.svg";
 import More from "../images/simulationIconsSmaller/more.svg";
 import ProfilePic from "../images/simulationIconsSmaller/profilePic.svg";
+import attachmentLogo from "../images/simulationIconsSmaller/attachmentLogo.svg";
 
 const SimulationPanel = (props) => {
   const [flagged, setFlagged] = useState(false);
@@ -132,7 +133,13 @@ const SimulationPanel = (props) => {
               <div className="sender-name">Miles Martines</div>
             </div>
             <div className="reciever-identity">To: Katrina Milka</div>
-            <div className="mail-attachments">Attachments</div>
+            <div className="mail-attachments">
+              <div className="attachment-title">Attachments:</div>
+              <div className="attachment-content">
+                <img src={attachmentLogo} alt="Attachment List" />
+                <div className="attachment-filename">Tablelist.pdf</div>
+              </div>
+            </div>
             <div className="literal-email">
               <div className="read-container">{displayText}</div>
             </div>

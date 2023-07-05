@@ -96,10 +96,3 @@
   background-color: rgba(80, 77, 77, 0.9);
   transition: background-color 0.3s ease;
 }
-
-@media (max-width: 991px) {
-  .modalContainer {
-    /* height: 80vh;
-    width: 80vw; */
-  }
-}

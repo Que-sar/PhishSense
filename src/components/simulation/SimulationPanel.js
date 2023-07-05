@@ -25,7 +25,7 @@ const SimulationPanel = (props) => {
   const [legitimateColor, setLegitimateColor] = useState("#f5f5f5");
   const [maliciousColor, setMaliciousColor] = useState("#f5f5f5");
 
-  const displayText = props.EmailDisplay;
+  const mailContent = props.mailContents;
 
   const markClick = () => {
     setMarked(!marked);
@@ -121,7 +121,7 @@ const SimulationPanel = (props) => {
       <div className="mail-body">
         <div className="mail-head">
           <div className="mail-identity">
-            <div className="mail-subject">Dinner reservation</div>
+            <div className="mail-subject">{mailContent.titleName}</div>
             <div className="sender-identity">
               <div className="sender-photo">
                 <img
@@ -130,18 +130,22 @@ const SimulationPanel = (props) => {
                   className="profile-icon"
                 />
               </div>
-              <div className="sender-name">Miles Martines</div>
+              <div className="sender-name">{mailContent.senderName}</div>
             </div>
             <div className="reciever-identity">To: Katrina Milka</div>
-            <div className="mail-attachments">
-              <div className="attachment-title">Attachments:</div>
-              <div className="attachment-content">
-                <img src={attachmentLogo} alt="Attachment List" />
-                <div className="attachment-filename">Tablelist.pdf</div>
+            {mailContent.attachmentPresence ? (
+              <div className="mail-attachments">
+                <div className="attachment-title">Attachments:</div>
+                <div className="attachment-content">
+                  <img src={attachmentLogo} alt="Attachment List" />
+                  <div className="attachment-filename">Tablelist.pdf</div>
+                </div>
               </div>
-            </div>
+            ) : (
+              ""
+            )}
             <div className="literal-email">
-              <div className="read-container">{displayText}</div>
+              <div className="read-container">{mailContent.emailContent}</div>
             </div>
           </div>
           <div className="mail-options">
@@ -166,7 +170,7 @@ const SimulationPanel = (props) => {
               {modalOpen && (
                 <MoreInfo
                   setOpenModal={setModalOpen}
-                  headerInfo={displayText}
+                  headerInfo={mailContent.emailContent}
                 />
               )}
             </div>

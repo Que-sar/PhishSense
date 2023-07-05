@@ -1,7 +1,11 @@
 import React from "react";
 
-const Example = () => {
-  return (
+const Example = {
+  titleName: "Dinner Reservation",
+  senderName: "Miles Martines",
+  attachmentPresence: true,
+
+  emailContent: (
     <>
       <p>Dear Team,</p>
 
@@ -47,7 +51,7 @@ const Example = () => {
 
       <p>Best regards,</p>
     </>
-  );
+  ),
 };
 
 export default Example;

@@ -5,10 +5,10 @@ import TodoPanel from "./TodoPanel";
 import SimulationPanel from "./SimulationPanel";
 
 const Simulation = (props) => {
-  const displayText = props.EmailDisplay;
+  const mailContents = props.mailContents;
   return (
     <div className="simulation-container">
-      <SimulationPanel EmailDisplay={displayText} />
+      <SimulationPanel mailContents={mailContents} />
 
       <TodoPanel />
     </div>

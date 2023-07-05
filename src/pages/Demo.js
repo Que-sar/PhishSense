@@ -7,7 +7,7 @@ import Example from "../components/simulation/Example";
 const Demo = () => {
   return (
     <>
-      <Simulation EmailDisplay={<Example />} />
+      <Simulation mailContents={Example} />
       <div className="wave">
         <img
           src={BenefitsWave}

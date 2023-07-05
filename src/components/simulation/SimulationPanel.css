@@ -11,7 +11,7 @@
 .email-topbar {
   width: 100%;
   height: fit-content;
-  background: rgba(24, 24, 24, 0.8);
+  background: #484444;
   border-radius: 20px 20px 0 0;
   margin-bottom: 4vh;
 }

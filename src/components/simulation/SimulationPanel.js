@@ -157,7 +157,10 @@ const SimulationPanel = (props) => {
                 <span className="tooltiptext-more">More information</span>
               </button>
               {modalOpen && (
-                <MoreInfo setOpenModal={setModalOpen} headerInfo={"Blah"} />
+                <MoreInfo
+                  setOpenModal={setModalOpen}
+                  headerInfo={displayText}
+                />
               )}
             </div>
           </div>

@@ -10,6 +10,7 @@
   border-style: solid;
   border-width: thick;
   user-select: none;
+  border-color: #484444;
 }
 
 .todo-ranking-panel,

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./TodoPanel.css";
+import Delete from "../images/simulationIconsSmaller/delete.svg";
+
 import { DragDropContext, Draggable, Droppable } from "@hello-pangea/dnd";
 
 const panelTexts = [
@@ -19,6 +21,14 @@ const panelTexts = [
 
 const TodoPanel = () => {
   const [rankContent, setRankContent] = useState([]);
+
+  const handleDelete = (index) => {
+    setRankContent((previousList) => {
+      const updatedList = [...previousList];
+      updatedList.splice(index, 1);
+      return updatedList;
+    });
+  };
 
   const handleRankClick = (index) => {
     const clickedText = panelTexts[index];
@@ -82,6 +92,12 @@ const TodoPanel = () => {
                       >
                         <div className="action-index">{index + 1}</div>
                         <div className="action-place">{rankText.name}</div>
+                        <img
+                          src={Delete}
+                          alt="Delete"
+                          className="action-remove"
+                          onClick={() => handleDelete(index)}
+                        />
                       </div>
                     )}
                   </Draggable>

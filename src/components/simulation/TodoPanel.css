@@ -77,6 +77,13 @@
   user-select: none;
 }
 
+.action-remove {
+  margin-right: 2vw;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
 .action-index {
   display: flex;
   justify-content: center;

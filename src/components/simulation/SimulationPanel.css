@@ -153,7 +153,8 @@
 .report-click .tooltiptext-report,
 .delete-click .tooltiptext-delete,
 .reply-click .tooltiptext-reply,
-.forward-click .tooltiptext-forward {
+.forward-click .tooltiptext-forward,
+.help-click .tooltiptext-help {
   visibility: hidden;
   background-color: black;
   color: #fff;
@@ -179,7 +180,8 @@
 .reply-click:hover .tooltiptext-reply,
 .forward-click:hover .tooltiptext-forward,
 .flag-click:hover .tooltiptext-flag,
-.more-click:hover .tooltiptext-more {
+.more-click:hover .tooltiptext-more,
+.help-click:hover .tooltiptext-help {
   visibility: visible;
 }
 
@@ -224,6 +226,13 @@
 
 .reply-click.bottom,
 .forward-click.bottom {
+  background: rgba(24, 24, 24, 0.8);
+  width: 60px;
+  height: 60px;
+  margin-bottom: 5vh;
+}
+
+.help-click {
   background: rgba(24, 24, 24, 0.8);
   width: 60px;
   height: 60px;

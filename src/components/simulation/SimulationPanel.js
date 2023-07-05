@@ -13,6 +13,7 @@ import DarkFlag from "../images/simulationIconsSmaller/darkflag.svg";
 import More from "../images/simulationIconsSmaller/more.svg";
 import ProfilePic from "../images/simulationIconsSmaller/profilePic.svg";
 import attachmentLogo from "../images/simulationIconsSmaller/attachmentLogo.svg";
+import helpIcon from "../images/simulationIconsSmaller/helpIcon.svg";
 
 const SimulationPanel = (props) => {
   const [flagged, setFlagged] = useState(false);
@@ -188,6 +189,12 @@ const SimulationPanel = (props) => {
               <img src={Forward} alt="Forward" />
               <span className="tooltiptext-forward">Forward</span>
             </button>
+          </div>
+          <div className="help-button">
+            <div className="help-click">
+              <img src={helpIcon} alt="Show me the functions" />
+              <span className="tooltiptext-help">Help</span>
+            </div>
           </div>
         </div>
       </div>

@@ -79,9 +79,15 @@
 
 .action-remove {
   margin-right: 2vw;
-  width: 30px;
-  height: 30px;
+  width: 80px;
+  padding-left: 10px;
+  padding-right: 40px;
+  margin-right: 0px;
   cursor: pointer;
+  border-left-style: solid;
+  border-width: thin;
+  border-color: #3b3939;
+  height: 100%;
 }
 
 .action-index {

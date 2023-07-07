@@ -25,6 +25,7 @@
   margin-left: 1vw;
   margin-top: 1.5vh;
   margin-bottom: 1.5vh;
+  overflow-x: auto;
 }
 
 .topbar-container > * {
@@ -153,8 +154,7 @@
 .report-click .tooltiptext-report,
 .delete-click .tooltiptext-delete,
 .reply-click .tooltiptext-reply,
-.forward-click .tooltiptext-forward,
-.help-click .tooltiptext-help {
+.forward-click .tooltiptext-forward {
   visibility: hidden;
   background-color: black;
   color: #fff;
@@ -170,6 +170,22 @@
   z-index: 1;
   width: fit-content;
   height: fit-content;
+}
+
+.help-click .tooltiptext-help {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 15px;
+  font-size: calc(8px + 0.390625vw);
+  font-weight: bold;
+  position: absolute;
+  z-index: 1;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 60px;
 }
 
 .giveup-click:hover .tooltiptext-giveup,
@@ -233,10 +249,14 @@
 }
 
 .help-click {
-  background: rgba(24, 24, 24, 0.8);
+  margin-bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.help-click img {
   width: 60px;
   height: 60px;
-  margin-bottom: 5vh;
 }
 
 .reply-click.bottom:hover,
@@ -249,6 +269,11 @@
   display: flex;
   align-items: center;
   margin-top: 3vh;
+  justify-content: space-between;
+}
+
+.mail-foot-separator {
+  display: flex;
 }
 
 .attachment-content {

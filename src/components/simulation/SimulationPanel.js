@@ -178,17 +178,19 @@ const SimulationPanel = (props) => {
           </div>
         </div>
         <div className="mail-foot">
-          <div className="reply-button">
-            <button className="reply-click bottom">
-              <img src={Reply} alt="Reply" className="reply-icon-down" />
-              <span className="tooltiptext-reply">Reply</span>
-            </button>
-          </div>
-          <div className="forward-button">
-            <button className="forward-click bottom">
-              <img src={Forward} alt="Forward" />
-              <span className="tooltiptext-forward">Forward</span>
-            </button>
+          <div className="mail-foot-separator">
+            <div className="reply-button">
+              <button className="reply-click bottom">
+                <img src={Reply} alt="Reply" className="reply-icon-down" />
+                <span className="tooltiptext-reply">Reply</span>
+              </button>
+            </div>
+            <div className="forward-button">
+              <button className="forward-click bottom">
+                <img src={Forward} alt="Forward" />
+                <span className="tooltiptext-forward">Forward</span>
+              </button>
+            </div>
           </div>
           <div className="help-button">
             <div className="help-click">

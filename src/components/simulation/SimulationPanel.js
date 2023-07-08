@@ -56,7 +56,7 @@ const SimulationPanel = (props) => {
           <div className="icon done-button">
             <button className="giveup-click">
               <img src={GiveUp} alt="GiveUp" />
-              <span className="tooltiptext-giveup">Mark as finished</span>
+              <span className="tooltiptext-giveup">Finish</span>
             </button>
           </div>
           <div className="small-line"></div>
@@ -121,34 +121,7 @@ const SimulationPanel = (props) => {
       </div>
       <div className="mail-body">
         <div className="mail-head">
-          <div className="mail-identity">
-            <div className="mail-subject">{mailContent.titleName}</div>
-            <div className="sender-identity">
-              <div className="sender-photo">
-                <img
-                  src={ProfilePic}
-                  alt="ProfilePicture"
-                  className="profile-icon"
-                />
-              </div>
-              <div className="sender-name">{mailContent.senderName}</div>
-            </div>
-            <div className="reciever-identity">To: Katrina Milka</div>
-            {mailContent.attachmentPresence ? (
-              <div className="mail-attachments">
-                <div className="attachment-title">Attachments:</div>
-                <div className="attachment-content">
-                  <img src={attachmentLogo} alt="Attachment List" />
-                  <div className="attachment-filename">Tablelist.pdf</div>
-                </div>
-              </div>
-            ) : (
-              ""
-            )}
-            <div className="literal-email">
-              <div className="read-container">{mailContent.emailContent}</div>
-            </div>
-          </div>
+          <div className="mail-subject">{mailContent.titleName}</div>
           <div className="mail-options">
             <div className="icon flag-button">
               <button onClick={flagClick} className="flag-click">
@@ -177,6 +150,31 @@ const SimulationPanel = (props) => {
             </div>
           </div>
         </div>
+        <div className="sender-identity">
+          <div className="sender-photo">
+            <img
+              src={ProfilePic}
+              alt="ProfilePicture"
+              className="profile-icon"
+            />
+          </div>
+          <div className="sender-name">{mailContent.senderName}</div>
+        </div>
+        <div className="reciever-identity">To: Katrina Milka</div>
+        {mailContent.attachmentPresence ? (
+          <div className="mail-attachments">
+            <div className="attachment-title">Attachments:</div>
+            <div className="attachment-content">
+              <img src={attachmentLogo} alt="Attachment List" />
+              <div className="attachment-filename">Tablelist.pdf</div>
+            </div>
+          </div>
+        ) : (
+          ""
+        )}
+        <div className="literal-email">
+          <div className="read-container">{mailContent.emailContent}</div>
+        </div>
         <div className="mail-foot">
           <div className="mail-foot-separator">
             <div className="reply-button">
@@ -195,7 +193,7 @@ const SimulationPanel = (props) => {
           <div className="help-button">
             <div className="help-click">
               <img src={helpIcon} alt="Show me the functions" />
-              <span className="tooltiptext-help">Help</span>
+              <span className="tooltiptext-help">What can I do?</span>
             </div>
           </div>
         </div>

@@ -14,19 +14,21 @@ import More from "../images/simulationIconsSmaller/more.svg";
 import ProfilePic from "../images/simulationIconsSmaller/profilePic.svg";
 import attachmentLogo from "../images/simulationIconsSmaller/attachmentLogo.svg";
 import helpIcon from "../images/simulationIconsSmaller/helpIcon.svg";
+import HelpPanel from "./HelpPanel";
 
 const SimulationPanel = (props) => {
+  const mailContent = props.mailContents;
+
   const [flagged, setFlagged] = useState(false);
   const [marked, setMarked] = useState(false);
   const [legitMarked, setLegitMarked] = useState(false);
   const [maliciousMarked, setMaliciousMarked] = useState(false);
+  const [helperDisplay, setHelperDisplay] = useState(false);
 
   const [modalOpen, setModalOpen] = useState(false);
 
   const [legitimateColor, setLegitimateColor] = useState("#f5f5f5");
   const [maliciousColor, setMaliciousColor] = useState("#f5f5f5");
-
-  const mailContent = props.mailContents;
 
   const markClick = () => {
     setMarked(!marked);
@@ -192,9 +194,16 @@ const SimulationPanel = (props) => {
           </div>
           <div className="help-button">
             <div className="help-click">
-              <img src={helpIcon} alt="Show me the functions" />
+              <img
+                src={helpIcon}
+                alt="Show me the functions"
+                onClick={() => {
+                  setHelperDisplay(true);
+                }}
+              />
               <span className="tooltiptext-help">What can I do?</span>
             </div>
+            {helperDisplay && <HelpPanel setHelpPanel={setHelperDisplay} />}
           </div>
         </div>
       </div>

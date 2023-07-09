@@ -15,6 +15,7 @@ import ProfilePic from "../images/simulationIconsSmaller/profilePic.svg";
 import attachmentLogo from "../images/simulationIconsSmaller/attachmentLogo.svg";
 import helpIcon from "../images/simulationIconsSmaller/helpIcon.svg";
 import HelpPanel from "./HelpPanel";
+import FinishModel from "./FinishModel";
 
 const SimulationPanel = (props) => {
   const mailContent = props.mailContents;
@@ -24,6 +25,11 @@ const SimulationPanel = (props) => {
   const [legitMarked, setLegitMarked] = useState(false);
   const [maliciousMarked, setMaliciousMarked] = useState(false);
   const [helperDisplay, setHelperDisplay] = useState(false);
+  const [deletedIndicate, setDeletedIndicate] = useState(false);
+  const [finishedIndicate, setFinishedIndicate] = useState(false);
+
+  // eslint-disable-next-line
+  const [finishedAnalysis, setFinishedAnalysis] = useState(false);
 
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -56,10 +62,21 @@ const SimulationPanel = (props) => {
       <div className="email-topbar">
         <div className="topbar-container">
           <div className="icon done-button">
-            <button className="giveup-click">
+            <button
+              className="giveup-click"
+              onClick={() => {
+                setFinishedIndicate(!finishedIndicate);
+              }}
+            >
               <img src={GiveUp} alt="GiveUp" />
               <span className="tooltiptext-giveup">Finish</span>
             </button>
+            {finishedIndicate && (
+              <FinishModel
+                setFinishedModal={setFinishedIndicate}
+                setFinishedAnalysis={setFinishedAnalysis}
+              />
+            )}
           </div>
           <div className="small-line"></div>
           <div className="icon done-button">
@@ -100,9 +117,16 @@ const SimulationPanel = (props) => {
             </button>
           </div>
           <div className="icon delete-button">
-            <button className="delete-click">
+            <button
+              className="delete-click"
+              onClick={() => {
+                setDeletedIndicate(!deletedIndicate);
+              }}
+            >
               <img src={Delete} alt="Delete" />
-              <span className="tooltiptext-delete">Delete</span>
+              <span className="tooltiptext-delete">
+                {deletedIndicate ? "Restore" : "Delete"}
+              </span>
             </button>
           </div>
 

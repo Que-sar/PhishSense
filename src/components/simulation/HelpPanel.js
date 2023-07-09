@@ -1,9 +1,26 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import "./HelpPanel.css";
 
 const HelpPanel = (props) => {
   const setHelperPanel = props.setHelpPanel;
   const helpContainerRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        helpContainerRef.current &&
+        !helpContainerRef.current.contains(event.target)
+      ) {
+        setHelperPanel(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [setHelperPanel]);
 
   return (
     <div className="helpModalBackground">

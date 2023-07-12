@@ -1,0 +1,38 @@
+.help-button {
+  width: 100%;
+  background: rgba(245, 245, 245, 0);
+  padding-bottom: 2vh;
+  display: flex;
+  justify-content: center;
+}
+
+.help-click {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  width: 50%;
+  color: #f5f5f5;
+  border-radius: 6px;
+  padding: 15px;
+  font-size: calc(18px + 0.390625vw);
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.help-image-logo {
+  height: 40px;
+  width: 40px;
+  margin-right: 2vw;
+}
+
+.help-text-title {
+  height: fit-content;
+  width: fit-content;
+}
+@media (max-width: 991px) {
+  .help-click {
+    width: 80%;
+  }
+}

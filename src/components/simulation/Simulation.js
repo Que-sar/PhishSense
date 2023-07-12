@@ -6,9 +6,13 @@ import SimulationPanel from "./SimulationPanel";
 
 const Simulation = (props) => {
   const mailContents = props.mailContents;
+  const HelperContent = props.HelperContent;
   return (
     <div className="simulation-container">
-      <SimulationPanel mailContents={mailContents} />
+      <SimulationPanel
+        mailContents={mailContents}
+        HelperContent={HelperContent}
+      />
 
       <TodoPanel />
     </div>

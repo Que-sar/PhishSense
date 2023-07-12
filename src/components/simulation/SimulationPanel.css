@@ -169,23 +169,6 @@
   height: fit-content;
 }
 
-.help-click .tooltiptext-help {
-  visibility: hidden;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 15px;
-  font-size: calc(8px + 0.390625vw);
-  font-weight: bold;
-  position: absolute;
-  z-index: 1;
-  width: fit-content;
-  height: fit-content;
-  margin-top: 60px;
-  margin-right: 2vw;
-}
-
 .giveup-click:hover .tooltiptext-giveup,
 .legitimate-click:hover .tooltiptext-legitimate,
 .malicious-click:hover .tooltiptext-malicious,
@@ -194,8 +177,7 @@
 .reply-click:hover .tooltiptext-reply,
 .forward-click:hover .tooltiptext-forward,
 .flag-click:hover .tooltiptext-flag,
-.more-click:hover .tooltiptext-more,
-.help-click:hover .tooltiptext-help {
+.more-click:hover .tooltiptext-more {
   visibility: visible;
 }
 
@@ -243,18 +225,7 @@
   background: rgba(24, 24, 24, 0.8);
   width: 60px;
   height: 60px;
-  margin-bottom: 5vh;
-}
-
-.help-click {
-  margin-bottom: 5vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.help-click img {
-  width: 60px;
-  height: 60px;
+  margin-bottom: 3vh;
 }
 
 .reply-click.bottom:hover,

@@ -13,18 +13,17 @@ import DarkFlag from "../images/simulationIconsSmaller/darkflag.svg";
 import More from "../images/simulationIconsSmaller/more.svg";
 import ProfilePic from "../images/simulationIconsSmaller/profilePic.svg";
 import attachmentLogo from "../images/simulationIconsSmaller/attachmentLogo.svg";
-import helpIcon from "../images/simulationIconsSmaller/helpIcon.svg";
-import HelpPanel from "./HelpPanel";
+
 import FinishModel from "./FinishModel";
 
 const SimulationPanel = (props) => {
   const mailContent = props.mailContents;
+  const HelperContent = props.HelperContent;
 
   const [flagged, setFlagged] = useState(false);
   const [marked, setMarked] = useState(false);
   const [legitMarked, setLegitMarked] = useState(false);
   const [maliciousMarked, setMaliciousMarked] = useState(false);
-  const [helperDisplay, setHelperDisplay] = useState(false);
   const [deletedIndicate, setDeletedIndicate] = useState(false);
   const [finishedIndicate, setFinishedIndicate] = useState(false);
 
@@ -216,20 +215,8 @@ const SimulationPanel = (props) => {
               </button>
             </div>
           </div>
-          <div className="help-button">
-            <div className="help-click">
-              <img
-                src={helpIcon}
-                alt="Show me the functions"
-                onClick={() => {
-                  setHelperDisplay(true);
-                }}
-              />
-              <span className="tooltiptext-help">What can I do?</span>
-            </div>
-            {helperDisplay && <HelpPanel setHelpPanel={setHelperDisplay} />}
-          </div>
         </div>
+        {HelperContent}
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./SimulationPanel.css";
+
 import MoreInfo from "./MoreInfo";
 
 import GiveUp from "../images/simulationIconsSmaller/giveup.svg";
@@ -15,10 +16,12 @@ import ProfilePic from "../images/simulationIconsSmaller/profilePic.svg";
 import attachmentLogo from "../images/simulationIconsSmaller/attachmentLogo.svg";
 
 import FinishModel from "./FinishModel";
+import HelpCaller from "./HelpCaller";
 
 const SimulationPanel = (props) => {
   const mailContent = props.mailContents;
   const HelperContent = props.HelperContent;
+  const HelpIndicator = props.HelpIndicator;
 
   const [flagged, setFlagged] = useState(false);
   const [marked, setMarked] = useState(false);
@@ -56,6 +59,7 @@ const SimulationPanel = (props) => {
     setLegitimateColor("#f5f5f5");
     setMaliciousColor("#DE2626");
   };
+
   return (
     <div className="simulation-panel">
       <div className="email-topbar">
@@ -216,7 +220,7 @@ const SimulationPanel = (props) => {
             </div>
           </div>
         </div>
-        {HelperContent}
+        {HelperContent ? <HelpCaller helpNeeded={HelpIndicator} /> : <></>}
       </div>
     </div>
   );

@@ -1,122 +1,117 @@
-  @media screen and (max-width: 991px) {
-    .navbar-container {
-      flex-direction: row; /* Change flex direction to stack items vertically */
-      padding: 10px 20px; /* Adjust padding for better spacing */
-    }
-
-    .nav-links-container {
-      margin-top: 10px; /* Add margin to separate the links from the logo */
-    }
-
-    .nav-links > * {
-      margin-right: 0; /* Remove the right margin on individual links */
-      margin-bottom: 10px; /* Add bottom margin for spacing between links */
-    }
-
-    .logo-img {
-      width: 50px;
-      height: auto;
-      padding-left: 20px;
-    }
-  }
-
-
+@media screen and (max-width: 991px) {
   .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-    background-color: rgba(250, 226, 189, 0.8);
-    backdrop-filter: blur(5px); /* Adjust the blur radius as desired */
-    -webkit-backdrop-filter: blur(5px); /* For Safari support */
-  }
-
-  .logo-img {
-    width: 200px;
-    height: auto;
-    padding-left: 20px;
+    flex-direction: row; /* Change flex direction to stack items vertically */
+    padding: 10px 20px; /* Adjust padding for better spacing */
   }
 
   .nav-links-container {
-    display: flex;
-    align-items: center;
-    list-style: none;
-  }
-  
-  .nav-links {
-    margin-left: 8px;
+    margin-top: 10px; /* Add margin to separate the links from the logo */
   }
 
-  .login-link {
-    border: 1.5px solid #181818;
-    padding: 10px 15px;
-    margin-left: 8px;
+  .nav-links > * {
+    margin-right: 0; /* Remove the right margin on individual links */
+    margin-bottom: 10px; /* Add bottom margin for spacing between links */
   }
 
-  .sign-up-link {
-    border: 1.5px solid rgb(24, 24, 24);
-    padding: 10px 15px;
-    background-color: #181818;
-
+  .logo-img {
+    width: 50px;
+    height: auto;
+    padding-left: 20px;
   }
+}
 
-  .sign-up-link,
-  .login-link {
-    font-weight: 500;
-    border-radius: 20px;
-  }
-  
-  .sign-up-link:hover {
-    background-color: rgba(0,0,0, 0.65);
-    transition: background-color 0.3s ease;
-  }
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(250, 226, 189, 0.1);
+  backdrop-filter: blur(5px); /* Adjust the blur radius as desired */
+  -webkit-backdrop-filter: blur(5px); /* For Safari support */
+}
 
+.logo-img {
+  width: 200px;
+  height: auto;
+  padding-left: 20px;
+}
 
-  .login-link:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-  }
+.nav-links-container {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
 
-  .nav-links > .sign-up-link,
-  .nav-links > .sign-up-link:visited,
-  .nav-links > .sign-up-link:link {
-    color: whitesmoke;
-  }
+.nav-links {
+  margin-left: 8px;
+}
 
-  .nav-links > *,
-  .nav-links > *:visited,
-  .nav-links > *:link
-  {
-    text-decoration: none;
-    margin-right: 15px;
-    color: inherit;
-  }
+.login-link {
+  border: 1.5px solid #181818;
+  padding: 10px 15px;
+  margin-left: 8px;
+}
 
-  .nav-links > .about-link,
-  .nav-links > .products-link {
-    position: relative;
-    overflow: hidden;
-  }
+.sign-up-link {
+  border: 1.5px solid rgb(24, 24, 24);
+  padding: 10px 15px;
+  background-color: #181818;
+}
 
-  .nav-links > .about-link:after,
-  .nav-links > .products-link:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 0;
-    height: 2px;
-    background-color: rgba(240, 144, 115,255);
-    transition: width 0.3s ease;
-  }
+.sign-up-link,
+.login-link {
+  font-weight: 500;
+  border-radius: 20px;
+}
 
-  .nav-links > .about-link:hover:after,
-  .nav-links > .products-link:hover:after {
-    width: 100%;
-  }
+.sign-up-link:hover {
+  background-color: rgba(0, 0, 0, 0.65);
+  transition: background-color 0.3s ease;
+}
 
+.login-link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.nav-links > .sign-up-link,
+.nav-links > .sign-up-link:visited,
+.nav-links > .sign-up-link:link {
+  color: whitesmoke;
+}
+
+.nav-links > *,
+.nav-links > *:visited,
+.nav-links > *:link {
+  text-decoration: none;
+  margin-right: 15px;
+  color: inherit;
+}
+
+.nav-links > .about-link,
+.nav-links > .products-link {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-links > .about-link:after,
+.nav-links > .products-link:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: rgba(240, 144, 115, 255);
+  transition: width 0.3s ease;
+}
+
+.nav-links > .about-link:hover:after,
+.nav-links > .products-link:hover:after {
+  width: 100%;
+}

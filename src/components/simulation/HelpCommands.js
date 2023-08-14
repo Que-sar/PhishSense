@@ -12,6 +12,7 @@ export const HelpCommands = [
             display: "flex",
             flexDirection: "column",
             alignItems: "flex-start",
+            justifyContent: "flex-end",
             lineHeight: "1.8",
           }}
         >
@@ -25,8 +26,8 @@ export const HelpCommands = [
           </li>
           <li>
             <strong>3. </strong>
-            If harmful, click and drag actions like contacting IT or deleting
-            the email.
+            If harmful, click and drag actions like contacting IT or following
+            company protocol.
           </li>
           <li>
             <strong>4. </strong>Then navigate back and finish the exercise!
@@ -44,6 +45,7 @@ export const HelpCommands = [
     target: "body",
     title: "Welcome to the Email Simulation Challenge!",
   },
+
   {
     content: (
       <div>
@@ -78,31 +80,24 @@ export const HelpCommands = [
         </ul>
       </div>
     ),
-    placement: "center",
+    placement: "right",
+    placementSmallScreen: "bottom",
     target: ".simulation-panel",
     title: "The Email Assessment Panel",
-    customStyles: {
-      tooltip: {
-        maxWidth: "400px",
-        background: "#FFFFE0", // Highlighting background color
-        border: "2px solid #FFCC22", // Highlighting border color
-        borderRadius: "8px",
-        padding: "16px",
-        boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-        zIndex: 1000, // Ensure tooltip appears above other content
-      },
-    },
+    disableScrolling: true,
   },
+
   {
     content: (
       <>
         <div>Wow</div>
       </>
     ),
-    placement: "right",
+    placement: "bottom",
     target: ".email-topbar",
     title: "Second step",
   },
+
   {
     content: (
       <>
@@ -112,11 +107,6 @@ export const HelpCommands = [
     placement: "right",
     target: ".mail-options",
     title: "Third step",
-    customStyles: {
-      tooltip: {
-        width: "100px",
-      },
-    },
   },
   {
     content: (

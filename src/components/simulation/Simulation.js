@@ -34,11 +34,6 @@ const Simulation = (props) => {
         continuous
         showProgress
         disableScrolling
-        styles={{
-          tooltip: {
-            maxWidth: "200px", // Adjust the width as needed
-          },
-        }}
       />
     </div>
   );

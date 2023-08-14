@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Simulation.css";
 import { HelpCommands } from "./HelpCommands";
 import JoyRide from "react-joyride";
@@ -11,24 +11,6 @@ const Simulation = (props) => {
   const HelperContent = props.HelperContent;
 
   const [helpIndicator, setHelpIndicator] = useState(false);
-
-  const [screenSize, setScreenSize] = useState(window.innerWidth);
-
-  const handleResize = () => {
-    setScreenSize(window.innerWidth);
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  const helpCommandsWithPlacement = HelpCommands.map((step) => ({
-    ...step,
-    placement: screenSize <= 1506 ? step.placementSmallScreen : step.placement,
-  }));
 
   const handleJoyrideCallback = (data) => {
     // Check if the joyride is finished or closed
@@ -48,7 +30,7 @@ const Simulation = (props) => {
       <JoyRide
         callback={handleJoyrideCallback}
         run={helpIndicator}
-        steps={helpCommandsWithPlacement}
+        steps={HelpCommands}
         continuous
         showProgress
         disableScrolling={false}

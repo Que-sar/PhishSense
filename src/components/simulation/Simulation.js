@@ -10,6 +10,7 @@ const Simulation = (props) => {
   const mailContents = props.mailContents;
   const HelperContent = props.HelperContent;
 
+  const [showTodoPanel, setShowTodoPanel] = useState(false);
   const [helpIndicator, setHelpIndicator] = useState(false);
 
   const handleJoyrideCallback = (data) => {
@@ -25,12 +26,16 @@ const Simulation = (props) => {
         mailContents={mailContents}
         HelperContent={HelperContent}
         HelpIndicator={setHelpIndicator}
+        setShowTodoPanel={setShowTodoPanel}
       />
-      <TodoPanel />
+      <div className={showTodoPanel ? "todo-panel" : "todo-panel hidden"}>
+        {showTodoPanel && <TodoPanel />}
+      </div>
+
       <JoyRide
         callback={handleJoyrideCallback}
         run={helpIndicator}
-        steps={HelpCommands}
+        steps={showTodoPanel ? HelpCommands : HelpCommands.slice(0, 4)}
         continuous
         showProgress
         disableScrolling={false}

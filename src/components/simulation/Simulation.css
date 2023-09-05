@@ -9,6 +9,16 @@
   background: #fcc477;
 }
 
+.todo-panel {
+  opacity: 1; /* Initial opacity is set to 0 */
+  transition: width 0.4s ease-in-out, opacity 0.3s ease-in-out; /* Shorten the width transition duration */
+  overflow: hidden; /* Hide content that overflows the panel */
+}
+
+.todo-panel.hidden {
+  width: 0; /* When the 'hidden' class is applied, width becomes 0 */
+  opacity: 0; /* Opacity remains 0 */
+}
 @media (max-width: 991px) {
   .simulation-container {
     flex-direction: column;

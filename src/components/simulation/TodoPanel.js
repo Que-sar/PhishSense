@@ -66,7 +66,7 @@ const TodoPanel = () => {
   };
 
   return (
-    <div className="todo-panel">
+    <>
       <DragDropContext onDragEnd={handleDragDrop}>
         <div className="todo-ranking-panel">
           <div className="todo-rankingpanel-top">When to do?</div>
@@ -123,7 +123,7 @@ const TodoPanel = () => {
           </div>
         </div>
       </DragDropContext>
-    </div>
+    </>
   );
 };
 

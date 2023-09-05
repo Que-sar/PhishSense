@@ -22,6 +22,7 @@ const SimulationPanel = (props) => {
   const mailContent = props.mailContents;
   const HelperContent = props.HelperContent;
   const HelpIndicator = props.HelpIndicator;
+  const ShowTodoPanel = props.setShowTodoPanel;
 
   const [flagged, setFlagged] = useState(false);
   const [marked, setMarked] = useState(false);
@@ -48,6 +49,7 @@ const SimulationPanel = (props) => {
 
   const legitimateClick = () => {
     setMaliciousMarked(false);
+    ShowTodoPanel(false);
     setLegitMarked(true);
     setMaliciousColor("#f5f5f5");
     setLegitimateColor("#1ED44B");
@@ -56,12 +58,17 @@ const SimulationPanel = (props) => {
   const maliciousClick = () => {
     setLegitMarked(false);
     setMaliciousMarked(true);
+    ShowTodoPanel(true);
     setLegitimateColor("#f5f5f5");
     setMaliciousColor("#DE2626");
   };
 
   return (
-    <div className="simulation-panel">
+    <div
+      className={`simulation-panel ${
+        maliciousMarked ? "" : "simulation-panel-expanded"
+      }`}
+    >
       <div className="email-topbar">
         <div className="topbar-container">
           <div className="icon done-button">

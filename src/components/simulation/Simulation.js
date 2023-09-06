@@ -35,10 +35,27 @@ const Simulation = (props) => {
       <JoyRide
         callback={handleJoyrideCallback}
         run={helpIndicator}
-        steps={showTodoPanel ? HelpCommands : HelpCommands.slice(0, 4)}
+        steps={
+          showTodoPanel
+            ? HelpCommands
+            : HelpCommands.slice(0, 4).map((step, index) => {
+                // Customize floaterProps and disableScrolling for each step
+                const floaterProps = {
+                  hideArrow: step.disableFloaterArrow, // Set the hideArrow property based on your step configuration
+                  // Add any other floaterProps you want to customize for this step
+                };
+
+                const customizedStep = {
+                  ...step, // Include the original step properties
+                  floaterProps, // Include the customized floaterProps
+                  disableScrolling: step.disableScrolling, // Set disableScrolling based on your step configuration
+                };
+
+                return customizedStep;
+              })
+        }
         continuous
         showProgress
-        disableScrolling={false}
       />
     </div>
   );

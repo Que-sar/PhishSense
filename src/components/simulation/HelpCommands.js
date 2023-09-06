@@ -16,20 +16,20 @@ export const HelpCommands = [
             lineHeight: "1.8",
           }}
         >
-          <li>
+          <li style={{ marginBottom: "12px" }}>
             <strong>1. </strong>Assess each email's content and sender
             information.
           </li>
-          <li>
-            <strong>2. </strong>Determine if they're safe or potentially
-            harmful.
+          <li style={{ marginBottom: "12px" }}>
+            <strong>2. </strong>Determine if they're safe or potentially harmful
+            with the buttons.
           </li>
-          <li>
+          <li style={{ marginBottom: "12px" }}>
             <strong>3. </strong>
-            If harmful, click and drag actions like contacting IT or following
-            company protocol.
+            If marked harmful, click and drag actions like contacting IT or
+            following company protocol.
           </li>
-          <li>
+          <li style={{ marginBottom: "12px" }}>
             <strong>4. </strong>Then navigate back and finish the exercise!
           </li>
         </ul>
@@ -45,6 +45,7 @@ export const HelpCommands = [
     target: "body",
     title: "Welcome to the Email Simulation Challenge!",
     disableScrolling: false,
+    disableFloaterArrow: false,
   },
 
   {
@@ -83,11 +84,11 @@ export const HelpCommands = [
         </ul>
       </div>
     ),
-    placement: "right",
-    placementSmallScreen: "bottom",
+    placement: "bottom",
     target: ".simulation-panel",
     title: "The Email Assessment Panel",
     disableScrolling: true,
+    disableFloaterArrow: false,
   },
 
   {
@@ -121,9 +122,11 @@ export const HelpCommands = [
         </ul>
       </div>
     ),
-    placement: "top",
+    placement: "bottom",
     target: ".email-topbar",
     title: "Email Panel's top bar",
+    disableFloaterArrow: false,
+    disableScrolling: true,
   },
 
   {
@@ -156,8 +159,9 @@ export const HelpCommands = [
     ),
     placement: "right",
     target: ".mail-options",
-    title: "Flag and More information",
+    title: "More information",
     disableScrolling: true,
+    disableFloaterArrow: false,
   },
   {
     content: (
@@ -206,5 +210,6 @@ export const HelpCommands = [
     target: ".todo-panel",
     title: "The Action Panel",
     disableScrolling: true,
+    disableFloaterArrow: true,
   },
 ];

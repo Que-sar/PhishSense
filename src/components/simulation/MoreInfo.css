@@ -14,7 +14,7 @@
 }
 
 .modalContainer {
-  border-radius: 25px;
+  border-radius: 10px;
   border-style: solid;
   border-width: thick;
   border-color: #484444;
@@ -66,7 +66,7 @@
 .header-info {
   border-style: solid;
   border-width: thin;
-  border-radius: 25px;
+  border-radius: 10px;
   max-height: 50vh;
   overflow-y: auto;
   width: 90%;

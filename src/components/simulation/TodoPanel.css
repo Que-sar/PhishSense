@@ -6,7 +6,7 @@
   width: 20vw;
   height: 80vh;
   background: whitesmoke;
-  border-radius: 25px;
+  border-radius: 10px;
   border-style: solid;
   border-width: thick;
   user-select: none;
@@ -21,7 +21,7 @@
   width: 100%;
   align-items: center;
   background-color: whitesmoke;
-  border-radius: 25px;
+  border-radius: 10px;
 }
 
 .horizontalLineTodo {

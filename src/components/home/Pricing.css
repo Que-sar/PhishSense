@@ -31,7 +31,7 @@
   min-width: 20vw;
   min-height: 7vh;
   border-radius: 25px;
-  background-color: rgb(252, 196, 119);
+  background-color: #fcc477;
   color: rgb(24, 24, 24);
   padding: 18px;
   padding-bottom: 20px;
@@ -85,6 +85,7 @@
   border-width: thin;
   border-radius: 10px;
   border-color: #fcc477;
+  background-color: whitesmoke;
 }
 
 .certification {

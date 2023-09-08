@@ -1,5 +1,14 @@
+import Footer from "../components/footer/Footer.js";
+import "../components/about/About.css";
+import Mission from "../components/about/Mission.js";
+
 const About = () => {
-  return <h1>About page</h1>;
+  return (
+    <div className="about-container">
+      <Mission />
+      <Footer />
+    </div>
+  );
 };
 
 export default About;

@@ -205,11 +205,16 @@
   align-items: center;
 }
 
+.sender-origin {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1vh;
+  margin-left: 1vw;
+}
+
 .sender-name {
   font-size: calc(16px + 0.390625vw);
-  margin-bottom: 1vh;
-  font-weight: bold;
-  margin-left: 1vw;
+  font-weight: bolder;
 }
 
 .profile-icon {

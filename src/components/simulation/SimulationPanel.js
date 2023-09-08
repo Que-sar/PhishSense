@@ -194,7 +194,12 @@ const SimulationPanel = (props) => {
               className="profile-icon"
             />
           </div>
-          <div className="sender-name">{mailContent.senderName}</div>
+          <div className="sender-origin">
+            <div className="sender-name">{mailContent.senderName}</div>
+            <div className="sender-mail-address">
+              From: {mailContent.senderMail}
+            </div>
+          </div>
         </div>
         <div className="reciever-identity">To: Katrina Milka</div>
         {mailContent.attachmentPresence ? (

@@ -3,6 +3,7 @@ import React from "react";
 const Example = {
   titleName: "Dinner Reservation",
   senderName: "Miles Martines",
+  senderMail: "miles.martines@mail.com",
   attachmentPresence: true,
 
   emailContent: (

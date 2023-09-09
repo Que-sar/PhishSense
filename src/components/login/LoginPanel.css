@@ -1,0 +1,12 @@
+.login-panel {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+  min-width: 30vw;
+  border-style: solid;
+  border-width: thin;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  border-color: #fcc477;
+}

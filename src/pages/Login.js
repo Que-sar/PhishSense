@@ -1,8 +1,13 @@
+import LoginPanel from "../components/login/LoginPanel";
+import "../components/login/Login.css";
+import Footer from "../components/footer/Footer";
+
 const Login = () => {
   return (
-    <>
-      <h1>Login Page</h1>
-    </>
+    <div className="logreg-container">
+      <LoginPanel />
+      <Footer />
+    </div>
   );
 };
 

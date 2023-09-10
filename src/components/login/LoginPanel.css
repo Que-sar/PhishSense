@@ -89,7 +89,7 @@
   background-color: rgb(24, 24, 24);
   color: #f5f5f5;
   border-radius: 25px;
-  margin-top: 5vh;
+  margin-top: 3vh;
 }
 
 .login-button:hover {
@@ -103,7 +103,7 @@
   margin-bottom: 6vh;
   justify-content: center;
   align-items: center;
-  margin-top: 4vh;
+  margin-top: 5vh;
 }
 
 .login-sign-up-or {

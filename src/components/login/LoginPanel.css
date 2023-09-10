@@ -1,17 +1,17 @@
 .login-panel-container {
   display: flex;
   justify-content: center;
-  height: 80vh;
+  height: 85vh;
   width: 100vw;
   margin-top: 70px;
   background-color: #fcc477;
 }
 
 .login-panel {
-  margin-top: 70px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
-  height: 70vh;
+  height: fit-content;
   max-width: 450px;
   width: 95%;
   border-radius: 10px;
@@ -100,7 +100,7 @@
 
 .login-sign-up-container {
   display: flex;
-
+  margin-bottom: 6vh;
   justify-content: center;
   align-items: center;
   margin-top: 4vh;

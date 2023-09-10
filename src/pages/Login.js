@@ -1,13 +1,14 @@
 import LoginPanel from "../components/login/LoginPanel";
-import "../components/login/Login.css";
 import Footer from "../components/footer/Footer";
+import Wave from "../components/wave/Wave";
 
 const Login = () => {
   return (
-    <div className="logreg-container">
+    <>
       <LoginPanel />
+      <Wave />
       <Footer />
-    </div>
+    </>
   );
 };
 

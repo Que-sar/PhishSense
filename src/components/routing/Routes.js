@@ -32,7 +32,7 @@ const usedRoutes = [
   },
   {
     path: "/login",
-    name: "Log in",
+    name: "Sign in",
     reference: "login",
     component: Login,
   },

@@ -2,8 +2,7 @@ import React from "react";
 
 import "./Benefits.css";
 
-import BenefitsWave from "../images/heroWave.svg";
-
+import Wave from "../wave/Wave";
 import ShieldIcon from "../images/shieldIcon.svg";
 import PeaceIcon from "../images/peaceIcon.svg";
 import TrophyIcon from "../images/trophyIcon.svg";
@@ -11,9 +10,7 @@ import TrophyIcon from "../images/trophyIcon.svg";
 const Benefits = () => {
   return (
     <>
-      <div className="benefits-wave">
-        <img src={BenefitsWave} alt="Benefits Wave" />
-      </div>
+      <Wave />
       <div className="benefits-section">
         <div className="benefits-title">Benefits</div>
         <div className="benefits-description">

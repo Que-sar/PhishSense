@@ -20,7 +20,7 @@ const Hero = () => {
         <div className="hero-call-to-action">
           <button className="hero-action-button">Get started</button>
           <Link to="/demo" className="hero-tryout-button">
-            Try demo
+            Try it Free
           </Link>
         </div>
       </div>

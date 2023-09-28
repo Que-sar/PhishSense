@@ -4,7 +4,7 @@ import { Icon } from "react-icons-kit";
 import { eyeOff } from "react-icons-kit/feather/eyeOff";
 import { eye } from "react-icons-kit/feather/eye";
 
-const RegisterPanel = ({ EmailIcon, PasswordIcon }) => {
+const RegisterPanel = ({ setLoginPanel, EmailIcon, PasswordIcon }) => {
   const [type, setType] = useState("password");
   const [icon, setIcon] = useState(eyeOff);
 
@@ -17,6 +17,12 @@ const RegisterPanel = ({ EmailIcon, PasswordIcon }) => {
       setType("password");
     }
   };
+
+  const handleLoginPanelClick = () => {
+    // Toggle the loginPanel state when a button is clicked
+    setLoginPanel((prevLoginPanel) => !prevLoginPanel);
+  };
+
   return (
     <div className="register-panel-container">
       <div className="register-panel">
@@ -74,6 +80,27 @@ const RegisterPanel = ({ EmailIcon, PasswordIcon }) => {
             icon={icon}
             size={25}
           />
+        </div>
+        <div className="terms-conditions-agreement">
+          <input
+            type="checkbox"
+            id="termsconditions"
+            name="termsconditions"
+            value="agreedTerms"
+          />
+          <label htmlFor="termsconditions" className="termsconditions-text">
+            I have read and agreed to the terms of use, privacy notice and offer
+            details
+          </label>
+        </div>
+        <div className="register-button-container">
+          <button className="register-button">Sign up</button>
+        </div>
+        <div className="login-sign-up-container-reg">
+          <div className="login-sign-up-or">Already have an account?</div>
+          <div className="login-sign-up" onClick={handleLoginPanelClick}>
+            Sign in
+          </div>
         </div>
       </div>
     </div>

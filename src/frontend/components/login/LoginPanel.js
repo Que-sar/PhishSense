@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import "./LoginPanel.css";
-import EmailIcon from "../images/loginIcons/emailIcon.svg";
-import PasswordIcon from "../images/loginIcons/passwordIcon.svg";
 import { Icon } from "react-icons-kit";
 import { eyeOff } from "react-icons-kit/feather/eyeOff";
 import { eye } from "react-icons-kit/feather/eye";
 
-const LoginPanel = ({ setLoginPanel }) => {
+const LoginPanel = ({ setLoginPanel, EmailIcon, PasswordIcon }) => {
   const [type, setType] = useState("password");
   const [icon, setIcon] = useState(eyeOff);
 
@@ -71,7 +69,7 @@ const LoginPanel = ({ setLoginPanel }) => {
         <div className="login-sign-up-container">
           <div className="login-sign-up-or">Don't have an account?</div>
           <div className="login-sign-up" onClick={handleLoginPanelClick}>
-            Sign up
+            Get Started
           </div>
         </div>
       </div>

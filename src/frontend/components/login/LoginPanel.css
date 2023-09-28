@@ -59,14 +59,13 @@
   width: 80%;
   background-color: whitesmoke;
   color: rgba(24, 24, 24, 0.7);
-  border-bottom: 1px solid;
+  border-bottom: 2px solid;
   border-color: #181818b3;
   padding-right: 35px;
 }
 
 #email-input:focus,
 #password-input:focus {
-  border-bottom: 2px solid;
   border-color: #fcc477;
 }
 

@@ -1,9 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import "./LoginPanel.css";
 import EmailIcon from "../images/loginIcons/emailIcon.svg";
 import PasswordIcon from "../images/loginIcons/passwordIcon.svg";
+import { Icon } from "react-icons-kit";
+import { eyeOff } from "react-icons-kit/feather/eyeOff";
+import { eye } from "react-icons-kit/feather/eye";
 
-const LoginPanel = () => {
+const LoginPanel = ({ setLoginPanel }) => {
+  const [type, setType] = useState("password");
+  const [icon, setIcon] = useState(eyeOff);
+
+  const handleToggle = () => {
+    if (type === "password") {
+      setIcon(eye);
+      setType("text");
+    } else {
+      setIcon(eyeOff);
+      setType("password");
+    }
+  };
+
+  const handleLoginPanelClick = () => {
+    // Toggle the loginPanel state when a button is clicked
+    setLoginPanel((prevLoginPanel) => !prevLoginPanel);
+  };
+
   return (
     <div className="login-panel-container">
       <div className="login-panel">
@@ -28,21 +49,30 @@ const LoginPanel = () => {
               alt="Password"
             />
             <input
-              type="password"
+              type={type}
               id="password-input"
               name="password"
               placeholder="Type your password"
-              required
+              autoComplete="current-password"
+            />
+            <Icon
+              className="passwordEye"
+              onClick={handleToggle}
+              icon={icon}
+              size={25}
             />
           </div>
           <div className="login-forgot-password">Forgot password?</div>
+
           <div className="login-button-container">
             <button className="login-button">Sign in</button>
           </div>
         </div>
         <div className="login-sign-up-container">
           <div className="login-sign-up-or">Don't have an account?</div>
-          <div className="login-sign-up">Sign up</div>
+          <div className="login-sign-up" onClick={handleLoginPanelClick}>
+            Sign up
+          </div>
         </div>
       </div>
     </div>

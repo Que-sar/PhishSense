@@ -7,6 +7,8 @@ import { eye } from "react-icons-kit/feather/eye";
 const LoginPanel = ({ setLoginPanel, EmailIcon, PasswordIcon }) => {
   const [type, setType] = useState("password");
   const [icon, setIcon] = useState(eyeOff);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleToggle = () => {
     if (type === "password") {
@@ -18,6 +20,10 @@ const LoginPanel = ({ setLoginPanel, EmailIcon, PasswordIcon }) => {
     }
   };
 
+  const handleLoginTry = async (e) => {
+    e.preventDefault();
+  };
+
   const handleLoginPanelClick = () => {
     // Toggle the loginPanel state when a button is clicked
     setLoginPanel((prevLoginPanel) => !prevLoginPanel);
@@ -27,7 +33,7 @@ const LoginPanel = ({ setLoginPanel, EmailIcon, PasswordIcon }) => {
     <div className="login-panel-container">
       <div className="login-panel">
         <div className="login-title">Sign in</div>
-        <div className="login-entries">
+        <form className="login-entries" onSubmit={handleLoginTry}>
           <div className="login-email-sign">Email</div>
           <div className="login-email">
             <img src={EmailIcon} className="login-email-icon" alt="Email" />
@@ -36,6 +42,7 @@ const LoginPanel = ({ setLoginPanel, EmailIcon, PasswordIcon }) => {
               id="email-input"
               name="email"
               placeholder="Type your email"
+              onChange={(e) => setEmail(e.target.value)}
               required
             />
           </div>
@@ -52,6 +59,8 @@ const LoginPanel = ({ setLoginPanel, EmailIcon, PasswordIcon }) => {
               name="password"
               placeholder="Type your password"
               autoComplete="current-password"
+              onChange={(e) => setPassword(e.target.value)}
+              required
             />
             <Icon
               className="passwordEye"
@@ -65,7 +74,7 @@ const LoginPanel = ({ setLoginPanel, EmailIcon, PasswordIcon }) => {
           <div className="login-button-container">
             <button className="login-button">Sign in</button>
           </div>
-        </div>
+        </form>
         <div className="login-sign-up-container">
           <div className="login-sign-up-or">Don't have an account?</div>
           <div className="login-sign-up" onClick={handleLoginPanelClick}>

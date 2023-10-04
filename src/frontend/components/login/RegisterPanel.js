@@ -25,7 +25,7 @@ const RegisterPanel = ({ setLoginPanel, EmailIcon, PasswordIcon }) => {
 
   return (
     <div className="register-panel-container">
-      <div className="register-panel">
+      <form className="register-panel">
         <div className="register-title">Sign up</div>
         <div className="register-entries">
           <div className="register-first-name-sign">First name</div>
@@ -102,7 +102,7 @@ const RegisterPanel = ({ setLoginPanel, EmailIcon, PasswordIcon }) => {
             Sign in
           </div>
         </div>
-      </div>
+      </form>
     </div>
   );
 };

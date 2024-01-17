@@ -4,8 +4,8 @@ import "./Benefits.css";
 
 import Wave from "../wave/Wave";
 import ShieldIcon from "../images/shieldIcon.svg";
-import PeaceIcon from "../images/peaceIcon.svg";
-import TrophyIcon from "../images/trophyIcon.svg";
+import HandshakeIcon from "../images/handshakeIcon.svg";
+import ScaleIcon from "../images/scaleIcon.svg";
 
 const Benefits = () => {
   return (
@@ -23,7 +23,7 @@ const Benefits = () => {
               <img src={ShieldIcon} alt="Protection" />
             </div>
             <div>
-              <div className="benefit-item-title">Enforce Your Defense</div>
+              <div className="benefit-item-title">Empower Your Security</div>
               <p className="benefit-item-description">
                 Acquire habits or test skills to detect and protect against
                 phishing, showcasing resilience and gaining a cybersecurity
@@ -34,28 +34,32 @@ const Benefits = () => {
 
           <div className="secondBenefit">
             <div className="benefit-item-icon">
-              <img src={TrophyIcon} alt="Protection" />
+              <img src={ScaleIcon} alt="Protection" />
             </div>
             <div>
-              <div className="benefit-item-title">Prove Digital Resilience</div>
+              <div className="benefit-item-title">
+                Enhance Vigilence Affordably
+              </div>
               <p className="benefit-item-description">
-                Demonstrate your ability to navigate securely, confidently
-                defend against phishing, and set your organisation or yourself
-                apart by certifying.
+                Strengthen your defenses economically with targeted phishing
+                simulations, yielding custom insights for strategic
+                cybersecurity improvements.
               </p>
             </div>
           </div>
 
           <div className="thirdBenefit">
             <div className="benefit-item-icon">
-              <img src={PeaceIcon} alt="Protection" />
+              <img src={HandshakeIcon} alt="Protection" />
             </div>
             <div>
-              <div className="benefit-item-title">Gain Peace of Mind</div>
+              <div className="benefit-item-title">
+                Transparent Ethical Engagement
+              </div>
               <p className="benefit-item-description">
-                Join our comprehensive training and certification program for
-                peace of mind, effective mitigation of phishing threats, and
-                instilling confidence.
+                Benefit from our transparent, ethical phishing approach that
+                delivers confidential, actionable intelligence for your security
+                strategy.
               </p>
             </div>
           </div>

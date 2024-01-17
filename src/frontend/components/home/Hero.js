@@ -9,19 +9,14 @@ const Hero = () => {
     <div className="hero-section">
       <div className="hero-action">
         <div className="hero-title">
-          Sense your security,
+          Know your security,
           <br />
           empower yourself.
         </div>
         <div className="hero-description">
-          Build natural resistance against malicious emails through a
-          comprehensive training and certification program.
-        </div>
+        Enhance your team's resilience against email threats with our personalized, affordable testing programs, aimed at boosting security awareness.        </div>
         <div className="hero-call-to-action">
-          <button className="hero-action-button">Get started</button>
-          <Link to="/demo" className="hero-tryout-button">
-            Try it Free
-          </Link>
+          <button className="hero-action-button">Get in Touch</button>
         </div>
       </div>
       <div className="hero-image">

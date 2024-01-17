@@ -1,28 +1,15 @@
 import Home from "../../pages/Home";
 import About from "../../pages/About";
-import Login from "../../pages/Login";
-import Register from "../../pages/Register";
-import Products from "../../pages/Products";
-import Demo from "../../pages/Demo";
+import ContactUs from "../../pages/ContactUs";
+import Solutions from "../../pages/Solutions";
+import News from "../../pages/News";
 
 const usedRoutes = [
-  {
-    path: "/demo",
-    name: "Demo",
-    reference: "demo",
-    component: Demo,
-  },
   {
     path: "/",
     name: "Home",
     reference: "home",
     component: Home,
-  },
-  {
-    path: "/products",
-    name: "Products",
-    reference: "products",
-    component: Products,
   },
   {
     path: "/about",
@@ -31,16 +18,22 @@ const usedRoutes = [
     component: About,
   },
   {
-    path: "/login",
-    name: "Sign in",
-    reference: "login",
-    component: Login,
+    path: "/solutions",
+    name: "Solutions",
+    reference: "solutions",
+    component: Solutions,
   },
   {
-    path: "/signup",
-    name: "Get started",
-    reference: "sign-up",
-    component: Register,
+    path: "/news",
+    name: "News",
+    reference: "news",
+    component: News,
+  },
+  {
+    path: "/contact-us",
+    name: "Contact us",
+    reference: "contact-us",
+    component: ContactUs,
   },
 ];
 

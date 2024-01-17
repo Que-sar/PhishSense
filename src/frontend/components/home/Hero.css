@@ -1,123 +1,94 @@
-
-
 .hero-section {
-    margin-top: 70px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background:#fcc477;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #fcc477;
 }
 
 .hero-action {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    margin-left: 5vw;
-    justify-content: center;
-    align-items: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5vw;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-title {
-    font-weight: bolder;
-    font-size: calc(55px + 0.390625vw);
-    margin-top: 7vh;
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: calc(55px + 0.390625vw);
+  margin-top: 7vh;
 }
 
 .hero-description {
-    font-size: calc(15px + 0.390625vw);
-    font-weight: 400;
-    margin-top: 1.5vh;
-    max-width: 600px
+  font-size: calc(15px + 0.390625vw);
+  font-weight: 400;
+  margin-top: 1.5vh;
+  max-width: 600px;
 }
 .hero-call-to-action {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 4vh;
-}
-
-.hero-tryout-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4vh;
-    margin-left: 2vw;
-    margin-right: 2vw;
-    font-size: calc(16px + 0.390625vw);
-    min-width: 12vw;
-    min-height: 7vh;
-    border-radius: 25px;
-    border-style: solid;
-    background-color: #fcc477;
-    color: rgb(24, 24, 24);
-    padding: 18px;
-    padding-bottom: 20px;
-    cursor: pointer;
-    text-decoration: none;
-
-}
-
-.hero-tryout-button:hover {
-    background-color: rgb(24, 24, 24, 0.1);
-    transition: background-color 0.3s ease;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4vh;
 }
 
 .hero-action-button {
-    margin-top: 4vh;
-    margin-left: 2vw;
-    margin-right: 2vw;
-    font-size: calc(16px + 0.390625vw);
-    min-width: 12vw;
-    min-height: 7vh;
-    border-radius: 25px;
-    background-color: rgba(24, 24, 24);
-    color: whitesmoke;
-    padding: 18px;
-    padding-bottom: 20px;
-    
-
+  margin-top: 4vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  font-size: calc(16px + 0.390625vw);
+  min-width: 18vw;
+  min-height: 8vh;
+  border-radius: 25px;
+  background-color: rgba(24, 24, 24);
+  color: whitesmoke;
+  padding: 18px;
+  padding-bottom: 20px;
+  cursor: pointer;
 }
 
 .hero-action-button:hover {
-    background-color: rgba(0, 0, 0, 0.65);
-    transition: background-color 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.65);
+  transition: background-color 0.3s ease;
 }
 .hero-image {
-    flex: 1; /* Allow the image to grow or shrink based on available space */
-    display: flex;
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically */
-    position: relative; /* Enable relative positioning for the image */
-    margin-right: 50px;
+  flex: 1; /* Allow the image to grow or shrink based on available space */
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  position: relative; /* Enable relative positioning for the image */
+  margin-right: 50px;
 }
 
 .hero-image img {
-    max-width: 40vw;
-    height: auto;
-    max-height: 72vh;
+  max-width: 40vw;
+  height: auto;
+  max-height: 72vh;
 }
 
 @media (max-width: 991px) {
+  .hero-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .hero-section {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  .hero-action {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
 
-    .hero-action {
-        margin-left: 5vw;
-        margin-right: 5vw;
+  .hero-description {
+    font-size: calc(25px + 0.390625vw);
+  }
 
-    }
-
-    .hero-description {
-        font-size: calc(25px + 0.390625vw);
-    }
-
-    .hero-image img{
-        margin-left: 4vw;
-        max-width: 95vw;
-        height: auto;
-    }
+  .hero-image img {
+    margin-left: 4vw;
+    max-width: 95vw;
+    height: auto;
+  }
 }

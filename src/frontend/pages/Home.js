@@ -2,8 +2,8 @@ import React from "react";
 
 import Hero from "../components/home/Hero";
 import Benefits from "../components/home/Benefits";
-import Pricing from "../components/home/Pricing";
 import Footer from "../components/footer/Footer";
+import Services from "../components/solutions/Services";
 
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
 
       <Benefits />
 
-      <Pricing />
+      <Services />
 
       <Footer />
     </div>

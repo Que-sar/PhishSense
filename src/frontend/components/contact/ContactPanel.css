@@ -114,3 +114,19 @@
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
+
+@media (max-width: 879px) {
+  .email-submit-form-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .email-text-input {
+    height: 240px;
+    width: 250px;
+  }
+
+  .email-text-container {
+    margin-left: 0vw;
+  }
+}

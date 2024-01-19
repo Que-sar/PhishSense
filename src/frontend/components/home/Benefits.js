@@ -26,8 +26,8 @@ const Benefits = () => {
               <div className="benefit-item-title">Empower Your Security</div>
               <p className="benefit-item-description">
                 Acquire habits or test skills to detect and protect against
-                phishing, showcasing resilience and gaining a cybersecurity
-                edge.
+                phishing, showcasing resilience and gaining a cybersecurity edge
+                for businesses of all sizes.
               </p>
             </div>
           </div>

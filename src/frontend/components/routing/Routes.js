@@ -1,5 +1,5 @@
 import Home from "../../pages/Home";
-import About from "../../pages/About";
+import Mission from "../../pages/Mission";
 import ContactUs from "../../pages/ContactUs";
 import Solutions from "../../pages/Solutions";
 import News from "../../pages/News";
@@ -12,10 +12,10 @@ const usedRoutes = [
     component: Home,
   },
   {
-    path: "/about",
-    name: "About us",
-    reference: "about",
-    component: About,
+    path: "/mission",
+    name: "Mission",
+    reference: "mission",
+    component: Mission,
   },
   {
     path: "/solutions",
@@ -31,7 +31,7 @@ const usedRoutes = [
   },
   {
     path: "/contact-us",
-    name: "Contact us",
+    name: "Contact Us",
     reference: "contact-us",
     component: ContactUs,
   },

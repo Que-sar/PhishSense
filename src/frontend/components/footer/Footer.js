@@ -12,7 +12,7 @@ const Footer = () => {
         </div>
         <div className="footer-policies right-column">
           <div className="footer-links">
-            <div className="linkedin">Link</div>
+            <div className="linkedin">FaceLink</div>
             <div className="facebook">Face</div>
           </div>
         </div>

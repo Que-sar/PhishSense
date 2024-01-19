@@ -71,9 +71,6 @@ const Services = () => {
           <button className="services-action-button">Learn More</button>
         </div>
       </div>
-      <div className="services-title-sub-description">
-        Contact us to customize your multi-phase assessment plan
-      </div>
     </div>
   );
 };

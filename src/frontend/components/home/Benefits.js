@@ -43,7 +43,7 @@ const Benefits = () => {
               <p className="benefit-item-description">
                 Strengthen your defenses economically with targeted phishing
                 simulations, yielding custom insights for strategic
-                cybersecurity improvements.
+                cybersecurity improvements, from certified ethical hackers.
               </p>
             </div>
           </div>

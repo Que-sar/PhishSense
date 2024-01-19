@@ -1,0 +1,104 @@
+.email-submit-form {
+  margin-top: 5vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  background-color: #fcc477;
+}
+
+.services-title-sub-description {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: calc(22px + 0.390625vw);
+  margin-bottom: 4vh;
+  margin-right: 12vw;
+  margin-left: 12vw;
+  color: rgb(24, 24, 24);
+}
+
+.email-submit-form-container {
+  display: flex;
+  justify-content: center;
+}
+.email-titles-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-submit-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.email-text-container {
+  margin-left: 2vw;
+  margin-top: 1vh;
+  margin-bottom: 3.5vh;
+}
+
+.email-input-container,
+.firstname-input-container,
+.lastname-input-container,
+.phonenumber-input-container {
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+}
+
+.phoneNumber,
+.email,
+.firstName,
+.lastName,
+.message {
+  font-size: calc(8px + 0.390625vw);
+  margin-bottom: 2px;
+}
+
+.email-input,
+.firstname-input,
+.lastname-input,
+.phonenumber-input,
+.email-text-input {
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 250px;
+  font-size: calc(10px + 0.390625vw);
+  border-style: solid;
+  border-color: #181818;
+  border-radius: 8px;
+}
+
+.email-text-input {
+  width: 450px;
+  height: 100%;
+}
+
+.email-input:hover,
+.firstname-input:hover,
+.lastname-input:hover,
+.phonenumber-input:hover,
+.email-text-input:hover {
+  border-color: rgba(24, 24, 24, 0.7);
+}
+
+.email-submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(15px + 0.390625vw);
+  font-weight: bold;
+  background-color: rgb(24, 24, 24);
+  color: #f5f5f5;
+  border-radius: 25px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  padding: 15px;
+  width: 200px;
+}
+
+.email-submit-button:hover {
+  background-color: rgba(0, 0, 0, 0.65);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}

@@ -23,6 +23,9 @@ const ContactPanel = () => {
       <div className="services-title-sub-description">
         Contact us to customize your multi-phase assessment plan
       </div>
+      <div className="in-touch-shortly">
+        Please fill out the form and we will be in touch.
+      </div>
       <div className="email-submit-form-container">
         <div className="email-titles-container">
           <div className="email-input-container">

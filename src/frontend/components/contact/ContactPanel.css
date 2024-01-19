@@ -16,6 +16,18 @@
   color: rgb(24, 24, 24);
 }
 
+.in-touch-shortly {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: calc(14px + 0.390625vw);
+  margin-top: 4vh;
+  margin-bottom: 3vh;
+  margin-right: 12vw;
+  margin-left: 12vw;
+  color: rgba(24, 24, 24, 0.7);
+}
+
 .email-submit-form-container {
   display: flex;
   justify-content: center;

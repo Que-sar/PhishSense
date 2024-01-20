@@ -3,6 +3,87 @@
   flex-direction: column;
   margin-top: 70px;
   width: 100vw;
-  height: 85vh;
   background-color: #fcc477;
+}
+
+.logo-panel {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  background-color: transparent;
+}
+
+.logo-img-mission {
+  max-width: 150px;
+}
+
+.mission-logo-inside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10vw;
+  margin-left: 10vw;
+  width: 50vw;
+}
+
+.mission-title {
+  color: #181818; /* Default color */
+  font-size: calc(30px + 0.390625vw);
+  text-decoration: none;
+  list-style: none;
+}
+
+.mission-title:visited {
+  color: inherit;
+}
+
+.name-explanation-quote-container {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.name-explanation-title {
+  font-weight: bolder;
+  font-size: calc(40px + 0.390625vw);
+  margin-top: 2vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.name-explanation-text {
+  margin-top: 5vh;
+  width: 50vw;
+  font-size: calc(16px + 0.390625vw);
+  margin-bottom: 4vh;
+}
+
+.mission-statement-container {
+  background-color: whitesmoke;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.mission-statement-title {
+  font-weight: bolder;
+  font-size: calc(40px + 0.390625vw);
+  margin-top: 4vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.mission-statement-text {
+  margin-top: 5vh;
+  width: 50vw;
+  font-size: calc(16px + 0.390625vw);
+  margin-bottom: 4vh;
+}
+
+.placeholder-margins-broken {
+  margin-bottom: -5vh;
 }

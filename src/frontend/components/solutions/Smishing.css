@@ -1,0 +1,13 @@
+.smishing-phishing-container {
+  height: 40vh;
+  width: 100vw;
+  background-color: whitesmoke;
+}
+
+.smishing-phishing-title {
+  font-weight: bolder;
+  font-size: calc(30px + 0.390625vw);
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  margin-left: 4vw;
+}

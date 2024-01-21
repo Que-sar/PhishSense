@@ -6,17 +6,17 @@ import Phishing from "../components/solutions/Phishing";
 import Spearphishing from "../components/solutions/Spearphishing";
 import Quishing from "../components/solutions/Quishing";
 import Whaling from "../components/solutions/Whaling";
-import Services from "../components/solutions/Services";
+import Smishing from "../components/solutions/Smishing";
 
 const Solutions = () => {
   return (
     <div className="solutions-container">
       <Intro />
-      <Services />
       <Phishing />
       <Spearphishing />
-      <Quishing />
       <Whaling />
+      <Quishing />
+      <Smishing />
       <Footer />
     </div>
   );

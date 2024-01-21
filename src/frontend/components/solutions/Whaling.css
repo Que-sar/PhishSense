@@ -1,10 +1,10 @@
-.spearphishing-phishing-container {
+.whaling-phishing-container {
   height: 40vh;
   width: 100vw;
-  background-color: #fcc477;
+  background-color: whitesmoke;
 }
 
-.spearphishing-phishing-title {
+.whaling-phishing-title {
   display: flex;
   justify-content: center;
   font-weight: bolder;
@@ -14,6 +14,11 @@
   margin-left: 4vw;
 }
 
-.solution-image-spearphishing {
-  max-width: 158px;
+.solution-image-whaling {
+  width: 130px;
+  margin-left: 15px;
+}
+
+.whaling-text-description {
+  margin-left: 10px;
 }

@@ -17,12 +17,15 @@ const Spearphishing = () => {
           />
         </div>
         <div className="solution-text spearphishing-text-description">
-          Equip your organization with the fundamental line of defense against
-          phishing. Our General Phishing Assessment tests your team's reflexes
-          against broad-scale phishing attacks, employing simulated phishing
-          emails that lead to a safe but realistic landing page. We analyze the
-          response and provide a detailed report to highlight your security
-          posture and areas for improvement.
+          Our Spear Phishing Assessment targets each individual with a
+          personalized email, designed to test and strengthen specific security
+          awareness.
+          <br /> <br />
+          Our varied landing pages enhance the realism of the simulation, while
+          optional in-depth investigations offer a comprehensive analysis.
+          <br /> <br />
+          Detailed reporting concludes the exercise, providing actionable
+          insights.
         </div>
       </div>
     </div>

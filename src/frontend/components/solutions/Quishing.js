@@ -17,12 +17,13 @@ const Quishing = () => {
           />
         </div>
         <div className="solution-text quishing-text-description">
-          Equip your organization with the fundamental line of defense against
-          phishing. Our General Phishing Assessment tests your team's reflexes
-          against broad-scale phishing attacks, employing simulated phishing
-          emails that lead to a safe but realistic landing page. We analyze the
-          response and provide a detailed report to highlight your security
-          posture and areas for improvement.
+          Our Quishing Assessment introduces a novel layer to phishing tests,
+          utilizing QR codes that lead to customized landing pages when scanned.
+          <br /> <br />
+          This subtle twist on traditional tactics assesses adaptability to
+          modern threats. <br /> <br />
+          Our service culminates with detailed reports, offering insights into
+          your team's QR code security awareness.
         </div>
       </div>
     </div>

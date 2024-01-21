@@ -7,6 +7,7 @@ import Spearphishing from "../components/solutions/Spearphishing";
 import Quishing from "../components/solutions/Quishing";
 import Whaling from "../components/solutions/Whaling";
 import Smishing from "../components/solutions/Smishing";
+import ContactPanel from "../components/contact/ContactPanel";
 
 const Solutions = () => {
   return (
@@ -17,6 +18,7 @@ const Solutions = () => {
       <Whaling />
       <Quishing />
       <Smishing />
+      <ContactPanel />
       <Footer />
     </div>
   );

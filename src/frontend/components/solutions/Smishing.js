@@ -17,12 +17,13 @@ const Smishing = () => {
           />
         </div>
         <div className="solution-text smishing-text-description">
-          Equip your organization with the fundamental line of defense against
-          phishing. Our General Phishing Assessment tests your team's reflexes
-          against broad-scale phishing attacks, employing simulated phishing
-          emails that lead to a safe but realistic landing page. We analyze the
-          response and provide a detailed report to highlight your security
-          posture and areas for improvement.
+          Our SMS Phishing Assessment gauges mobile threat awareness by sending
+          tailored text messages with deceptive links. <br /> <br />
+          Each simulation is crafted to mimic authentic SMS communication,
+          leading to specialized landing pages for an immersive experience.{" "}
+          <br /> <br />
+          Comprehensive reporting follows, providing valuable metrics on
+          response and readiness.
         </div>
       </div>
     </div>

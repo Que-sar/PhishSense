@@ -15,12 +15,12 @@ const Whaling = () => {
           />
         </div>
         <div className="solution-text whaling-text-description">
-          Equip your organization with the fundamental line of defense against
-          phishing. Our General Phishing Assessment tests your team's reflexes
-          against broad-scale phishing attacks, employing simulated phishing
-          emails that lead to a safe but realistic landing page. We analyze the
-          response and provide a detailed report to highlight your security
-          posture and areas for improvement.
+          Our Whaling Assessment delves deep, targeting your organization's
+          high-profile executives with crafted emails and SMS, mirroring
+          advanced threat tactics. <br /> <br /> This top-tier simulation is
+          backed by thorough investigations and diverse landing pages,
+          concluding with an in-depth report to sharpen your leadership's
+          cybersecurity acumen.
         </div>
       </div>
     </div>

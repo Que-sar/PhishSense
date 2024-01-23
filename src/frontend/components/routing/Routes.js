@@ -1,11 +1,3 @@
-/*
-import Home from "../../pages/Home";
-import Mission from "../../pages/Mission";
-import ContactUs from "../../pages/ContactUs";
-import Solutions from "../../pages/Solutions";
-import News from "../../pages/News";
-
-*/
 import { lazy } from "react";
 
 const Home = lazy(() => import("../../pages/Home"));

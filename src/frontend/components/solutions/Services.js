@@ -1,5 +1,6 @@
 import React from "react";
 import "./Services.css";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
@@ -21,7 +22,9 @@ const Services = () => {
             resilience.
           </div>
           <div className="horizontalLine"></div>
-          <button className="services-action-button">Learn More</button>
+          <Link to="/solutions#phishing" className="services-action-button">
+            Learn More
+          </Link>
         </div>
 
         <div className="services-panel orange">
@@ -33,7 +36,12 @@ const Services = () => {
             security awareness.
           </div>
           <div className="horizontalLine-whites"></div>
-          <button className="services-action-button">Learn More</button>
+          <Link
+            to="/solutions#spearphishing"
+            className="services-action-button"
+          >
+            Learn More
+          </Link>
         </div>
 
         <div className="services-panel white generalwhaling">
@@ -45,7 +53,9 @@ const Services = () => {
             emailing, messaging.
           </div>
           <div className="horizontalLine"></div>
-          <button className="services-action-button">Learn More</button>
+          <Link to="/solutions#whaling" className="services-action-button">
+            Learn More
+          </Link>
         </div>
 
         <div className="services-panel orange ">
@@ -57,7 +67,9 @@ const Services = () => {
             links.
           </div>
           <div className="horizontalLine-whites"></div>
-          <button className="services-action-button">Learn More</button>
+          <Link to="/solutions#quishing" className="services-action-button">
+            Learn More
+          </Link>
         </div>
 
         <div className="services-panel white">
@@ -68,7 +80,9 @@ const Services = () => {
             Assess mobile security with SMS-based phishing simulations.
           </div>
           <div className="horizontalLine"></div>
-          <button className="services-action-button">Learn More</button>
+          <Link to="/solutions#smishing" className="services-action-button">
+            Learn More
+          </Link>
         </div>
       </div>
     </div>

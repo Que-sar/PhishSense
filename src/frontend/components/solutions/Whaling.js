@@ -1,6 +1,6 @@
 import React from "react";
 import "./Whaling.css";
-import WhalePhishImage from "../images/solutionimagery/whaling.png";
+import WhalePhishImage from "../images/solutionimagery/whaling.webp";
 
 const Whaling = () => {
   return (

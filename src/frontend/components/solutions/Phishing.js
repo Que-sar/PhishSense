@@ -1,6 +1,6 @@
 import React from "react";
 import "./Phishing.css";
-import PhishiMage from "../images/solutionimagery/phishing.png";
+import PhishiMage from "../images/solutionimagery/phishing.webp";
 
 const Phishing = () => {
   return (

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../images/speculorlogo.png";
+import logo from "../images/speculorlogo.webp";
 import "./Navbar.css";
 import HamburgerMenu from "./hamburgerMenu/HamburgerMenu.js";
 

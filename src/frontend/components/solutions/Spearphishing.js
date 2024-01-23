@@ -1,6 +1,6 @@
 import React from "react";
 import "./Spearphishing.css";
-import SpearPhishImage from "../images/solutionimagery/spearphishing.png";
+import SpearPhishImage from "../images/solutionimagery/spearphishing.webp";
 
 const Spearphishing = () => {
   return (

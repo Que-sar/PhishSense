@@ -1,6 +1,6 @@
 import React from "react";
 import "./Quishing.css";
-import QuishImage from "../images/solutionimagery/quishing.png";
+import QuishImage from "../images/solutionimagery/quishing.webp";
 
 const Quishing = () => {
   return (

@@ -18,8 +18,8 @@ const Services = () => {
             General Phishing Assessment
           </div>
           <div className="services-panel-bulletpoints">
-            Comprehensive phishing simulations to test your organization's
-            resilience.
+            Comprehensive email security phishing simulations to test your
+            organization's resilience.
           </div>
           <div className="horizontalLine"></div>
           <Link to="/solutions#phishing" className="services-action-button">

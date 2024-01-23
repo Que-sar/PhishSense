@@ -1,6 +1,6 @@
 import React from "react";
 import "./Smishing.css";
-import Smishimage from "../images/solutionimagery/smishing.png";
+import Smishimage from "../images/solutionimagery/smishing.webp";
 
 const Smishing = () => {
   return (

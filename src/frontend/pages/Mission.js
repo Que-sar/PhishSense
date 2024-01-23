@@ -1,7 +1,7 @@
 import Footer from "../components/footer/Footer.js";
 import { Link } from "react-router-dom";
 import "../components/mission/Mission.css";
-import logo from "../components/images/speculorlogo.png";
+import logo from "../components/images/speculorlogo.webp";
 import ContactPanel from "../components/contact/ContactPanel.js";
 import { useEffect } from "react";
 
@@ -29,8 +29,8 @@ const About = () => {
             <br />
             Our name, inspired by the Latin 'to watch, observe, examine,'
             captures the essence of our mission: to equip businesses of all
-            sizes with effective and affordable phishing awareness solutions.{" "}
-            <br />
+            sizes with effective and affordable email security awareness
+            solutions. <br />
             <br />
             At Speculor, we blend vigilance with innovation, transforming the
             complexity of cybersecurity into clear, actionable strategies. Let's
@@ -46,9 +46,9 @@ const About = () => {
             endeavor, putting it out of reach for many. <br />
             <br />
             Speculor is changing that narrative. We are committed to providing
-            comprehensive phishing awareness solutions — including general
+            comprehensive email security awareness solutions — including general
             phishing assessments, spearphishing, whaling, QR code phishing, and
-            smishing (SMS phishing) — at an accessible and affordable level.{" "}
+            SMS phishing — at an accessible and affordable level.
             <br />
             <br />
             We believe that every business, regardless of its size, deserves the

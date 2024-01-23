@@ -10,7 +10,7 @@
   justify-content: center;
   text-align: center;
   font-size: calc(22px + 0.390625vw);
-  margin-bottom: 4vh;
+  margin-bottom: 6vh;
   margin-right: 12vw;
   margin-left: 12vw;
   color: rgb(24, 24, 24);
@@ -21,7 +21,6 @@
   justify-content: center;
   text-align: center;
   font-size: calc(14px + 0.390625vw);
-  margin-top: 4vh;
   margin-bottom: 3vh;
   margin-right: 12vw;
   margin-left: 12vw;

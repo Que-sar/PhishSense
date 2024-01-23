@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../components/news/News.css";
 import newsimage from "../components/news/newsimage.webp";
 import Footer from "../components/footer/Footer";
 
 const News = () => {
+  useEffect(() => {
+    document.title = "News - Speculor";
+  }, []);
   return (
     <div className="news-container">
       <div className="news-header-image-container">

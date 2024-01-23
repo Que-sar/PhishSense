@@ -3,8 +3,13 @@ import { Link } from "react-router-dom";
 import "../components/mission/Mission.css";
 import logo from "../components/images/speculorlogo.png";
 import ContactPanel from "../components/contact/ContactPanel.js";
+import { useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    document.title = "Mission - Speculor";
+  }, []);
+
   return (
     <div className="about-container">
       <div className="mission-container">
@@ -56,7 +61,7 @@ const About = () => {
         </div>
       </div>
       <div className="placeholder-margins-broken"></div>
-      <ContactPanel />
+      <ContactPanel titlerequired={true} />
       <Footer />
     </div>
   );

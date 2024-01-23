@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../components/solutions/Solutions.css";
 import Footer from "../components/footer/Footer";
 import Intro from "../components/solutions/Intro";
@@ -10,6 +10,10 @@ import Smishing from "../components/solutions/Smishing";
 import ContactPanel from "../components/contact/ContactPanel";
 
 const Solutions = () => {
+  useEffect(() => {
+    document.title = "Solutions - Speculor";
+  }, []);
+
   return (
     <div className="solutions-container">
       <Intro />
@@ -18,7 +22,7 @@ const Solutions = () => {
       <Whaling />
       <Quishing />
       <Smishing />
-      <ContactPanel />
+      <ContactPanel titlerequired={true} />
       <Footer />
     </div>
   );

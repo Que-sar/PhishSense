@@ -1,10 +1,55 @@
 .contact-us-page-container {
   margin-top: 70px;
   background-color: rgb(252, 196, 119);
-  height: 100vh;
+  height: fit-content;
 }
 
 .contact-us-boxes-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5vh;
+  margin-bottom: -4vh;
+}
+
+.contact-us-title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: bolder;
+  font-size: calc(55px + 0.390625vw);
+}
+
+.contact-us-encouraging {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: calc(22px + 0.390625vw);
+  margin-top: 6vh;
+}
+
+.business-info {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  background-color: whitesmoke;
+}
+
+.contact-info-title {
+  font-size: calc(40px + 0.390625vw);
+  margin-bottom: 2vh;
+  margin-top: 4vh;
+}
+
+.contact-us-email {
+  font-size: calc(18px + 0.390625vw);
+  margin-bottom: 1vh;
+}
+
+.contact-us-phonenumber {
+  font-size: calc(18px + 0.390625vw);
+  margin-bottom: 4vh;
 }

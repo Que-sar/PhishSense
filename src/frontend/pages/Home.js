@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Hero from "../components/home/Hero";
 import Benefits from "../components/home/Benefits";
@@ -7,6 +7,10 @@ import Services from "../components/solutions/Services";
 import ContactPanel from "../components/contact/ContactPanel";
 
 const Home = () => {
+  useEffect(() => {
+    document.title = "Home - Speculor";
+  }, []);
+
   return (
     <div className="home-container">
       <Hero />
@@ -15,7 +19,7 @@ const Home = () => {
 
       <Services />
 
-      <ContactPanel />
+      <ContactPanel titlerequired={true} />
 
       <Footer />
     </div>

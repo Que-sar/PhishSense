@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "./ContactPanel.css";
 
-const ContactPanel = () => {
+const ContactPanel = (prop) => {
+  const titlerequired = prop.titlerequired;
+
   const [formData, setFormData] = useState({
     email: "",
     firstName: "",
@@ -20,9 +22,13 @@ const ContactPanel = () => {
 
   return (
     <div className="email-submit-form">
-      <div className="services-title-sub-description">
-        Contact us to customize your multi-phase assessment plan
-      </div>
+      {titlerequired ? (
+        <div className="services-title-sub-description">
+          Contact us to customize your multi-phase assessment plan
+        </div>
+      ) : (
+        " "
+      )}
       <div className="in-touch-shortly">
         Please fill out the form and we will be in touch.
       </div>

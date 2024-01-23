@@ -1,5 +1,4 @@
 @media screen and (max-width: 991px) {
-
   .nav-links-container {
     margin-top: 10px; /* Add margin to separate the links from the logo */
   }
@@ -64,7 +63,6 @@
 }
 
 .news-link {
-
   border: 1.5px solid #181818;
   padding: 10px 15px;
   margin-left: 8px;
@@ -106,13 +104,13 @@
   color: inherit;
 }
 
-.nav-links > .about-link,
+.nav-links > .mission-link,
 .nav-links > .solutions-link {
   position: relative;
   overflow: hidden;
 }
 
-.nav-links > .about-link:after,
+.nav-links > .mission-link:after,
 .nav-links > .solutions-link:after {
   content: "";
   position: absolute;
@@ -124,7 +122,7 @@
   transition: width 0.3s ease;
 }
 
-.nav-links > .about-link:hover:after,
+.nav-links > .mission-link:hover:after,
 .nav-links > .solutions-link:hover:after {
   width: 100%;
 }

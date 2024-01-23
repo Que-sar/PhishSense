@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import HeroImage from "../images/heroImage.png";
+import HeroImage from "../images/heroImage.webp";
 
 import "./Hero.css";
 
@@ -14,7 +13,10 @@ const Hero = () => {
           empower yourself.
         </div>
         <div className="hero-description">
-        Enhance your team's resilience against email threats with our personalized, affordable testing programs, aimed at boosting security awareness.        </div>
+          Enhance your team's resilience against email threats with our
+          personalized, affordable testing programs, aimed at boosting security
+          awareness.{" "}
+        </div>
         <div className="hero-call-to-action">
           <button className="hero-action-button">Get in Touch</button>
         </div>

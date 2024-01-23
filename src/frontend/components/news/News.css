@@ -1,0 +1,120 @@
+.news-container {
+  margin-top: 70px;
+}
+
+.news-header-image-container {
+  position: relative; /* This makes the child absolute positioning relative to this container */
+  background-image: url("./newsimage.webp");
+  background-size: cover;
+  background-position: center center;
+  height: 50vh; /* Adjust the height to your preference */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* This ensures no content spills out */
+  z-index: 0; /* Set z-index to stack the overlay above */
+}
+
+.news-header-image-container::after {
+  content: "";
+  background: rgba(252, 196, 119, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%; /* This will take the full height of the parent */
+  z-index: 1;
+}
+
+.news-header-title {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: calc(55px + 0.390625vw);
+  z-index: 2;
+}
+
+.news-list-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: rgb(252, 196, 119);
+}
+
+.news-list-title {
+  text-align: center;
+  display: flex;
+  margin-bottom: 5vh;
+  justify-content: center;
+  margin-top: 4vh;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  font-size: calc(55px + 0.390625vw);
+}
+
+.news-list {
+  margin-bottom: 10vh;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(440px, 500px)
+  ); /* Creates a responsive grid */
+  gap: 20px; /* Spacing between grid items */
+}
+
+.news-item {
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(252, 196, 119);
+  border-radius: 5px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-item:hover {
+  transform: scale(1.05);
+  z-index: 10;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Example shadow for depth on hover */
+}
+
+.news-item-image {
+  height: 60%; /* Set the height of the image container */
+  overflow: hidden; /* Prevents the image from exceeding the container */
+}
+.news-item-image img {
+  width: 100%; /* Make the image fill the container width */
+  height: 100%; /* The image will now take up the full height of its container */
+  display: block; /* Remove extra space below the image */
+  object-fit: cover; /* Ensures the image covers the container, may crop if necessary */
+}
+
+.news-item-content {
+  height: 40%;
+  padding: 5px; /* Add padding around the text content */
+  background-color: whitesmoke;
+}
+
+.news-item-title {
+  padding-left: 20px;
+  font-size: calc(22px + 0.390625vw);
+  padding-top: 20px;
+  font-weight: bold; /* Optional: if you want the title to be bold */
+}
+
+.news-item-description {
+  padding: 20px;
+  font-size: 1rem;
+  /* Additional styling for the description */
+}
+
+@media screen and (max-width: 555px) {
+  .news-list {
+    grid-template-columns: 1fr; /* Stack the items on smaller screens */
+  }
+}

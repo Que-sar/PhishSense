@@ -1,8 +1,18 @@
+/*
 import Home from "../../pages/Home";
 import Mission from "../../pages/Mission";
 import ContactUs from "../../pages/ContactUs";
 import Solutions from "../../pages/Solutions";
 import News from "../../pages/News";
+
+*/
+import { lazy } from "react";
+
+const Home = lazy(() => import("../../pages/Home"));
+const Mission = lazy(() => import("../../pages/Mission"));
+const ContactUs = lazy(() => import("../../pages/ContactUs"));
+const Solutions = lazy(() => import("../../pages/Solutions"));
+const News = lazy(() => import("../../pages/News"));
 
 const usedRoutes = [
   {

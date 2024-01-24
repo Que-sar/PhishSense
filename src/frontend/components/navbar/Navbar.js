@@ -20,7 +20,7 @@ const Navbar = (props) => {
   }, []);
 
   const routes = props.routes;
-  const navLinks = routes.slice(1).map((route, index) => (
+  const navLinks = routes.slice(1, -1).map((route, index) => (
     <li key={`${route.reference}-${index}`} className="nav-links">
       <Link to={route.path} className={route.reference + "-link"}>
         {route.name}

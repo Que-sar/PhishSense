@@ -5,6 +5,7 @@ const Mission = lazy(() => import("../../pages/Mission"));
 const ContactUs = lazy(() => import("../../pages/ContactUs"));
 const Solutions = lazy(() => import("../../pages/Solutions"));
 const News = lazy(() => import("../../pages/News"));
+const NotFound = lazy(() => import("../../pages/NotFound"));
 
 const usedRoutes = [
   {
@@ -36,6 +37,12 @@ const usedRoutes = [
     name: "Contact Us",
     reference: "contact-us",
     component: ContactUs,
+  },
+  {
+    path: "*",
+    name: "Not Found",
+    reference: "not-found",
+    component: NotFound,
   },
 ];
 

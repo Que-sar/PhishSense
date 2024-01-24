@@ -4,6 +4,16 @@ import "./ContactPanel.css";
 const ContactPanel = (prop) => {
   const titlerequired = prop.titlerequired;
 
+  const [submitAttempted, setSubmitAttempted] = useState(false);
+
+  const [inputValidity, setInputValidity] = useState({
+    email: false,
+    firstName: false,
+    lastName: false,
+    phoneNumber: false,
+    message: false,
+  });
+
   const [formData, setFormData] = useState({
     email: "",
     firstName: "",
@@ -18,6 +28,52 @@ const ContactPanel = (prop) => {
       ...prevFormData,
       [name]: value,
     }));
+  };
+
+  const handleSubmit = () => {
+    setSubmitAttempted(true);
+    const email = formData.email.trim();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const phoneRegex = /^\+?\d*$/;
+    const injectionRegex = /[[\]{}"`'<>]/;
+
+    const isEmailValid = emailRegex.test(email);
+    const isPhoneValid =
+      formData.phoneNumber === "" || phoneRegex.test(formData.phoneNumber);
+    const isFirstNameValid =
+      formData.firstName === "" || !injectionRegex.test(formData.firstName);
+    const isLastNameValid =
+      formData.lastName === "" || !injectionRegex.test(formData.lastName);
+    const isMessageValid =
+      formData.message === "" || !injectionRegex.test(formData.message);
+
+    setInputValidity({
+      email: isEmailValid,
+      firstName: isFirstNameValid,
+      lastName: isLastNameValid,
+      phoneNumber: isPhoneValid,
+      message: isMessageValid,
+    });
+
+    if (
+      isEmailValid &&
+      isFirstNameValid &&
+      isLastNameValid &&
+      isPhoneValid &&
+      isMessageValid
+    ) {
+      const submitData = {
+        email: email,
+        firstName: formData.firstName || "Not Included",
+        lastName: formData.lastName || "Not Included",
+        phoneNumber: formData.phoneNumber || "Not Included",
+        message: formData.message || "Not Included",
+      };
+
+      console.log(submitData); // Replace this with your POST request logic
+    } else {
+      console.error("Invalid input detected.");
+    }
   };
 
   return (
@@ -37,7 +93,9 @@ const ContactPanel = (prop) => {
           <div className="email-input-container">
             <div className="email">Email *</div>
             <input
-              className="email-input"
+              className={`email-input ${
+                !inputValidity.email && submitAttempted ? "invalid-input" : ""
+              }`}
               type="email"
               name="email"
               value={formData.email}
@@ -47,7 +105,11 @@ const ContactPanel = (prop) => {
           <div className="firstname-input-container">
             <div className="firstName">First Name</div>
             <input
-              className="firstname-input"
+              className={`firstname-input ${
+                !inputValidity.firstName && submitAttempted
+                  ? "invalid-input"
+                  : ""
+              }`}
               type="text"
               name="firstName"
               value={formData.firstName}
@@ -57,7 +119,11 @@ const ContactPanel = (prop) => {
           <div className="lastname-input-container">
             <div className="firstName">Last Name</div>
             <input
-              className="lastname-input"
+              className={`lastname-input ${
+                !inputValidity.lastName && submitAttempted
+                  ? "invalid-input"
+                  : ""
+              }`}
               type="text"
               name="lastName"
               value={formData.lastName}
@@ -67,7 +133,11 @@ const ContactPanel = (prop) => {
           <div className="phonenumber-input-container">
             <div className="phoneNumber">Phone Number</div>
             <input
-              className="phonenumber-input"
+              className={`phonenumber-input ${
+                !inputValidity.phoneNumber && submitAttempted
+                  ? "invalid-input"
+                  : ""
+              }`}
               type="tel"
               name="phoneNumber"
               value={formData.phoneNumber}
@@ -79,7 +149,9 @@ const ContactPanel = (prop) => {
           <div className="message">Get in touch...</div>
 
           <textarea
-            className="email-text-input"
+            className={`email-text-input ${
+              !inputValidity.message && submitAttempted ? "invalid-input" : ""
+            }`}
             name="message"
             value={formData.message}
             onChange={handleChange}
@@ -87,7 +159,9 @@ const ContactPanel = (prop) => {
         </div>
       </div>
       <div className="email-submit-button-container">
-        <div className="email-submit-button">Submit</div>
+        <div onClick={handleSubmit} className="email-submit-button">
+          Submit
+        </div>
       </div>
     </div>
   );

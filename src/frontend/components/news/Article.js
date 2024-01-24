@@ -7,10 +7,23 @@ const Article = () => {
   const [article, setArticle] = useState(null);
 
   useEffect(() => {
-    // Fetch the article data from Sanity using the articleId
-    // setArticle with the fetched data
-  }, [articleId]);
 
+        document.title = "News - article.title"; insert this somewhere!!!
+    const fetchArticle = async () => {
+      try {
+        // Replace with your actual API call
+        const response = await fetch(`YOUR_API_ENDPOINT/${articleId}`);
+        if (!response.ok) throw new Error('Article not found');
+        const data = await response.json();
+        setArticle(data);
+      } catch (error) {
+        // Redirect to 404 page if the article is not found
+        navigate('/404');
+      }
+    };
+
+    fetchArticle();
+  }, [articleId, navigate]);
   if (!article) {
     return <div>Loading...</div>;
   } */

@@ -6,8 +6,15 @@ const ContactUs = lazy(() => import("../../pages/ContactUs"));
 const Solutions = lazy(() => import("../../pages/Solutions"));
 const News = lazy(() => import("../../pages/News"));
 const NotFound = lazy(() => import("../../pages/NotFound"));
+const Article = lazy(() => import("../news/Article"));
 
 const usedRoutes = [
+  {
+    path: "/news/:articleId",
+    name: "Article",
+    reference: "article",
+    component: Article,
+  },
   {
     path: "/",
     name: "Home",

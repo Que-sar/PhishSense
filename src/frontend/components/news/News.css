@@ -74,6 +74,8 @@
   flex-direction: column;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  list-style: none;
+  color: #181818;
 }
 
 .news-item:hover {
@@ -111,6 +113,12 @@
   padding: 20px;
   font-size: 1rem;
   /* Additional styling for the description */
+}
+
+.news-item-timestamp {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2vw;
 }
 
 @media screen and (max-width: 555px) {

@@ -27,6 +27,14 @@
   font-size: calc(8px + 0.390625vw);
 }
 
+.linkedin,
+.facebook {
+  width: 30px;
+  height: auto;
+  margin: 10px;
+  cursor: pointer;
+}
+
 @media (max-width: 991px) {
   .footer-forms {
     flex-direction: column;

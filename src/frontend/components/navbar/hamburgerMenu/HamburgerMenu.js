@@ -22,7 +22,7 @@ const HamburgerMenu = (props) => {
     setMenuOpen(false);
   };
 
-  const navLinks = navigationLinks.map((route) => (
+  const navLinks = navigationLinks.slice(1, -1).map((route) => (
     <Link
       to={route.path}
       className={`hamburger-links ${

@@ -26,6 +26,9 @@ const Spearphishing = () => {
           <br /> <br />
           Detailed reporting concludes the exercise, providing actionable
           insights.
+          <br /> <br />
+          Post-assessment, we offer tailored educational sessions to target
+          areas needing heightened security awareness.
         </div>
       </div>
     </div>

@@ -24,6 +24,9 @@ const Quishing = () => {
           modern threats. <br /> <br />
           Our service culminates with detailed reports, offering insights into
           your team's QR code security awareness.
+          <br /> <br />
+          Based on results, we provide specialized educational insights to
+          enhance QR code threat recognition and response.
         </div>
       </div>
     </div>

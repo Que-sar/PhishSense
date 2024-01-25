@@ -21,6 +21,9 @@ const Whaling = () => {
           backed by thorough investigations and diverse landing pages,
           concluding with an in-depth report to sharpen your leadership's
           cybersecurity acumen.
+          <br /> <br />
+          Following this assessment, targeted educational modules are provided
+          to further refine executive security strategies.
         </div>
       </div>
     </div>

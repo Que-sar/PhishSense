@@ -24,6 +24,9 @@ const Smishing = () => {
           <br /> <br />
           Comprehensive reporting follows, providing valuable metrics on
           response and readiness.
+          <br /> <br />
+          Concluding the test, we deliver focused educational content to bolster
+          mobile security acumen as needed.
         </div>
       </div>
     </div>

@@ -21,7 +21,11 @@ const Phishing = () => {
           reflexes against broad-scale phishing attacks, employing simulated
           phishing emails that lead to a safe but realistic landing page. <br />{" "}
           <br /> We analyze the response and provide a detailed report to
-          highlight your security posture and areas for improvement.
+          highlight your security posture and areas for improvement. <br />
+          <br />
+          Following the assessment, we offer optional educational modules,
+          tailored to your needs or test results, to reinforce your team's
+          phishing defense skills.
         </div>
       </div>
     </div>

@@ -18,8 +18,8 @@ const Services = () => {
             General Phishing Assessment
           </div>
           <div className="services-panel-bulletpoints">
-            Comprehensive email security phishing simulations to test your
-            organization's resilience.
+            Comprehensive email security simulations to test resilience,
+            followed by insights to bolster security knowledge.
           </div>
           <div className="horizontalLine"></div>
           <Link to="/solutions#phishing" className="services-action-button">
@@ -32,8 +32,8 @@ const Services = () => {
             Spear Phishing Assessment
           </div>
           <div className="services-panel-bulletpoints">
-            Targeted simulations with personalized emails to assess individual
-            security awareness.
+            Targeted email simulations assessing individual awareness,
+            accompanied by personalized educational content.
           </div>
           <div className="horizontalLine-whites"></div>
           <Link
@@ -49,8 +49,8 @@ const Services = () => {
             Whaling Assessment
           </div>
           <div className="services-panel-bulletpoints">
-            Advanced phishing tests, including investigations and personalized
-            emailing, messaging.
+            Advanced tests for high-profile personnel, with strategic
+            educational feedback post-assessment.
           </div>
           <div className="horizontalLine"></div>
           <Link to="/solutions#whaling" className="services-action-button">
@@ -63,8 +63,8 @@ const Services = () => {
             Quishing Assessment
           </div>
           <div className="services-panel-bulletpoints">
-            Utilizes QR codes for phishing simulations instead of traditional
-            links.
+            QR code phishing simulations, complemented by insights on modern
+            techniques and prevention.
           </div>
           <div className="horizontalLine-whites"></div>
           <Link to="/solutions#quishing" className="services-action-button">
@@ -77,7 +77,8 @@ const Services = () => {
             SMS Phishing Assessment
           </div>
           <div className="services-panel-bulletpoints">
-            Assess mobile security with SMS-based phishing simulations.
+            Mobile security assessment through SMS simulations, followed by
+            practical feedback on threat awareness.
           </div>
           <div className="horizontalLine"></div>
           <Link to="/solutions#smishing" className="services-action-button">

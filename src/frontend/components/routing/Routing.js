@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 
 import { Routes, Route } from "react-router-dom";
+import Spinner from "../news/Spinner";
 
 const Routing = ({ routes }) => {
   return (
@@ -10,7 +11,7 @@ const Routing = ({ routes }) => {
           key={route.path}
           path={route.path}
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<Spinner />}>
               <route.component />
             </Suspense>
           }

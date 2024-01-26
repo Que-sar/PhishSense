@@ -1,38 +1,49 @@
 // Article.js
-import React /* { useEffect, useState } */ from "react";
-/* import { useParams } from "react-router-dom"; */
+import React, { useEffect, useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import client from "./sanityClient";
+import Spinner from "./Spinner";
+import "./Article.css";
 
 const Article = () => {
-  /*   const { articleId } = useParams();
   const [article, setArticle] = useState(null);
+  const { articleId } = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
-
-        document.title = "News - article.title"; insert this somewhere!!!
-    const fetchArticle = async () => {
-      try {
-        // Replace with your actual API call
-        const response = await fetch(`YOUR_API_ENDPOINT/${articleId}`);
-        if (!response.ok) throw new Error('Article not found');
-        const data = await response.json();
-        setArticle(data);
-      } catch (error) {
-        // Redirect to 404 page if the article is not found
-        navigate('/404');
-      }
-    };
-
-    fetchArticle();
+    if (articleId) {
+      client
+        .fetch(
+          `*[_type == "articlePanel" && slug.current == $articleId]{title, articleBody, mainImage{asset->{url}, alt}, publishedAt}[0]`,
+          { articleId }
+        )
+        .then((data) => {
+          if (data) {
+            setArticle(data);
+          } else {
+            navigate("/not-found", { replace: true });
+          }
+        })
+        .catch(() => {
+          navigate("/not-found", { replace: true });
+        });
+    }
   }, [articleId, navigate]);
-  if (!article) {
-    return <div>Loading...</div>;
-  } */
 
   return (
-    <div>
-      {/*       <h1>{article.title}</h1>
-      <img src={article.imageUrl} alt={article.title} />
-      <p>{article.content}</p> */}
+    <div className="article-container">
+      {!article ? (
+        <Spinner />
+      ) : (
+        <div key={article.slug + "-container"}>
+          <h1>{article.title}</h1>
+          <img src={article.mainImage.asset.url} alt={article.mainImage.alt} />
+          <p dangerouslySetInnerHTML={{ __html: article.articleBody }}></p>
+          <p>
+            Published on: {new Date(article.publishedAt).toLocaleDateString()}
+          </p>
+        </div>
+      )}
     </div>
   );
 };

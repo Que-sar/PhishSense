@@ -1,7 +1,12 @@
 // sanityClient.js
-import sanityClient from "@sanity/client";
+import { createClient } from "@sanity/client";
 
-export default sanityClient({
-  projectId: "ie36z7qr", // find this in your sanity.json
-  dataset: "production", // or whatever your dataset is named
+const sanityClient = createClient({
+  projectId: "ie36z7qr",
+  apiVersion: "2021-08-31",
+  dataset: "production",
+  useCdn: true,
+  // other configuration options
 });
+
+export default sanityClient;

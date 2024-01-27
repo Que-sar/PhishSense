@@ -1,4 +1,3 @@
-import Footer from "../components/footer/Footer.js";
 import { Link } from "react-router-dom";
 import "../components/mission/Mission.css";
 import logo from "../components/images/speculorlogo.webp";
@@ -62,7 +61,6 @@ const About = () => {
       </div>
       <div className="placeholder-margins-broken"></div>
       <ContactPanel titlerequired={true} />
-      <Footer />
     </div>
   );
 };

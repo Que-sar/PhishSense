@@ -1,51 +1,75 @@
+/* Footer.css */
 .footer-section {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fcc477; /* Adjust the background color as needed */
+  color: #181818; /* Adjust the text color as needed */
+  padding: 10px; /* Add padding to the footer */
   display: flex;
   flex-direction: column;
-  background: #fcc477;
+  align-items: center;
+}
+
+.footer-separator {
+  margin-top: 4vh;
+  border-top: 4px solid whitesmoke;
+  border-radius: 25px;
+  margin-bottom: 2vh;
+}
+.footer-quick-links {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.footer-link {
+  margin: 10px;
+  font-size: calc(16px + 0.390625vw);
+  color: #181818;
 }
 
 .footer-forms {
+  margin-top: 4vh;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 10vh;
-  margin-bottom: 2vh;
-}
-
-.footer-policies {
-  margin-left: 10vw;
-  margin-right: 10vw;
-}
-
-.footer-title {
-  font-size: calc(8px + 0.390625vw);
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-links {
   display: flex;
-  flex-direction: row;
-  font-size: calc(8px + 0.390625vw);
+  gap: 30px; /* Adjust the gap between social icons if needed */
+  margin-bottom: 40px;
+  justify-content: center;
 }
 
-.linkedin,
-.facebook {
-  width: 30px;
-  height: auto;
-  margin: 10px;
-  cursor: pointer;
+.facebook-footer-image {
+  width: 48px; /* Set the width of the images to 30px */
+  height: auto; /* Maintain aspect ratio */
 }
 
-@media (max-width: 991px) {
-  .footer-forms {
-    flex-direction: column;
-  }
-  .footer-policies {
-    margin: 0;
-    text-align: center;
-  }
+.linkedin-footer-image {
+  width: 55px;
+}
 
-  .footer-links {
-    margin-right: 4vw;
-    justify-content: flex-end;
+.footer-brandname {
+  font-size: calc(12px + 0.390625vw);
+}
+
+@media screen and (max-width: 529px) {
+  .footer-link {
+    font-size: calc(12px + 0.390625vw);
+  }
+}
+
+@media screen and (max-width: 529px) {
+  .footer-link {
+    font-size: calc(12px + 0.390625vw);
+    margin: 6px;
+  }
+}
+@media screen and (max-width: 404px) {
+  .footer-link {
+    font-size: calc(10px + 0.390625vw);
   }
 }

@@ -1,24 +1,33 @@
 import React from "react";
 import "./Footer.css";
-import FaceIcon from "./facebook.svg";
-import LinkedinIcon from "./linkedin.svg";
+import FaceIcon from "../news/colorfacebook.svg";
+import LinkedinIcon from "../news/colorlinkedin.svg";
+import { Link } from "react-router-dom";
 
-const Footer = () => {
+const Footer = (props) => {
+  const routes = props.routes;
+  const footerLinks = routes.slice(1, -1).map((route, index) => (
+    <Link
+      to={route.path}
+      key={route.reference + index + "-footer"}
+      className="footer-link"
+    >
+      {route.name}
+    </Link>
+  ));
+  const links = <div className="footer-links-container">{footerLinks}</div>;
+
   return (
     <div className="footer-section">
+      <span className="footer-separator"></span>
       <div className="footer-forms">
-        <div className="footer-policies left-column">
-          <div className="footer-title">
-            2024 Speculor, All rights reserved.
-          </div>
-        </div>
-        <div className="footer-policies right-column">
+        <div className="footer-socials">
           <div className="footer-links">
             <a
               href="https://www.linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="linkedin"
+              className="linkedin-footer-image"
             >
               <img src={LinkedinIcon} alt="LinkedIn" />
             </a>
@@ -26,12 +35,18 @@ const Footer = () => {
               href="https://www.facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="facebook"
+              className="facebook-footer"
             >
-              <img src={FaceIcon} alt="Facebook" />
+              <img
+                className="facebook-footer-image"
+                src={FaceIcon}
+                alt="Facebook"
+              />
             </a>
           </div>
         </div>
+        <div className="footer-quick-links">{links}</div>
+        <p className="footer-brandname">Speculor 2024. All rights reserved.</p>
       </div>
     </div>
   );

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "../components/news/News.css";
-import Footer from "../components/footer/Footer";
 import { Link } from "react-router-dom";
 import client from "../components/news/sanityClient";
+import Spinner from "../components/news/Spinner";
 
 const News = () => {
   const [articles, setArticles] = useState([]);
@@ -65,7 +65,7 @@ const News = () => {
               key={article.slug + "-panel"}
             >
               <div className="news-item-image">
-                <img src={article.mainImage.asset.url} alt="News Headline" />
+                <img src={article.mainImage.asset.url} alt={<Spinner />} />
               </div>
               <div className="news-item-content">
                 <h3 className="news-item-title">{article.title}</h3>
@@ -80,7 +80,6 @@ const News = () => {
           ))}
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

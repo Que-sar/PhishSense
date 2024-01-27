@@ -1,6 +1,5 @@
 import React, { useLayoutEffect } from "react";
 import "../components/solutions/Solutions.css";
-import Footer from "../components/footer/Footer";
 import Intro from "../components/solutions/Intro";
 import Phishing from "../components/solutions/Phishing";
 import Spearphishing from "../components/solutions/Spearphishing";
@@ -52,7 +51,6 @@ const Solutions = () => {
         <Smishing />
       </div>
       <ContactPanel titlerequired={true} />
-      <Footer />
     </div>
   );
 };

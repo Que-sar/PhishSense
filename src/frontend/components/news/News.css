@@ -69,7 +69,7 @@
   border-width: 2px;
   border-color: rgb(252, 196, 119);
   border-radius: 5px;
-  height: 500px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -124,5 +124,9 @@
 @media screen and (max-width: 555px) {
   .news-list {
     grid-template-columns: 1fr; /* Stack the items on smaller screens */
+  }
+
+  .news-item {
+    height: fit-content;
   }
 }

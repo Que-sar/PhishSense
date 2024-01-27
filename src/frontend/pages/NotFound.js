@@ -2,7 +2,6 @@ import React from "react";
 import "../components/notfound/NotFound.css";
 import NotFoundImage from "../components/notfound/404image.webp";
 import { Link } from "react-router-dom";
-import Footer from "../components/footer/Footer";
 
 const NotFound = () => {
   return (
@@ -23,7 +22,6 @@ const NotFound = () => {
           </Link>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

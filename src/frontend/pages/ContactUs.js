@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Footer from "../components/footer/Footer";
 import ContactPanel from "../components/contact/ContactPanel";
 import "../components/contact/ContactUs.css";
 
@@ -26,7 +25,6 @@ const ContactUs = () => {
         <p className="contact-us-email">Email: contact@speculor.uk</p>
         <p className="contact-us-phonenumber">Phone: +1 234 567 8900</p>
       </div>
-      <Footer />
     </div>
   );
 };

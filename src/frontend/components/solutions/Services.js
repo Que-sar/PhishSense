@@ -11,8 +11,21 @@ const Services = () => {
           Tailor it to your needs.
         </div>
       </div>
+      <div className="services-panel-section-first">
+        <div className="services-panel orange ">
+          <div className="services-panel-title training-title">
+            Email Security Workshop
+          </div>
+          <div className="services-panel-bulletpoints">
+            Tailored learning, engaging activities, and fun games for enjoyable
+            team-building in phishing awareness.
+          </div>
+          <div className="horizontalLine-whites"></div>
+          <Link to="/solutions#workshop" className="services-action-button">
+            Learn More
+          </Link>
+        </div>
 
-      <div className="services-panel-section">
         <div className="services-panel white generalphishing">
           <div className="services-panel-title phishing-title">
             General Phishing Assessment
@@ -43,7 +56,8 @@ const Services = () => {
             Learn More
           </Link>
         </div>
-
+      </div>{" "}
+      <div className="services-panel-section-second">
         <div className="services-panel white generalwhaling">
           <div className="services-panel-title whaling-title">
             Whaling Assessment

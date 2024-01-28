@@ -6,6 +6,20 @@ const ContactPanel = (prop) => {
 
   const [submitAttempted, setSubmitAttempted] = useState(false);
 
+  const [submitStatus, setSubmitStatus] = useState({
+    success: false,
+    error: false,
+    message: "",
+  });
+
+  const displayMessage = (success, message) => {
+    setSubmitStatus({
+      success: success,
+      error: !success,
+      message: message,
+    });
+  };
+
   const [inputValidity, setInputValidity] = useState({
     email: false,
     firstName: false,
@@ -64,15 +78,34 @@ const ContactPanel = (prop) => {
     ) {
       const submitData = {
         email: email,
-        firstName: formData.firstName || "Not Included",
-        lastName: formData.lastName || "Not Included",
-        phoneNumber: formData.phoneNumber || "Not Included",
-        message: formData.message || "Not Included",
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        phoneNumber: formData.phoneNumber,
+        message: formData.message,
       };
-
-      console.log(submitData); // Replace this with your POST request logic
+      fetch(
+        "https://f40aq0fwjd.execute-api.eu-west-2.amazonaws.com/test/emailProcessor",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(submitData),
+        }
+      )
+        .then((response) => {
+          if (response.ok) {
+            displayMessage(true, "Email sent successfully!");
+          } else {
+            throw new Error("Network response was not ok.");
+          }
+        })
+        .catch((error) => {
+          console.log(JSON.stringify(submitData));
+          displayMessage(false, "Failed to send email. Please try again.");
+        });
     } else {
-      console.error("Invalid input detected.");
+      displayMessage(false, "Invalid input detected.");
     }
   };
 
@@ -163,6 +196,15 @@ const ContactPanel = (prop) => {
           Submit
         </div>
       </div>
+      {submitStatus.success || submitStatus.error ? (
+        <div
+          className={`submit-message ${
+            submitStatus.success ? "success-message" : "error-message"
+          }`}
+        >
+          {submitStatus.message}
+        </div>
+      ) : null}
     </div>
   );
 };

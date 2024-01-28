@@ -103,7 +103,7 @@
   color: #f5f5f5;
   border-radius: 25px;
   margin-top: 2vh;
-  margin-bottom: 2vh;
+  margin-bottom: 4vh;
   padding: 15px;
   width: 200px;
 }
@@ -116,6 +116,19 @@
   background-color: rgba(0, 0, 0, 0.65);
   transition: background-color 0.3s ease;
   cursor: pointer;
+}
+
+.submit-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  width: fit-content;
+  padding: 10px;
+  font-size: calc(15px + 0.390625vw);
+  border-radius: 8px;
+  background-color: whitesmoke;
+  margin: auto;
 }
 
 @media (max-width: 879px) {

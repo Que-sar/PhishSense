@@ -6,6 +6,7 @@ import Spearphishing from "../components/solutions/Spearphishing";
 import Quishing from "../components/solutions/Quishing";
 import Whaling from "../components/solutions/Whaling";
 import Smishing from "../components/solutions/Smishing";
+import Workshop from "../components/solutions/Workshop";
 import ContactPanel from "../components/contact/ContactPanel";
 
 const Solutions = () => {
@@ -18,6 +19,7 @@ const Solutions = () => {
       "whaling",
       "quishing",
       "smishing",
+      "workshop",
     ];
 
     if (!hash) {
@@ -35,19 +37,22 @@ const Solutions = () => {
   return (
     <div className="solutions-container">
       <Intro />
-      <div id="phishing" className="solution-section-white">
+      <div id="workshop" className="solution-section-white">
+        <Workshop />
+      </div>
+      <div id="phishing" className="solution-section-orange">
         <Phishing />
       </div>
-      <div id="spearphishing" className="solution-section-orange">
+      <div id="spearphishing" className="solution-section-white">
         <Spearphishing />
       </div>
-      <div id="whaling" className="solution-section-white">
+      <div id="whaling" className="solution-section-orange">
         <Whaling />
       </div>
-      <div id="quishing" className="solution-section-orange">
+      <div id="quishing" className="solution-section-white">
         <Quishing />
       </div>
-      <div id="smishing" className="solution-section-white">
+      <div id="smishing" className="solution-section-orange">
         <Smishing />
       </div>
       <ContactPanel titlerequired={true} />

@@ -92,7 +92,7 @@ const ContactPanel = (prop) => {
           headers: {
             "Content-Type": "application/json",
           },
-          body: requestBody, // Use the formatted JSON string here
+          body: requestBody,
         }
       )
         .then((response) => response.json()) // Convert response to JSON

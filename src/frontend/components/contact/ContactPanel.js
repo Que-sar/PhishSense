@@ -84,7 +84,7 @@ const ContactPanel = (prop) => {
         message: formData.message,
       };
       fetch(
-        "https://f40aq0fwjd.execute-api.eu-west-2.amazonaws.com/test/emailProcessor",
+        "https://dae9gzqvv6.execute-api.eu-west-2.amazonaws.com/production/data",
         {
           method: "POST",
           headers: {
@@ -101,7 +101,6 @@ const ContactPanel = (prop) => {
           }
         })
         .catch((error) => {
-          console.log(JSON.stringify(submitData));
           displayMessage(false, "Failed to send email. Please try again.");
         });
     } else {

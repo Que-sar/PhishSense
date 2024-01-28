@@ -22,7 +22,7 @@ const ContactUs = () => {
       <ContactPanel titlerequired={false} />
       <div className="business-info">
         <h2 className="contact-info-title">Contact Information</h2>
-        <p className="contact-us-email">Email: contact@speculor.uk</p>
+        <p className="contact-us-email">Email: info@speculor.uk</p>
         <p className="contact-us-phonenumber">Phone: +1 234 567 8900</p>
       </div>
     </div>

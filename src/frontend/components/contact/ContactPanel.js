@@ -83,6 +83,7 @@ const ContactPanel = (prop) => {
         phoneNumber: formData.phoneNumber,
         message: formData.message,
       };
+
       fetch(
         "https://dae9gzqvv6.execute-api.eu-west-2.amazonaws.com/production/data",
         {
@@ -93,14 +94,16 @@ const ContactPanel = (prop) => {
           body: JSON.stringify(submitData),
         }
       )
-        .then((response) => {
-          if (response.ok) {
+        .then((response) => response.json()) // Convert response to JSON
+        .then((data) => {
+          if (data.statusCode === 200) {
             displayMessage(true, "Email sent successfully!");
           } else {
-            throw new Error("Network response was not ok.");
+            displayMessage(false, `Failed to send email: ${data.message}`);
           }
         })
         .catch((error) => {
+          console.error("Error:", error);
           displayMessage(false, "Failed to send email. Please try again.");
         });
     } else {

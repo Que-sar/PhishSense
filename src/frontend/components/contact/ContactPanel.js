@@ -95,7 +95,7 @@ const ContactPanel = (prop) => {
           body: requestBody,
         }
       )
-        .then((response) => response.json()) // Convert response to JSON
+        .then((response) => response.json())
         .then((data) => {
           if (data.statusCode === 200) {
             displayMessage(true, "Email sent successfully!");

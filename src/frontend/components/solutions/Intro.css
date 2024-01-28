@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   font-weight: bolder;
+  text-align: center;
   font-size: calc(40px + 0.390625vw);
   margin-top: 6vh;
   margin-bottom: 4vh;

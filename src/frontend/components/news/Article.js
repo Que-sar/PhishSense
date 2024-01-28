@@ -34,6 +34,12 @@ const Article = () => {
     }
   }, [articleId, navigate]);
 
+  useEffect(() => {
+    if (article && article.title) {
+      document.title = "News - " + article.title;
+    }
+  }, [article]);
+
   const formatDate = (dateString) => {
     const date = new Date(dateString);
     const year = date.getFullYear();

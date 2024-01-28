@@ -39,6 +39,9 @@
 }
 
 .contact-info-title {
+  display: flex;
+  align-items: center;
+  text-align: center;
   font-size: calc(40px + 0.390625vw);
   margin-bottom: 2vh;
   margin-top: 4vh;
@@ -52,4 +55,10 @@
 .contact-us-phonenumber {
   font-size: calc(18px + 0.390625vw);
   margin-bottom: 4vh;
+}
+
+@media (max-width: 469px) {
+  .contact-us-title {
+    font-size: calc(38px + 0.390625vw);
+  }
 }

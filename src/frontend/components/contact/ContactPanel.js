@@ -83,6 +83,7 @@ const ContactPanel = (prop) => {
         phoneNumber: formData.phoneNumber,
         message: formData.message,
       };
+      const requestBody = JSON.stringify(submitData);
 
       fetch(
         "https://dae9gzqvv6.execute-api.eu-west-2.amazonaws.com/production/data",
@@ -91,7 +92,7 @@ const ContactPanel = (prop) => {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(submitData),
+          body: requestBody, // Use the formatted JSON string here
         }
       )
         .then((response) => response.json()) // Convert response to JSON

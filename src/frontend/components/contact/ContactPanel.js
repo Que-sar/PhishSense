@@ -107,7 +107,7 @@ const ContactPanel = (prop) => {
           displayMessage(false, "Failed to send email. Please try again.");
         });
     } else {
-      displayMessage(false, "Invalid input detected.");
+      displayMessage(false, "Invalid input detected. ");
     }
   };
 

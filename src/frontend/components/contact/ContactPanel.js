@@ -83,8 +83,7 @@ const ContactPanel = (prop) => {
         phoneNumber: formData.phoneNumber,
         message: formData.message,
       };
-      const requestBody = JSON.stringify(submitData);
-
+      const requestBody = JSON.stringify({ body: JSON.stringify(submitData) });
       fetch(
         "https://dae9gzqvv6.execute-api.eu-west-2.amazonaws.com/production/data",
         {

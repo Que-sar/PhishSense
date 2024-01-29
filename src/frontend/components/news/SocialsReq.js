@@ -3,6 +3,7 @@ import facebookSvg from "./roundfacebook.svg";
 import linkedinSvg from "./roundlinkedin.svg";
 import redditSvg from "./roundreddit.svg";
 import emailSvg from "./roundemail.svg";
+import { Helmet } from "react-helmet-async";
 import {
   FacebookShareButton,
   LinkedinShareButton,
@@ -11,8 +12,29 @@ import {
 } from "react-share";
 
 const SocialsReq = (props) => {
+  const structuredData = {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    headline: props.title,
+    description: props.shortDescription,
+    image: props.image,
+    author: props.author,
+    datePublished: props.date,
+  };
+
   return (
     <>
+      <Helmet>
+        <title>Home - {props.title}</title>
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={props.title} />
+        <meta property="og:description" content={props.shortDescription} />
+        <meta property="og:image" content={props.image} />
+        <meta property="og:url" content={window.location.href} />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>
       <LinkedinShareButton
         url={window.location.href}
         title={props.title}

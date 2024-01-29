@@ -17,8 +17,8 @@ const Home = () => {
           content="Ready to Enhance Your Cybersecurity?"
         />
         <meta
-          name="description"
-          content="Strengthen your team's cyber defenses with our phishing awareness simulations and training. Join us to build a proactive culture of cybersecurity awareness."
+          name="og:description"
+          content="Enhance your team's resilience against email threats with our personalized, affordable testing and education programs, aimed at boosting security awareness."
         />
         <meta
           property="og:image"

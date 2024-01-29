@@ -4,7 +4,21 @@ import logo from "../components/images/speculorlogo.webp";
 import ContactPanel from "../components/contact/ContactPanel.js";
 import { Helmet } from "react-helmet-async";
 
-const About = () => {
+const Mission = () => {
+  const structuredData = {
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    name: "Mission - Speculor",
+    description:
+      "At Speculor, we blend vigilance with innovation, transforming the complexity of cybersecurity into clear, actionable strategies. Let's journey together towards a safer digital future.",
+    url: "https://www.speculor.uk/mission",
+    primaryImageOfPage: {
+      "@type": "ImageObject",
+      url: "https://www.speculor.uk/static/media/speculorlogo.2dea119f4ffa4b3bc88d.webp",
+      width: 1200,
+      height: 800,
+    },
+  };
   return (
     <article className="about-container">
       <Helmet>
@@ -23,6 +37,9 @@ const About = () => {
           content="https://www.speculor.uk/static/media/speculorlogo.2dea119f4ffa4b3bc88d.webp"
         />
         <meta property="og:url" content="https://www.speculor.uk/mission" />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
       </Helmet>
       <div className="mission-container">
         <div className="logo-panel">
@@ -78,4 +95,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Mission;

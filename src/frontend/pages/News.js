@@ -50,6 +50,14 @@ const News = () => {
     return `${year}.${month}.${day} ${hours}:${minutes}`;
   };
 
+  const newsStructuredData = {
+    "@context": "http://schema.org",
+    "@type": "CollectionPage",
+    name: "News - Speculor",
+    description: "The latest news and updates from Speculor.",
+    url: window.location.href,
+  };
+
   return (
     <div className="news-container">
       <Helmet>
@@ -61,6 +69,9 @@ const News = () => {
           content="Our latest news and updates!"
         />
         <meta property="og:url" content={window.location.href} />
+        <script type="application/ld+json">
+          {JSON.stringify(newsStructuredData)}
+        </script>
       </Helmet>
       <div className="news-header-image-container">
         <h1 className="news-header-title">News</h1>

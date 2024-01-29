@@ -35,6 +35,15 @@ const Solutions = () => {
     }
   }, []);
 
+  const solutionsStructuredData = {
+    "@context": "http://schema.org",
+    "@type": "EducationalOrganization",
+    name: "Solutions - Speculor",
+    description:
+      "Explore our comprehensive solutions to raise awareness against email security threats. Learn about various phishing awareness campaigns, training workshops, and more.",
+    url: window.location.href,
+  };
+
   return (
     <section className="solutions-container">
       <Helmet>
@@ -46,6 +55,9 @@ const Solutions = () => {
           content="Our solutions to raise awareness against email security threats comprise of various phishing awareness campaigns, accompanied by a report, as well as an optional, eye opener training."
         />
         <meta property="og:url" content={window.location.href} />
+        <script type="application/ld+json">
+          {JSON.stringify(solutionsStructuredData)}
+        </script>
       </Helmet>
       <Intro />
       <div id="workshop" className="solution-section-white">

@@ -8,6 +8,7 @@ import Whaling from "../components/solutions/Whaling";
 import Smishing from "../components/solutions/Smishing";
 import Workshop from "../components/solutions/Workshop";
 import ContactPanel from "../components/contact/ContactPanel";
+import { Helmet } from "react-helmet-async";
 
 const Solutions = () => {
   useLayoutEffect(() => {
@@ -36,6 +37,16 @@ const Solutions = () => {
 
   return (
     <div className="solutions-container">
+      <Helmet>
+        <title>Solutions - Speculor</title>
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Solutions" />
+        <meta
+          property="og:description"
+          content="Our solutions to raise awareness against email security threats comprise of various phishing awareness campaigns, accompanied by a report, as well as an optional, eye opener training."
+        />
+        <meta property="og:url" content={window.location.href} />
+      </Helmet>
       <Intro />
       <div id="workshop" className="solution-section-white">
         <Workshop />

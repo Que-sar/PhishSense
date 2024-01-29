@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import ContactPanel from "../components/contact/ContactPanel";
 import "../components/contact/ContactUs.css";
+import { Helmet } from "react-helmet-async";
 
 const ContactUs = () => {
   useEffect(() => {
@@ -9,6 +10,19 @@ const ContactUs = () => {
 
   return (
     <div className="contact-us-page-container">
+      <Helmet>
+        <title>Contact Us - Speculor</title>
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:title"
+          content="Ready to Enhance Your Cybersecurity?"
+        />
+        <meta
+          property="og:description"
+          content="Let's discuss how our tailored phishing assessment services can benefit your business. Reach out to us today."
+        />
+        <meta property="og:url" content={window.location.href} />
+      </Helmet>
       <div className="contact-us-boxes-container">
         <h1 className="contact-us-title">
           Ready to Enhance Your Cybersecurity?

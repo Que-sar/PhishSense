@@ -94,8 +94,14 @@
   justify-content: flex-end;
 }
 
+.article-email-share img {
+  width: 48px;
+  cursor: pointer;
+}
+
 .article-linkedin-share img,
-.article-facebook-share img {
+.article-facebook-share img,
+.article-reddit-share img {
   width: 40px;
   cursor: pointer;
 }

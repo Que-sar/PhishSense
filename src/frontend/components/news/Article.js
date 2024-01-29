@@ -5,8 +5,6 @@ import client from "./sanityClient";
 import Spinner from "./Spinner";
 import "./Article.css";
 import userFace from "./user.svg";
-import facebookSvg from "./roundfacebook.svg";
-import linkedinSvg from "./roundlinkedin.svg";
 import FooterWave from "./FooterWave.svg";
 import SocialsReq from "./SocialsReq";
 
@@ -51,11 +49,6 @@ const Article = () => {
         <Spinner />
       ) : (
         <>
-          <SocialsReq
-            title={article.title}
-            image={article.mainImage.asset.url}
-            shortDescription={article.shortDescription}
-          />
           <div
             className="article-image"
             style={{ backgroundImage: `url(${article.mainImage.asset.url})` }}
@@ -83,28 +76,11 @@ const Article = () => {
                 {formatDate(article.publishedAt)}
               </p>
               <div className="socials-holder">
-                <a
-                  href={
-                    "https://www.linkedin.com/sharing/share-offsite/?url=" +
-                    window.location.href
-                  }
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="article-linkedin-share"
-                >
-                  <img src={linkedinSvg} alt="Linkedin" />
-                </a>
-                <a
-                  href={
-                    "https://www.facebook.com/sharer/sharer.php?u=" +
-                    window.location.href
-                  }
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="article-facebook-share"
-                >
-                  <img src={facebookSvg} alt="Facebook" />
-                </a>
+                <SocialsReq
+                  title={article.title}
+                  image={article.mainImage.asset.url}
+                  shortDescription={article.shortDescription}
+                />
               </div>
             </div>
           </div>

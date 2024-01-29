@@ -2,15 +2,28 @@ import { Link } from "react-router-dom";
 import "../components/mission/Mission.css";
 import logo from "../components/images/speculorlogo.webp";
 import ContactPanel from "../components/contact/ContactPanel.js";
-import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 
 const About = () => {
-  useEffect(() => {
-    document.title = "Mission - Speculor";
-  }, []);
-
   return (
     <div className="about-container">
+      <Helmet>
+        <title>Mission - Speculor</title>
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:title"
+          content="Your Proactive Partner in Cybersecurity"
+        />
+        <meta
+          name="description"
+          content="At Speculor, we blend vigilance with innovation, transforming the complexity of cybersecurity into clear, actionable strategies. Let's journey together towards a safer digital future."
+        />
+        <meta
+          property="og:image"
+          content="https://www.speculor.uk/static/media/speculorlogo.2dea119f4ffa4b3bc88d.webp"
+        />
+        <meta property="og:url" content="https://www.speculor.uk/mission" />
+      </Helmet>
       <div className="mission-container">
         <div className="logo-panel">
           <Link className="mission-logo-inside" to="/">

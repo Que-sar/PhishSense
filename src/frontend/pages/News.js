@@ -3,12 +3,12 @@ import "../components/news/News.css";
 import { Link } from "react-router-dom";
 import client from "../components/news/sanityClient";
 import Spinner from "../components/news/Spinner";
+import { Helmet } from "react-helmet-async";
 
 const News = () => {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
-    document.title = "News - Speculor";
     client
       .fetch(
         `
@@ -52,6 +52,16 @@ const News = () => {
 
   return (
     <div className="news-container">
+      <Helmet>
+        <title>News - Speculor</title>
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="News" />
+        <meta
+          property="og:description"
+          content="Our latest news and updates!"
+        />
+        <meta property="og:url" content={window.location.href} />
+      </Helmet>
       <div className="news-header-image-container">
         <h1 className="news-header-title">News</h1>
       </div>

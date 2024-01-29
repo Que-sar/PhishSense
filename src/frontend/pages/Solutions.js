@@ -36,7 +36,7 @@ const Solutions = () => {
   }, []);
 
   return (
-    <div className="solutions-container">
+    <section className="solutions-container">
       <Helmet>
         <title>Solutions - Speculor</title>
         <meta property="og:type" content="article" />
@@ -67,7 +67,7 @@ const Solutions = () => {
         <Smishing />
       </div>
       <ContactPanel titlerequired={true} />
-    </div>
+    </section>
   );
 };
 

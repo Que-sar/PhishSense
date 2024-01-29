@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet-async";
 
 const About = () => {
   return (
-    <div className="about-container">
+    <article className="about-container">
       <Helmet>
         <title>Mission - Speculor</title>
         <meta property="og:type" content="article" />
@@ -74,7 +74,7 @@ const About = () => {
       </div>
       <div className="placeholder-margins-broken"></div>
       <ContactPanel titlerequired={true} />
-    </div>
+    </article>
   );
 };
 

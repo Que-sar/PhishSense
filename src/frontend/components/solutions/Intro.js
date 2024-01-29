@@ -3,7 +3,7 @@ import "./Intro.css";
 
 const Intro = () => {
   return (
-    <div className="solutions-introduction-container">
+    <section className="solutions-introduction-container">
       <h1 className="solutions-introduction-title">
         Unlock Your Email Security
       </h1>
@@ -16,7 +16,7 @@ const Intro = () => {
         journey with us to enhance your email security and stay ahead of cyber
         threats.
       </div>
-    </div>
+    </section>
   );
 };
 

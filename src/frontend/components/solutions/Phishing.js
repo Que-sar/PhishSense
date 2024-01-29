@@ -4,7 +4,7 @@ import PhishiMage from "../images/solutionimagery/phishing.webp";
 
 const Phishing = () => {
   return (
-    <div className="phishing-phishing-container">
+    <section className="phishing-phishing-container">
       <div className="phishing-phishing-title">General Phishing Assessment</div>
       <div className="solutions-container-descriptions">
         <div className="solution-image-container">
@@ -28,7 +28,7 @@ const Phishing = () => {
           phishing defense skills.
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

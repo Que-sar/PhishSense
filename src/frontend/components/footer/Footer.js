@@ -18,7 +18,7 @@ const Footer = (props) => {
   const links = <div className="footer-links-container">{footerLinks}</div>;
 
   return (
-    <div className="footer-section">
+    <footer className="footer-section">
       <span className="footer-separator"></span>
       <div className="footer-forms">
         <div className="footer-socials">
@@ -48,7 +48,7 @@ const Footer = (props) => {
         <div className="footer-quick-links">{links}</div>
         <p className="footer-brandname">Speculor 2024. All rights reserved.</p>
       </div>
-    </div>
+    </footer>
   );
 };
 

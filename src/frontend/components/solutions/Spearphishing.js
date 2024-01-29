@@ -4,7 +4,7 @@ import SpearPhishImage from "../images/solutionimagery/spearphishing.webp";
 
 const Spearphishing = () => {
   return (
-    <div className="spearphishing-phishing-container">
+    <section className="spearphishing-phishing-container">
       <div className="spearphishing-phishing-title">
         Spear Phishing Assessment
       </div>
@@ -31,7 +31,7 @@ const Spearphishing = () => {
           areas needing heightened security awareness.
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

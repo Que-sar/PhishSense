@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
-    <div className="services-plan-section">
+    <article className="services-plan-section">
       <div className="services-title-section">
         <div className="services-title"> Our Primary Services</div>
         <div className="services-title-description">
@@ -100,7 +100,7 @@ const Services = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </article>
   );
 };
 

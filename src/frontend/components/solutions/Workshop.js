@@ -4,7 +4,7 @@ import SpearPhishImage from "../images/solutionimagery/workshop.webp";
 
 const Workshop = () => {
   return (
-    <div className="workshop-phishing-container">
+    <section className="workshop-phishing-container">
       <div className="workshop-phishing-title">Email Security Workshop</div>
       <div className="solutions-container-descriptions">
         <div className="solution-image-container">
@@ -30,7 +30,7 @@ const Workshop = () => {
           awareness.
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

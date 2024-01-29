@@ -11,7 +11,7 @@ const Hero = () => {
     navigate("/contact-us"); // Navigate to the contact-us page
   };
   return (
-    <div className="hero-section">
+    <main className="hero-section">
       <div className="hero-action">
         <h1 className="hero-title">
           Know your security,
@@ -32,7 +32,7 @@ const Hero = () => {
       <div className="hero-image">
         <img src={HeroImage} alt="Hero" />
       </div>
-    </div>
+    </main>
   );
 };
 

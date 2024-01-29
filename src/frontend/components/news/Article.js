@@ -48,7 +48,7 @@ const Article = () => {
       {!article ? (
         <Spinner />
       ) : (
-        <>
+        <article>
           <div
             className="article-image"
             style={{ backgroundImage: `url(${article.mainImage.asset.url})` }}
@@ -84,7 +84,7 @@ const Article = () => {
               </div>
             </div>
           </div>
-        </>
+        </article>
       )}
       <img src={FooterWave} alt="Footer" />
     </div>

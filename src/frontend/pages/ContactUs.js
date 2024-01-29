@@ -23,7 +23,7 @@ const ContactUs = () => {
         />
         <meta property="og:url" content={window.location.href} />
       </Helmet>
-      <div className="contact-us-boxes-container">
+      <main className="contact-us-boxes-container">
         <h1 className="contact-us-title">
           Ready to Enhance Your Cybersecurity?
         </h1>
@@ -32,7 +32,7 @@ const ContactUs = () => {
           benefit your business. <br />
           Reach out to us today.
         </div>
-      </div>
+      </main>
       <ContactPanel titlerequired={false} />
       <div className="business-info">
         <h2 className="contact-info-title">Contact Information</h2>

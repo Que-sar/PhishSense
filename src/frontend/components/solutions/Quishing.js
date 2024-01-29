@@ -4,7 +4,7 @@ import QuishImage from "../images/solutionimagery/quishing.webp";
 
 const Quishing = () => {
   return (
-    <div className="quishing-phishing-container">
+    <section className="quishing-phishing-container">
       <div className="quishing-phishing-title">
         Quishing (QR Code Phishing) Assessment
       </div>
@@ -29,7 +29,7 @@ const Quishing = () => {
           enhance QR code threat recognition and response.
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

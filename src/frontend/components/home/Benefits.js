@@ -11,7 +11,7 @@ const Benefits = () => {
   return (
     <>
       <Wave />
-      <div className="benefits-section">
+      <section className="benefits-section">
         <div className="benefits-title">Benefits</div>
         <div className="benefits-description">
           What we offer to increase your security, elevate your confidence,
@@ -64,7 +64,7 @@ const Benefits = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

@@ -4,7 +4,7 @@ import WhalePhishImage from "../images/solutionimagery/whaling.webp";
 
 const Whaling = () => {
   return (
-    <div className="whaling-phishing-container">
+    <section className="whaling-phishing-container">
       <div className="whaling-phishing-title">Whaling Assessment</div>
       <div className="solutions-container-descriptions">
         <div className="solution-image-container">
@@ -26,7 +26,7 @@ const Whaling = () => {
           to further refine executive security strategies.
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

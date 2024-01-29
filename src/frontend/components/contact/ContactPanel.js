@@ -112,7 +112,7 @@ const ContactPanel = (prop) => {
   };
 
   return (
-    <div className="email-submit-form">
+    <article className="email-submit-form">
       {titlerequired ? (
         <div className="services-title-sub-description">
           Contact us to customize your multi-phase assessment plan
@@ -207,7 +207,7 @@ const ContactPanel = (prop) => {
           {submitStatus.message}
         </div>
       ) : null}
-    </div>
+    </article>
   );
 };
 

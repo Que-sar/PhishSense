@@ -4,7 +4,7 @@ import Smishimage from "../images/solutionimagery/smishing.webp";
 
 const Smishing = () => {
   return (
-    <div className="smishing-phishing-container">
+    <section className="smishing-phishing-container">
       <div className="smishing-phishing-title">
         Smishing (SMS Phishing) Assessment
       </div>
@@ -29,7 +29,7 @@ const Smishing = () => {
           mobile security acumen as needed.
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

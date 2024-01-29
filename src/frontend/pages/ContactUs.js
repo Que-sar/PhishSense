@@ -22,8 +22,13 @@ const ContactUs = () => {
       <ContactPanel titlerequired={false} />
       <div className="business-info">
         <h2 className="contact-info-title">Contact Information</h2>
-        <p className="contact-us-email">Email: info@speculor.uk</p>
-        <p className="contact-us-phonenumber">Phone: +1 234 567 8900</p>
+        <p className="contact-us-email">
+          Email: <a href="mailto:info@speculor.uk">info@speculor.uk</a>
+        </p>
+        <p className="contact-us-phonenumber">Phone: +44 757 8866 102</p>
+        <p className="contact-us-address">
+          Flat 47, <br /> 12 Victoria Road, <br /> Dundee, <br /> DD1 1JN
+        </p>
       </div>
     </div>
   );

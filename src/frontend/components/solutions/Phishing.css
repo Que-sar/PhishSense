@@ -28,3 +28,13 @@
   width: 105px;
   margin-left: 5px;
 }
+
+@media (max-width: 991px) {
+  .solution-image-phishing {
+    margin-left: 0px;
+  }
+
+  .phishing-text-description {
+    padding-left: 0px;
+  }
+}

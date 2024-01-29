@@ -8,6 +8,7 @@ import userFace from "./user.svg";
 import facebookSvg from "./roundfacebook.svg";
 import linkedinSvg from "./roundlinkedin.svg";
 import FooterWave from "./FooterWave.svg";
+import SocialsReq from "./SocialsReq";
 
 const Article = () => {
   const [article, setArticle] = useState(null);
@@ -18,7 +19,7 @@ const Article = () => {
     if (articleId) {
       client
         .fetch(
-          `*[_type == "articlePanel" && slug.current == $articleId]{title, publisher, articleBody, mainImage{asset->{url}, alt}, publishedAt}[0]`,
+          `*[_type == "articlePanel" && slug.current == $articleId]{title, publisher, articleBody, shortDescription, mainImage{asset->{url}, alt}, publishedAt}[0]`,
           { articleId }
         )
         .then((data) => {
@@ -33,12 +34,6 @@ const Article = () => {
         });
     }
   }, [articleId, navigate]);
-
-  useEffect(() => {
-    if (article && article.title) {
-      document.title = "News - " + article.title;
-    }
-  }, [article]);
 
   const formatDate = (dateString) => {
     const date = new Date(dateString);
@@ -56,6 +51,11 @@ const Article = () => {
         <Spinner />
       ) : (
         <>
+          <SocialsReq
+            title={article.title}
+            image={article.mainImage.asset.url}
+            shortDescription={article.shortDescription}
+          />
           <div
             className="article-image"
             style={{ backgroundImage: `url(${article.mainImage.asset.url})` }}

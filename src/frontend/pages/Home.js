@@ -10,7 +10,7 @@ const Home = () => {
   const structuredData = {
     "@context": "http://schema.org",
     "@type": "WebPage",
-    name: "Speculor",
+    name: "Home - Speculor",
     description:
       "Enhance your team's resilience against email threats with our personalized, affordable testing and education programs, aimed at boosting security awareness.",
     url: "https://www.speculor.uk",
@@ -26,7 +26,10 @@ const Home = () => {
       <Helmet>
         <title>Home - Speculor</title>
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Speculor" />
+        <meta
+          property="og:title"
+          content="Ready to Enhance Your Cybersecurity?"
+        />
         <meta
           name="og:description"
           content="Enhance your team's resilience against email threats with our personalized, affordable testing and education programs, aimed at boosting security awareness."

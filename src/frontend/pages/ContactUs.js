@@ -10,9 +10,9 @@ const ContactUs = () => {
   return (
     <div className="contact-us-page-container">
       <div className="contact-us-boxes-container">
-        <div className="contact-us-title">
+        <h1 className="contact-us-title">
           Ready to Enhance Your Cybersecurity?
-        </div>
+        </h1>
         <div className="contact-us-encouraging">
           Let's discuss how our tailored phishing assessment services can
           benefit your business. <br />

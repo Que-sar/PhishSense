@@ -13,11 +13,11 @@ const Hero = () => {
   return (
     <div className="hero-section">
       <div className="hero-action">
-        <div className="hero-title">
+        <h1 className="hero-title">
           Know your security,
           <br />
           empower yourself.
-        </div>
+        </h1>
         <div className="hero-description">
           Enhance your team's resilience against email threats with our
           personalized, affordable testing and education programs, aimed at

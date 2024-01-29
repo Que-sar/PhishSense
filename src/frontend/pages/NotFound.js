@@ -11,7 +11,7 @@ const NotFound = () => {
           <img className="notfound-image" src={NotFoundImage} alt="Not found" />
         </div>
         <div className="notfound-data-container">
-          <div className="notfound-title">Oops!</div>
+          <h1 className="notfound-title">Oops!</h1>
           <div className="notfound-subtitle">404 - Page not found</div>
           <div className="notfound-description">
             The page you are looking for might have been removed,

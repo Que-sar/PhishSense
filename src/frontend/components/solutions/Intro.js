@@ -4,9 +4,9 @@ import "./Intro.css";
 const Intro = () => {
   return (
     <div className="solutions-introduction-container">
-      <div className="solutions-introduction-title">
+      <h1 className="solutions-introduction-title">
         Unlock Your Email Security
-      </div>
+      </h1>
       <div className="solutions-beginner-text">
         In today's digital landscape, robust email security is crucial. Speculor
         offers a suite of specialized phishing assessments to strengthen your

@@ -19,9 +19,9 @@ const About = () => {
           </Link>
         </div>
         <div className="name-explanation-quote-container">
-          <div className="name-explanation-title">
+          <h1 className="name-explanation-title">
             Your Proactive Partner in Cybersecurity
-          </div>
+          </h1>
           <div className="name-explanation-text">
             In a world brimming with digital threats, Speculor stands as a
             guardian in the realm of cybersecurity. <br />

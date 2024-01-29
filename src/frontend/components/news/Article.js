@@ -7,6 +7,7 @@ import "./Article.css";
 import userFace from "./user.svg";
 import FooterWave from "./FooterWave.svg";
 import SocialsReq from "./SocialsReq";
+import { Helmet } from "react-helmet-async";
 
 const Article = () => {
   const [article, setArticle] = useState(null);
@@ -43,12 +44,37 @@ const Article = () => {
 
     return `${year}.${month}.${day} ${hours}:${minutes}`;
   };
+
+  const structuredData = {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    headline: article.title,
+    description: article.shortDescription,
+    image: article.mainImage.asset.url,
+    author: article.author,
+    datePublished: article.date,
+  };
+
   return (
     <div className="article-container">
       {!article ? (
         <Spinner />
       ) : (
         <article>
+          <Helmet>
+            <title>Home - {article.title}</title>
+            <meta property="og:type" content="article" />
+            <meta property="og:title" content={article.title} />
+            <meta
+              property="og:description"
+              content={article.shortDescription}
+            />
+            <meta property="og:image" content={article.mainImage.asset.url} />
+            <meta property="og:url" content={window.location.href} />
+            <script type="application/ld+json">
+              {JSON.stringify(structuredData)}
+            </script>
+          </Helmet>
           <div
             className="article-image"
             style={{ backgroundImage: `url(${article.mainImage.asset.url})` }}

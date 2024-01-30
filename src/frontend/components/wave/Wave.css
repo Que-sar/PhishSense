@@ -1,5 +1,5 @@
 .benefits-wave img {
-  width: 105%;
+  width: 100%; /* Set the width to 100% to make it stretch to its container */
   z-index: -1;
   margin-top: -2px;
 }

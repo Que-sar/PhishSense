@@ -80,7 +80,7 @@ const Article = () => {
                   title={article.title}
                   image={article.mainImage.asset.url}
                   shortDescription={article.shortDescription}
-                  author={article.publisher}
+                  publisher={article.publisher}
                   date={article.publishedAt}
                 />
               </div>

@@ -4,6 +4,7 @@ import Hero from "../components/home/Hero";
 import Benefits from "../components/home/Benefits";
 import Services from "../components/solutions/Services";
 import ContactPanel from "../components/contact/ContactPanel";
+import "../components/home/Home.css";
 import { Helmet } from "react-helmet-async";
 
 const Home = () => {

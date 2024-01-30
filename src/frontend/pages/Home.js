@@ -4,14 +4,13 @@ import Hero from "../components/home/Hero";
 import Benefits from "../components/home/Benefits";
 import Services from "../components/solutions/Services";
 import ContactPanel from "../components/contact/ContactPanel";
-import "../components/home/Home.css";
 import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   const structuredData = {
     "@context": "http://schema.org",
     "@type": "WebPage",
-    name: "Home - Speculor",
+    name: "Speculor - Know your security, Empower yourselfr",
     description:
       "Enhance your team's resilience against email threats with our personalized, affordable testing and education programs, aimed at boosting security awareness.",
     url: "https://www.speculor.uk",

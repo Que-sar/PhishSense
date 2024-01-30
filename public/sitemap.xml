@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://speculor.uk/</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://speculor.uk/mission</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://speculor.uk/solutions</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://speculor.uk/news</loc>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>https://speculor.uk/news/understanding-phishing-the-cyber-threat-in-your-inbox</loc>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://speculor.uk/contact-us</loc>
+        <changefreq>monthly</changefreq>
+    </url>
+</urlset>

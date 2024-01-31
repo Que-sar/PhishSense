@@ -39,7 +39,7 @@ const ContactUs = () => {
         <p className="contact-us-email">
           Email: <a href="mailto:info@speculor.uk">info@speculor.uk</a>
         </p>
-        <p className="contact-us-phonenumber">Phone: +44 757 8866 102</p>
+        <p className="contact-us-phonenumber">Phone: +44 789 5448 593</p>
         <p className="contact-us-address">
           Flat 47, <br /> 12 Victoria Road, <br /> Dundee, <br /> DD1 1JN
         </p>

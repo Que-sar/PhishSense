@@ -24,7 +24,7 @@ const Footer = (props) => {
         <div className="footer-socials">
           <div className="footer-links">
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/company/speculor"
               target="_blank"
               rel="noopener noreferrer"
               className="linkedin-footer-image"
@@ -32,7 +32,7 @@ const Footer = (props) => {
               <img src={LinkedinIcon} alt="LinkedIn" />
             </a>
             <a
-              href="https://www.facebook.com"
+              href="https://www.facebook.com/speculorcyber"
               target="_blank"
               rel="noopener noreferrer"
               className="facebook-footer"

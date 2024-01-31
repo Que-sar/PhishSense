@@ -36,7 +36,10 @@ const SocialsReq = (props) => {
         </script>
       </Helmet>
       <LinkedinShareButton
-        url={window.location.href}
+        url={
+          "https://www.linkedin.com/sharing/share-offsite/?url=https://news.speculor.uk" +
+          window.location.pathname
+        }
         title={props.title}
         description={props.shortDescription}
         className="article-linkedin-share"
@@ -45,7 +48,10 @@ const SocialsReq = (props) => {
       </LinkedinShareButton>
 
       <FacebookShareButton
-        url={window.location.href}
+        url={
+          "https://www.facebook.com/sharer/sharer.php?u=https://news.speculor.uk" +
+          window.location.pathname
+        }
         title={props.title}
         description={props.shortDescription}
         className="article-facebook-share"
@@ -62,7 +68,12 @@ const SocialsReq = (props) => {
       </EmailShareButton>
 
       <RedditShareButton
-        url={window.location.href}
+        url={
+          "http://www.reddit.com/submit?url=https://news.speculor.uk" +
+          window.location.href +
+          "&title=" +
+          props.title
+        }
         title={props.title}
         className="article-reddit-share"
       >

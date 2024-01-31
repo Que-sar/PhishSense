@@ -37,8 +37,10 @@ const SocialsReq = (props) => {
       </Helmet>
       <LinkedinShareButton
         url={
-          "https://www.linkedin.com/sharing/share-offsite/?url=https://news.speculor.uk" +
-          window.location.pathname
+          "https://www.linkedin.com/sharing/share-offsite/?url=" +
+          encodeURIComponent(
+            "https://news.speculor.uk" + window.location.pathname
+          )
         }
         title={props.title}
         description={props.shortDescription}
@@ -49,8 +51,10 @@ const SocialsReq = (props) => {
 
       <FacebookShareButton
         url={
-          "https://www.facebook.com/sharer/sharer.php?u=https://news.speculor.uk" +
-          window.location.pathname
+          "https://www.facebook.com/sharer/sharer.php?u=" +
+          encodeURIComponent(
+            "https://news.speculor.uk" + window.location.pathname
+          )
         }
         title={props.title}
         description={props.shortDescription}
@@ -68,12 +72,9 @@ const SocialsReq = (props) => {
       </EmailShareButton>
 
       <RedditShareButton
-        url={
-          "http://www.reddit.com/submit?url=https://news.speculor.uk" +
-          window.location.href +
-          "&title=" +
-          props.title
-        }
+        url={`http://www.reddit.com/submit?url=${encodeURIComponent(
+          "https://news.speculor.uk" + window.location.pathname
+        )}&title=${encodeURIComponent(props.title)}`}
         title={props.title}
         className="article-reddit-share"
       >

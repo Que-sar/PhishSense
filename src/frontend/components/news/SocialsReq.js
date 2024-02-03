@@ -4,12 +4,7 @@ import linkedinSvg from "./roundlinkedin.svg";
 import redditSvg from "./roundreddit.svg";
 import emailSvg from "./roundemail.svg";
 import { Helmet } from "react-helmet-async";
-import {
-  FacebookShareButton,
-  LinkedinShareButton,
-  RedditShareButton,
-  EmailShareButton,
-} from "react-share";
+import { RedditShareButton, EmailShareButton } from "react-share";
 
 const SocialsReq = (props) => {
   const structuredData = {
@@ -35,23 +30,27 @@ const SocialsReq = (props) => {
           {JSON.stringify(structuredData)}
         </script>
       </Helmet>
-      <LinkedinShareButton
-        url={window.location.href}
-        title={props.title}
-        description={props.shortDescription}
+      <a
+        href={
+          "https://www.linkedin.com/sharing/share-offsite/?url=https://news.speculor.uk" +
+          window.location.pathname
+        }
+        target="_blank"
         className="article-linkedin-share"
       >
         <img src={linkedinSvg} alt="Linkedin" />
-      </LinkedinShareButton>
+      </a>
 
-      <FacebookShareButton
-        url={window.location.href}
-        title={props.title}
-        description={props.shortDescription}
+      <a
+        href={
+          "https://www.facebook.com/sharer/sharer.php?u=https://news.speculor.uk" +
+          window.location.pathname
+        }
+        target="_blank"
         className="article-facebook-share"
       >
         <img src={facebookSvg} alt="Facebook" />
-      </FacebookShareButton>
+      </a>
 
       <EmailShareButton
         title={props.title}

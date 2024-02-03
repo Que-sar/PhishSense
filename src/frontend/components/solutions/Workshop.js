@@ -15,12 +15,12 @@ const Workshop = () => {
           />
         </div>
         <div className="solution-text workshop-text-description">
-          Our Email Security Workshop is a dynamic, team-based training session
-          focusing on phishing awareness. <br /> <br />
+          Our Email Security Workshop is a dynamic training session focusing on
+          phishing awareness. <br /> <br />
           It starts with an introduction to phishing, followed by a presentation
           on the latest email scams, tailored for a general audience. <br />{" "}
           <br />
-          This is followed by interactive team exercises and educational games,
+          This is followed by interactive exercises and educational games,
           providing a hands-on experience in identifying and reacting to
           phishing threats. <br /> <br />
           The workshop content is customizable based on previous phishing test

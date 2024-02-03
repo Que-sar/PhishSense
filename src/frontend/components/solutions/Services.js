@@ -17,8 +17,8 @@ const Services = () => {
             Email Security Workshop
           </div>
           <div className="services-panel-bulletpoints">
-            Tailored learning, engaging activities, and fun games for enjoyable
-            team-building in phishing awareness.
+            Tailored learning, engaging activities, and fun games for effective
+            training in phishing awarenes.
           </div>
           <div className="horizontalLine-whites"></div>
           <Link to="/solutions#workshop" className="services-action-button">

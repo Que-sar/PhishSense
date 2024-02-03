@@ -88,7 +88,7 @@ const Article = () => {
           </div>
         </article>
       )}
-      <img src={FooterWave} alt="Footer" />
+      <img src={FooterWave} alt="Footer" className="footer-wave-article" />
     </div>
   );
 };

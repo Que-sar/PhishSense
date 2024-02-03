@@ -36,12 +36,9 @@ const SocialsReq = (props) => {
         </script>
       </Helmet>
       <LinkedinShareButton
-        url={
-          "https://www.linkedin.com/sharing/share-offsite/?url=" +
-          encodeURIComponent(
-            "https://news.speculor.uk" + window.location.pathname
-          )
-        }
+        url={encodeURIComponent(
+          "https://news.speculor.uk" + window.location.pathname
+        )}
         title={props.title}
         description={props.shortDescription}
         className="article-linkedin-share"
@@ -50,12 +47,9 @@ const SocialsReq = (props) => {
       </LinkedinShareButton>
 
       <FacebookShareButton
-        url={
-          "https://www.facebook.com/sharer/sharer.php?u=" +
-          encodeURIComponent(
-            "https://news.speculor.uk" + window.location.pathname
-          )
-        }
+        url={encodeURIComponent(
+          "https://news.speculor.uk" + window.location.pathname
+        )}
         title={props.title}
         description={props.shortDescription}
         className="article-facebook-share"
@@ -65,16 +59,18 @@ const SocialsReq = (props) => {
 
       <EmailShareButton
         title={props.title}
-        url={window.location.href}
+        url={encodeURIComponent(
+          "https://news.speculor.uk" + window.location.pathname
+        )}
         className="article-email-share"
       >
         <img src={emailSvg} alt="Email" />
       </EmailShareButton>
 
       <RedditShareButton
-        url={`http://www.reddit.com/submit?url=${encodeURIComponent(
+        url={encodeURIComponent(
           "https://news.speculor.uk" + window.location.pathname
-        )}&title=${encodeURIComponent(props.title)}`}
+        )}
         title={props.title}
         className="article-reddit-share"
       >

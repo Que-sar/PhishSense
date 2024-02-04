@@ -18,7 +18,11 @@
         <changefreq>daily</changefreq>
     </url>
     <url>
-        <loc>https://speculor.uk/news/understanding-phishing-the-cyber-threat-in-your-inbox</loc>
+        <loc>https://news.speculor.uk/news/understanding-phishing-the-cyber-threat-in-your-inbox</loc>
+        <changefreq>monthly</changefreq>
+    </url>
+        <url>
+        <loc>https://news.speculor.uk/news/phishing-defense-small-business-priority</loc>
         <changefreq>monthly</changefreq>
     </url>
     <url>

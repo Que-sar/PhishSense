@@ -19,9 +19,9 @@ const Hero = () => {
           empower yourself.
         </h1>
         <div className="hero-description">
-          Enhance your team's resilience against cyber threats with our
-          personalized, affordable testing and education programs, aimed at
-          boosting your cybersecurity.
+          Enhance your resilience against cyber threats with our personalized,
+          affordable testing and education programs, aimed at boosting your
+          cybersecurity.
         </div>
         <div className="hero-call-to-action">
           <button className="hero-action-button" onClick={navigateToContact}>

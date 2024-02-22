@@ -9,12 +9,12 @@ const Intro = () => {
       </h1>
       <div className="solutions-beginner-text">
         In today's digital landscape, robust email security is crucial. Speculor
-        offers a suite of specialized phishing assessments to strengthen your
-        organization's email defenses. From General Phishing to Spear Phishing,
-        Whaling, Quishing, and SMS Phishing, our services are designed to
-        identify vulnerabilities and bolster your email protection. Embark on a
-        journey with us to enhance your email security and stay ahead of cyber
-        threats.
+        offers a suite of specialized phishing assessments and web application
+        testing to strengthen your organization's defenses. From Web-application
+        Testing and training to General Phishing, Spear Phishing or Whaling,
+        Quishing, and SMS Phishing, our services are designed to identify
+        vulnerabilities and bolster your protection. Embark on a journey with us
+        to enhance your cyber resilience and stay ahead of cyber threats.
       </div>
     </section>
   );

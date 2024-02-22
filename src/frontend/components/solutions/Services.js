@@ -12,6 +12,20 @@ const Services = () => {
         </div>
       </div>
       <div className="services-panel-section-first">
+        <div className="services-panel white">
+          <div className="services-panel-title webappt-title">
+            Web Application Security Testing
+          </div>
+          <div className="services-panel-bulletpoints">
+            Web application cyber security testing with actionable reporting to
+            help your business.
+          </div>
+          <div className="horizontalLine"></div>
+          <Link to="/solutions#webapptest" className="services-action-button">
+            Learn More
+          </Link>
+        </div>
+
         <div className="services-panel orange ">
           <div className="services-panel-title training-title">
             Email Security Workshop
@@ -39,7 +53,8 @@ const Services = () => {
             Learn More
           </Link>
         </div>
-
+      </div>{" "}
+      <div className="services-panel-section-second">
         <div className="services-panel orange">
           <div className="services-panel-title spearphishing-title">
             Spear Phishing Assessment
@@ -56,8 +71,6 @@ const Services = () => {
             Learn More
           </Link>
         </div>
-      </div>{" "}
-      <div className="services-panel-section-second">
         <div className="services-panel white generalwhaling">
           <div className="services-panel-title whaling-title">
             Whaling Assessment
@@ -85,7 +98,8 @@ const Services = () => {
             Learn More
           </Link>
         </div>
-
+      </div>
+      <div className="services-panel-section-third">
         <div className="services-panel white">
           <div className="services-panel-title smishing-title">
             SMS Phishing Assessment

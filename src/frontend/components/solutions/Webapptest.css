@@ -1,10 +1,11 @@
-.smishing-phishing-container {
+.webapptest-container {
   height: fit-content;
   width: 100vw;
-  background-color: #fcc477;
+  background-color: whitesmoke;
+  margin-bottom: -5vh;
 }
 
-.smishing-phishing-title {
+.webapptest-title {
   display: flex;
   justify-content: center;
   font-weight: bolder;
@@ -15,11 +16,11 @@
   margin-bottom: 4vh;
 }
 
-.solution-image-smishing {
-  max-width: 158px;
-  margin-right: 15px;
+.solution-image-webapp {
+  width: 140px;
+  margin-left: 5px;
 }
 
-.smishing-text-description {
-  margin-left: -25px;
+.webapptest-text-description {
+  padding-left: 6px;
 }

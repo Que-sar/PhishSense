@@ -25,8 +25,8 @@ const Benefits = () => {
             <div>
               <div className="benefit-item-title">Empower Your Security</div>
               <p className="benefit-item-description">
-                Acquire habits or test skills to detect and protect against
-                phishing emails, showcasing resilience and gaining a
+                Acquire habits or test skills, web-applications to detect and
+                protect against threats, showcasing resilience and gaining a
                 cybersecurity edge for businesses of all sizes.
               </p>
             </div>
@@ -41,9 +41,9 @@ const Benefits = () => {
                 Enhance Vigilence Affordably
               </div>
               <p className="benefit-item-description">
-                Strengthen your defenses economically with targeted phishing
-                simulations, yielding custom insights for strategic
-                cybersecurity improvements, from certified ethical hackers.
+                Strengthen your defenses economically with testing and training,
+                yielding custom insights for strategic cybersecurity
+                improvements, from certified ethical hackers.
               </p>
             </div>
           </div>
@@ -57,9 +57,9 @@ const Benefits = () => {
                 Transparent Ethical Engagement
               </div>
               <p className="benefit-item-description">
-                Benefit from our transparent, ethical phishing approach that
-                delivers confidential, actionable intelligence for your security
-                strategy.
+                Benefit from our transparent, ethical testing and phishing
+                approach that delivers confidential, actionable intelligence for
+                your security strategy.
               </p>
             </div>
           </div>

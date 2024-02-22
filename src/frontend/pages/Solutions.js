@@ -9,6 +9,7 @@ import Smishing from "../components/solutions/Smishing";
 import Workshop from "../components/solutions/Workshop";
 import ContactPanel from "../components/contact/ContactPanel";
 import { Helmet } from "react-helmet-async";
+import Webapptest from "../components/solutions/Webapptest";
 
 const Solutions = () => {
   useLayoutEffect(() => {
@@ -21,6 +22,7 @@ const Solutions = () => {
       "quishing",
       "smishing",
       "workshop",
+      "webapptest",
     ];
 
     if (!hash) {
@@ -77,6 +79,9 @@ const Solutions = () => {
       </div>
       <div id="smishing" className="solution-section-orange">
         <Smishing />
+      </div>
+      <div id="webapptest" className="solution-section-white">
+        <Webapptest />
       </div>
       <ContactPanel titlerequired={true} />
     </section>

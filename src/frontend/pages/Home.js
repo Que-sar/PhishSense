@@ -12,7 +12,7 @@ const Home = () => {
     "@type": "WebPage",
     name: "Speculor - Know your security, Empower yourselfr",
     description:
-      "Enhance your team's resilience against email threats with our personalized, affordable testing and education programs, aimed at boosting security awareness.",
+      "Enhance your team's resilience against cyber threats with our personalized, affordable testing and education programs, aimed at boosting your cybersecurity.",
     url: "https://www.speculor.uk",
     primaryImageOfPage: {
       "@type": "ImageObject",
@@ -32,7 +32,7 @@ const Home = () => {
         />
         <meta
           name="og:description"
-          content="Enhance your team's resilience against email threats with our personalized, affordable testing and education programs, aimed at boosting security awareness."
+          content="Enhance your team's resilience against cyber threats with our personalized, affordable testing and education programs, aimed at boosting your cybersecurity."
         />
         <meta
           property="og:image"

@@ -12,7 +12,8 @@
   margin-bottom: 5vh;
 }
 
-.services-panel-section-first {
+.services-panel-section-first,
+.services-panel-section-second {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,13 +22,14 @@
   margin-bottom: 5vh;
 }
 
-.services-panel-section-second {
+.services-panel-section-third {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
   width: 95vw;
 }
+
 .services-title-description {
   font-size: calc(22px + 0.390625vw);
   margin-bottom: 5vh;
@@ -41,7 +43,7 @@
   align-items: center;
   margin-left: 0.5vw;
   margin-right: 0.5vw;
-  width: 24%;
+  width: 26%;
   height: 450px;
   padding-top: 2vh;
 }
@@ -60,7 +62,8 @@
 
 .phishing-title,
 .whaling-title,
-.smishing-title {
+.smishing-title,
+.webappt-title {
   background-color: #fcc477;
 }
 
@@ -154,13 +157,15 @@
   }
 
   .services-panel-section-first,
-  .services-panel-section-second {
+  .services-panel-section-second,
+  .services-panel-section-third {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .services-panel-section-first {
+  .services-panel-section-first,
+  .services-panel-section-second {
     margin-bottom: 0.5vh;
   }
 

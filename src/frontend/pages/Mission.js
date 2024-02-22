@@ -58,8 +58,8 @@ const Mission = () => {
             <br />
             Our name, inspired by the Latin 'to watch, observe, examine,'
             captures the essence of our mission: to equip businesses of all
-            sizes with effective and affordable email security awareness
-            solutions. <br />
+            sizes with effective and affordable web-application testing and
+            email security awareness solutions. <br />
             <br />
             At Speculor, we blend vigilance with innovation, transforming the
             complexity of cybersecurity into clear, actionable strategies. Let's
@@ -75,9 +75,10 @@ const Mission = () => {
             endeavor, putting it out of reach for many. <br />
             <br />
             Speculor is changing that narrative. We are committed to providing
-            comprehensive email security awareness solutions — including general
-            phishing assessments, spearphishing, whaling, QR code phishing, and
-            SMS phishing — at an accessible and affordable level.
+            comprehensive web-application security testing and email security
+            awareness solutions — including general phishing assessments,
+            spearphishing, whaling, QR code phishing, and SMS phishing — at an
+            accessible and affordable level
             <br />
             <br />
             We believe that every business, regardless of its size, deserves the

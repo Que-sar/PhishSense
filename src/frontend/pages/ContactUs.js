@@ -19,7 +19,7 @@ const ContactUs = () => {
         />
         <meta
           property="og:description"
-          content="Let's discuss how our tailored phishing assessment services can benefit your business. Reach out to us today."
+          content="Let's discuss how our tailored security testing services can benefit your business. Reach out to us today."
         />
         <meta property="og:url" content={window.location.href} />
       </Helmet>
@@ -28,8 +28,8 @@ const ContactUs = () => {
           Ready to Enhance Your Cybersecurity?
         </h1>
         <div className="contact-us-encouraging">
-          Let's discuss how our tailored phishing assessment services can
-          benefit your business. <br />
+          Let's discuss how our tailored security testing services can benefit
+          your business. <br />
           Reach out to us today.
         </div>
       </main>

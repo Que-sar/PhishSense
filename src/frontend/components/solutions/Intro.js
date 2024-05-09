@@ -4,7 +4,9 @@ import "./Intro.css";
 const Intro = () => {
   return (
     <section className="solutions-introduction-container">
-      <h1 className="solutions-introduction-title">Upgrade Your Security</h1>
+      <h1 className="solutions-introduction-title">
+        Enhance Your Cybersecurity
+      </h1>
       <div className="solutions-beginner-text">
         In today's digital landscape, a robust security stance is crucial.
         Speculor offers a suite of specialized web application testing and

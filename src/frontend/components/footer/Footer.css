@@ -11,6 +11,10 @@
   align-items: center;
 }
 
+.privacy-policy {
+  margin-bottom: 2vh;
+}
+
 .footer-separator {
   margin-top: 4vh;
   border-top: 4px solid whitesmoke;

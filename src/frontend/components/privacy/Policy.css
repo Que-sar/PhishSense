@@ -1,0 +1,12 @@
+.privacy-policy-container {
+  margin-top: 70px;
+  padding-top: 5vh;
+  background-color: rgb(252, 196, 119);
+  text-align: center;
+}
+
+.privacy-policy-container > * {
+  padding: 10px;
+  margin-right: 20vw;
+  margin-left: 20vw;
+}

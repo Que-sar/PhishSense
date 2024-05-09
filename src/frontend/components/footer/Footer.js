@@ -2,11 +2,13 @@ import React from "react";
 import "./Footer.css";
 import FaceIcon from "../news/colorfacebook.svg";
 import LinkedinIcon from "../news/colorlinkedin.svg";
+import PrivacyPolicy from "../privacy/Policy";
 import { Link } from "react-router-dom";
 
 const Footer = (props) => {
   const routes = props.routes;
-  const footerLinks = routes.slice(1, -1).map((route, index) => (
+  const privacyPolicyObj = routes[6];
+  const footerLinks = routes.slice(1, -2).map((route, index) => (
     <Link
       to={route.path}
       key={route.reference + index + "-footer"}
@@ -46,6 +48,15 @@ const Footer = (props) => {
           </div>
         </div>
         <div className="footer-quick-links">{links}</div>
+        <div className="privacy-policy">
+          <Link
+            to={privacyPolicyObj.path}
+            key={privacyPolicyObj.reference + "-1-footer"}
+            className="privacy-policy-link"
+          >
+            {privacyPolicyObj.name}
+          </Link>
+        </div>
         <p className="footer-brandname">Speculor 2024. All rights reserved.</p>
       </div>
     </footer>

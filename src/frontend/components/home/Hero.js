@@ -14,7 +14,7 @@ const Hero = () => {
     <main className="hero-section">
       <div className="hero-action">
         <h1 className="hero-title">
-          Know your security,
+          Transform security,
           <br />
           empower yourself.
         </h1>

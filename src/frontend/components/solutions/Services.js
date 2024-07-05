@@ -28,11 +28,11 @@ const Services = () => {
 
         <div className="services-panel orange ">
           <div className="services-panel-title training-title">
-            Email Security Workshop
+            Cyber Awareness Workshop
           </div>
           <div className="services-panel-bulletpoints">
             Tailored learning, engaging activities, and fun games for effective
-            training in phishing awarenes.
+            training in cybersecurity awarenes.
           </div>
           <div className="horizontalLine-whites"></div>
           <Link to="/solutions#workshop" className="services-action-button">

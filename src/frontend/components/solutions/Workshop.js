@@ -5,7 +5,7 @@ import SpearPhishImage from "../images/solutionimagery/workshop.webp";
 const Workshop = () => {
   return (
     <section className="workshop-phishing-container">
-      <div className="workshop-phishing-title">Email Security Workshop</div>
+      <div className="workshop-phishing-title">Cyber Awareness Workshop</div>
       <div className="solutions-container-descriptions">
         <div className="solution-image-container">
           <img

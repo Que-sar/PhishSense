@@ -1,6 +1,5 @@
 import React from "react";
 import "./Footer.css";
-import FaceIcon from "../news/colorfacebook.svg";
 import LinkedinIcon from "../news/colorlinkedin.svg";
 import PrivacyPolicy from "../privacy/Policy";
 import { Link } from "react-router-dom";
@@ -32,18 +31,6 @@ const Footer = (props) => {
               className="linkedin-footer-image"
             >
               <img src={LinkedinIcon} alt="LinkedIn" />
-            </a>
-            <a
-              href="https://www.facebook.com/speculorcyber"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="facebook-footer"
-            >
-              <img
-                className="facebook-footer-image"
-                src={FaceIcon}
-                alt="Facebook"
-              />
             </a>
           </div>
         </div>

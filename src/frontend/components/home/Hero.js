@@ -20,7 +20,8 @@ const Hero = () => {
         </h1>
         <div className="hero-description">
           Enhance your resilience against cyber attacks with measurable testing
-          and training, programs, aimed at boosting your cybersecurity.
+          and strategic team building programs, aimed at boosting your
+          cybersecurity.
         </div>
         <div className="hero-call-to-action">
           <button className="hero-action-button" onClick={navigateToContact}>

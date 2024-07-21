@@ -58,8 +58,8 @@ const Mission = () => {
             <br />
             Our name, inspired by the Latin 'to watch, observe, examine,'
             captures the essence of our mission: to equip businesses of all
-            sizes with effective and affordable web-application testing and
-            email security awareness solutions. <br />
+            sizes with effective testing and security awareness solutions.{" "}
+            <br />
             <br />
             At Speculor, we blend vigilance with innovation, transforming the
             complexity of cybersecurity into clear, actionable strategies. Let's
@@ -69,16 +69,16 @@ const Mission = () => {
         <div className="mission-statement-container">
           <div className="mission-statement-title"> Our Mission </div>
           <div className="mission-statement-text">
-            Our mission at Speculor is to revolutionize cybersecurity
-            accessibility, especially for smaller businesses. We recognize that
-            professional-grade cybersecurity has often been a resource-intensive
-            endeavor, putting it out of reach for many. <br />
+            Our mission at Speculor is to transform security for organisations
+            to combat cyber threats. We recognize that professional-grade
+            cybersecurity has often been a resource-intensive endeavor, putting
+            it out of reach for many. <br />
             <br />
             Speculor is changing that narrative. We are committed to providing
-            comprehensive web-application security testing and email security
-            awareness solutions — including general phishing assessments,
-            spearphishing, whaling, QR code phishing, and SMS phishing — at an
-            accessible and affordable level
+            comprehensive security testing and security awareness solutions —
+            including general phishing assessments, spearphishing, whaling, QR
+            code phishing, and SMS phishing — at an accessible and affordable
+            level
             <br />
             <br />
             We believe that every business, regardless of its size, deserves the

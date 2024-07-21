@@ -17,8 +17,8 @@ const Services = () => {
             Web Application Security Testing
           </div>
           <div className="services-panel-bulletpoints">
-            Web application cyber security testing with actionable reporting to
-            help your business.
+            Quick and effective web application cyber security testing with
+            actionable reporting to help your business.
           </div>
           <div className="horizontalLine"></div>
           <Link to="/solutions#webapptest" className="services-action-button">
@@ -31,8 +31,8 @@ const Services = () => {
             Cyber Awareness Workshop
           </div>
           <div className="services-panel-bulletpoints">
-            Tailored learning, engaging activities, and fun games for effective
-            training in cybersecurity awarenes.
+            Tailored learning, engaging activities, and team building exercises
+            for effective training in cybersecurity awareness.
           </div>
           <div className="horizontalLine-whites"></div>
           <Link to="/solutions#workshop" className="services-action-button">
@@ -42,10 +42,10 @@ const Services = () => {
 
         <div className="services-panel white generalphishing">
           <div className="services-panel-title phishing-title">
-            General Phishing Assessment
+            Comprehensive Phishing Assessment
           </div>
           <div className="services-panel-bulletpoints">
-            Comprehensive email security simulations to test resilience,
+            Comprehensive security awareness simulations to test resilience,
             followed by insights to bolster security knowledge.
           </div>
           <div className="horizontalLine"></div>
@@ -54,66 +54,6 @@ const Services = () => {
           </Link>
         </div>
       </div>{" "}
-      <div className="services-panel-section-second">
-        <div className="services-panel orange">
-          <div className="services-panel-title spearphishing-title">
-            Spear Phishing Assessment
-          </div>
-          <div className="services-panel-bulletpoints">
-            Targeted email simulations assessing individual awareness,
-            accompanied by personalized educational content.
-          </div>
-          <div className="horizontalLine-whites"></div>
-          <Link
-            to="/solutions#spearphishing"
-            className="services-action-button"
-          >
-            Learn More
-          </Link>
-        </div>
-        <div className="services-panel white generalwhaling">
-          <div className="services-panel-title whaling-title">
-            Whaling Assessment
-          </div>
-          <div className="services-panel-bulletpoints">
-            Advanced tests for high-profile personnel, with strategic
-            educational feedback post-assessment.
-          </div>
-          <div className="horizontalLine"></div>
-          <Link to="/solutions#whaling" className="services-action-button">
-            Learn More
-          </Link>
-        </div>
-
-        <div className="services-panel orange ">
-          <div className="services-panel-title quishing-title">
-            Quishing Assessment
-          </div>
-          <div className="services-panel-bulletpoints">
-            QR code phishing simulations, complemented by insights on modern
-            techniques and prevention.
-          </div>
-          <div className="horizontalLine-whites"></div>
-          <Link to="/solutions#quishing" className="services-action-button">
-            Learn More
-          </Link>
-        </div>
-      </div>
-      <div className="services-panel-section-third">
-        <div className="services-panel white">
-          <div className="services-panel-title smishing-title">
-            SMS Phishing Assessment
-          </div>
-          <div className="services-panel-bulletpoints">
-            Mobile security assessment through SMS simulations, followed by
-            practical feedback on threat awareness.
-          </div>
-          <div className="horizontalLine"></div>
-          <Link to="/solutions#smishing" className="services-action-button">
-            Learn More
-          </Link>
-        </div>
-      </div>
     </article>
   );
 };

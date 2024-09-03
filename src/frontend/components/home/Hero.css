@@ -22,6 +22,7 @@
   font-weight: bolder;
   font-size: calc(55px + 0.390625vw);
   margin-top: 7vh;
+  position: relative;
 }
 
 .hero-description {
@@ -66,6 +67,18 @@
   max-height: 72vh;
 }
 
+@media (max-width: 1239px) {
+  .hero-title {
+    font-size: calc(48px + 0.390625vw);
+  }
+}
+
+@media (max-width: 1089px) {
+  .hero-title {
+    font-size: calc(40px + 0.390625vw);
+  }
+}
+
 @media (max-width: 991px) {
   .hero-section {
     flex-direction: column;
@@ -86,5 +99,21 @@
     margin-left: 4vw;
     max-width: 95vw;
     height: auto;
+  }
+
+  .hero-title {
+    font-size: calc(55px + 0.390625vw);
+  }
+}
+
+@media (max-width: 601px) {
+  .hero-title {
+    font-size: calc(45px + 0.390625vw);
+  }
+}
+
+@media (max-width: 381px) {
+  .hero-title {
+    font-size: calc(40px + 0.390625vw);
   }
 }

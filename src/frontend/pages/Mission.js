@@ -77,8 +77,7 @@ const Mission = () => {
             Speculor is changing that narrative. We are committed to providing
             comprehensive security testing and security awareness solutions —
             including general phishing assessments, spearphishing, whaling, QR
-            code phishing, and SMS phishing — at an accessible and affordable
-            level
+            code phishing, and SMS phishing.
             <br />
             <br />
             We believe that every business, regardless of its size, deserves the

@@ -14,14 +14,13 @@ const Hero = () => {
     <main className="hero-section">
       <div className="hero-action">
         <h1 className="hero-title">
-          Transform security,
+          No vulnerabilities,
           <br />
-          combat cyber threats.
+          no expenses.
         </h1>
         <div className="hero-description">
-          Enhance your resilience against cyber attacks with measurable testing
-          and strategic team building programs, aimed at boosting your
-          cybersecurity.
+          Let us hack your business. If we find no vulnerabilities, you pay
+          nothing. Get the protection you deserve.
         </div>
         <div className="hero-call-to-action">
           <button className="hero-action-button" onClick={navigateToContact}>

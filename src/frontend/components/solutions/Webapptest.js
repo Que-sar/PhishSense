@@ -21,7 +21,7 @@ const Webapptest = () => {
           Through a custom approach, we address the specific security needs of
           your organization.
           <br /> <br />
-          This affordable testing solution means to enable businesses of all
+          This actionable testing solution means to enable businesses of all
           sizes to take a proactive approach in securing their web application.{" "}
           <br /> <br />
           Our service also comes with detailed reporting, detailing findings and

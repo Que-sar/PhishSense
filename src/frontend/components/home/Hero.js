@@ -14,13 +14,13 @@ const Hero = () => {
     <main className="hero-section">
       <div className="hero-action">
         <h1 className="hero-title">
-          No vulnerabilities,
+          Let us hack
           <br />
-          no expenses.
+          your business.
         </h1>
         <div className="hero-description">
-          Let us hack your business. If we find no vulnerabilities, you pay
-          nothing. Get the protection you deserve.
+          It's a challenge. If we find no vulnerabilities, you also pay nothing.
+          Get the protection you deserve.
         </div>
         <div className="hero-call-to-action">
           <button className="hero-action-button" onClick={navigateToContact}>

@@ -17,7 +17,7 @@ const Services = () => {
             Web Application Security Testing
           </div>
           <div className="services-panel-bulletpoints">
-            Quick and effective web application cyber security testing with
+            Industry unique and effective web application security testing with
             actionable reporting to help your business.
           </div>
           <div className="horizontalLine"></div>
@@ -31,8 +31,8 @@ const Services = () => {
             Cyber Awareness Workshop
           </div>
           <div className="services-panel-bulletpoints">
-            Tailored learning, engaging activities, and team building exercises
-            for effective training in cybersecurity awareness.
+            Engaging learning, and team building exercises for long lasting
+            cybersecurity awareness. You won't find this anywhere else.
           </div>
           <div className="horizontalLine-whites"></div>
           <Link to="/solutions#workshop" className="services-action-button">

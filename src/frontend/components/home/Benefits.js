@@ -13,10 +13,7 @@ const Benefits = () => {
       <Wave />
       <section className="benefits-section">
         <div className="benefits-title">Benefits</div>
-        <div className="benefits-description">
-          What we offer to increase your security, elevate your confidence,
-          achieve your goals.
-        </div>
+        <div className="benefits-description">How we cover you.</div>
         <div className="benefits-list">
           <div className="firstBenefit">
             <div className="benefit-item-icon">
@@ -27,8 +24,8 @@ const Benefits = () => {
                 Reporting for Cyber Insurance
               </div>
               <p className="benefit-item-description">
-                Get reports formatted for cyber insurance, helping quantify
-                risks and improve coverage.
+                Get intelligence formatted for cyber insurance by default,
+                helping quantify risks and improve coverage.
               </p>
             </div>
           </div>

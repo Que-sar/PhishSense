@@ -42,7 +42,7 @@ const Solutions = () => {
     "@type": "EducationalOrganization",
     name: "Solutions - Speculor",
     description:
-      "Explore our comprehensive solutions to raise awareness against email security threats. Learn about various phishing awareness campaigns, training workshops, and more.",
+      "Our solutions to solve cyber threats, accompanied by a report with insights for every department, opening eyes.",
     url: window.location.href,
   };
 
@@ -54,7 +54,7 @@ const Solutions = () => {
         <meta property="og:title" content="Solutions" />
         <meta
           property="og:description"
-          content="Our solutions to raise awareness against email security threats comprise of various phishing awareness campaigns, accompanied by a report, as well as an optional, eye opener training."
+          content="Our solutions to solve cyber threats, accompanied by a report with insights for every department, opening eyes."
         />
         <meta property="og:url" content={window.location.href} />
         <script type="application/ld+json">

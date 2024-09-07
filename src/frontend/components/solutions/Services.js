@@ -8,7 +8,7 @@ const Services = () => {
       <div className="services-title-section">
         <div className="services-title"> Our Primary Services</div>
         <div className="services-title-description">
-          Tailor it to your needs.
+          We tailor it to your needs.
         </div>
       </div>
       <div className="services-panel-section-first">
@@ -17,8 +17,8 @@ const Services = () => {
             Web Application Security Testing
           </div>
           <div className="services-panel-bulletpoints">
-            Industry unique and effective web application security testing with
-            actionable reporting to help your business.
+            Adaptive and efficient web application security testing with
+            actionable reporting to protect your business and visualise costs.
           </div>
           <div className="horizontalLine"></div>
           <Link to="/solutions#webapptest" className="services-action-button">
@@ -31,8 +31,9 @@ const Services = () => {
             Cyber Awareness Workshop
           </div>
           <div className="services-panel-bulletpoints">
-            Engaging learning, and team building exercises for long lasting
-            cybersecurity awareness. You won't find this anywhere else.
+            Engaging learning, and team building exercises for a measurable,
+            long lasting cybersecurity awareness, that you won't find anywhere
+            else.
           </div>
           <div className="horizontalLine-whites"></div>
           <Link to="/solutions#workshop" className="services-action-button">
@@ -46,7 +47,7 @@ const Services = () => {
           </div>
           <div className="services-panel-bulletpoints">
             Comprehensive security awareness simulations to test resilience,
-            followed by insights to bolster security knowledge.
+            followed by security insights with risks, associated expenses.
           </div>
           <div className="horizontalLine"></div>
           <Link to="/solutions#phishing" className="services-action-button">

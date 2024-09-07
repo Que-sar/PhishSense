@@ -49,9 +49,7 @@ const Mission = () => {
           </Link>
         </div>
         <div className="name-explanation-quote-container">
-          <h1 className="name-explanation-title">
-            Your Proactive Partner in Cybersecurity
-          </h1>
+          <h1 className="name-explanation-title">We have your back.</h1>
           <div className="name-explanation-text">
             In a world brimming with digital threats, Speculor stands as a
             guardian in the realm of cybersecurity. <br />
@@ -69,15 +67,14 @@ const Mission = () => {
         <div className="mission-statement-container">
           <div className="mission-statement-title"> Our Mission </div>
           <div className="mission-statement-text">
-            Our mission at Speculor is to transform security for organisations
-            to combat cyber threats. We recognize that professional-grade
-            cybersecurity has often been a resource-intensive endeavor, putting
-            it out of reach for many. <br />
+            Our mission at Speculor is to transform cybersecurity.
+            <br />
+            <br /> We recognize that professional-grade cybersecurity has often
+            been a intensive endeavor, putting it out of reach for many. <br />
             <br />
             Speculor is changing that narrative. We are committed to providing
-            comprehensive security testing and security awareness solutions —
-            including general phishing assessments, spearphishing, whaling, QR
-            code phishing, and SMS phishing.
+            comprehensive security testing and awareness solutions in a form
+            directly applicable for your goals.
             <br />
             <br />
             We believe that every business, regardless of its size, deserves the

@@ -23,10 +23,12 @@ const Benefits = () => {
               <img src={ShieldIcon} alt="Protection" />
             </div>
             <div>
-              <div className="benefit-item-title">Empower Your Security</div>
+              <div className="benefit-item-title">
+                Reporting for Cyber Insurance
+              </div>
               <p className="benefit-item-description">
-                Test your applications and awareness to protect against threats
-                by simulating real cyber attacks.
+                Get reports formatted for cyber insurance, helping quantify
+                risks and improve coverage.
               </p>
             </div>
           </div>

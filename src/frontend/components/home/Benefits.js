@@ -35,10 +35,12 @@ const Benefits = () => {
               <img src={ScaleIcon} alt="Protection" />
             </div>
             <div>
-              <div className="benefit-item-title">Enhance Vigilence</div>
+              <div className="benefit-item-title">
+                Understand Revenue Impact
+              </div>
               <p className="benefit-item-description">
-                Effectively strengthen your defenses through custom strategic
-                insights from certified ethical hackers.
+                Effectively measure and calculate your defenses through custom
+                strategic insights from certified ethical hackers.
               </p>
             </div>
           </div>

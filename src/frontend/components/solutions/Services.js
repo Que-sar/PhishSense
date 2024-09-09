@@ -18,7 +18,8 @@ const Services = () => {
           </div>
           <div className="services-panel-bulletpoints">
             Adaptive and efficient web application security testing with
-            actionable reporting to protect your business and visualise costs.
+            actionable reporting to protect your business and visualise costs,
+            revenue impact.
           </div>
           <div className="horizontalLine"></div>
           <Link to="/solutions#webapptest" className="services-action-button">

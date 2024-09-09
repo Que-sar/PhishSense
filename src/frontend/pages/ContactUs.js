@@ -37,7 +37,7 @@ const ContactUs = () => {
       <div className="business-info">
         <h2 className="contact-info-title">Contact Information</h2>
         <p className="contact-us-email">
-          Email: <a href="mailto:info@speculor.uk">info@speculor.uk</a>
+          Email: <a href="mailto:hello@speculor.uk">hello@speculor.uk</a>
         </p>
         <p className="contact-us-phonenumber">Phone: +44 789 5448 593</p>
       </div>

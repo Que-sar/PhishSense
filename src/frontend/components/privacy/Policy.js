@@ -51,7 +51,7 @@ const Policy = () => {
       <p>
         You have the right to access, correct, or delete your personal data. If
         you wish to exercise these rights, please contact us at
-        info@speculor.uk.
+        hello@speculor.uk.
       </p>
       <h2>Consent</h2>
       <p>
@@ -64,7 +64,7 @@ const Policy = () => {
       <p>
         f you have any questions about this Privacy Policy, the practices of
         this site, or your dealings with this site, please contact us at:
-        Speculor Ltd Email: info@speculor.uk This document was last updated on
+        Speculor Ltd Email: hello@speculor.uk This document was last updated on
         09/05/2024.
       </p>
     </div>

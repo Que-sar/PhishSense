@@ -65,7 +65,7 @@ const Policy = () => {
         f you have any questions about this Privacy Policy, the practices of
         this site, or your dealings with this site, please contact us at:
         Speculor Ltd Email: hello@speculor.uk This document was last updated on
-        09/05/2024.
+        09/09/2024.
       </p>
     </div>
   );

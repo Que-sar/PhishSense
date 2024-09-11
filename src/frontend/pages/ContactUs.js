@@ -39,7 +39,7 @@ const ContactUs = () => {
         <p className="contact-us-email">
           Email: <a href="mailto:hello@speculor.uk">hello@speculor.uk</a>
         </p>
-        <p className="contact-us-phonenumber">Phone: +44 789 5448 593</p>
+        <p className="contact-us-phonenumber">Phone: 0141 266 0227</p>
       </div>
     </div>
   );
